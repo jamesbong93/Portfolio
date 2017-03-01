@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=iso-8859-1" />
+		<meta name="author" content="www.frebsite.nl" />
+		<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
+
+		<title>Customized transition effects for your mobile sidebar menu.</title>
+
+		<link type="text/css" rel="stylesheet" href="jquery.mmenu.all.css" />
+		<link type="text/css" rel="stylesheet" href="style.css" />
+
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+		<script type="text/javascript" src="jquery.mmenu.min.all.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				var $html = $('html'),
+					$em = $('em');
+
+				function getclass( el )
+				{
+					var n = [],
+						o = ( $html.attr( 'class' ) || '' ).split( ' ' );
+	
+					for ( var i in o )
+					{
+						if ( o[ i ].slice( 0, 3 ) == 'mm-' )
+						{
+							n.push( o[ i ] );
+						}
+					}
+					n.push( $(el).text().toLowerCase().split( ' ' ).join( '-' ).split( '3' ).join( 'x' ) );
+					return n.join( ' ' );
+				}
+
+				$('a[href="#menu"], a[href="#page"]').click(function() {
+					$em.text( $(this).text().toLowerCase() );
+					$html.attr( 'class', getclass( this ) );
+				});
+				$('#menu').mmenu();
+			});
+		</script>
+	</head>
+	<body>
+		<div id="page">
+			<div>
+				<h1><span>A selection of</span> customized transition effects <span>for your mobile sidebar menu.</span></h1>
+				<p>Pick one to open the menu:</p>
+				<a href="#menu">Slide left</a>
+				<a href="#menu">Slide right</a><br />
+				<a href="#menu">Zoom left</a>
+				<a href="#menu">Zoom right</a><br />
+				<a href="#menu">3D left</a>
+				<a href="#menu">3D right</a><br />
+				<a href="#menu">Fade</a>
+				<a href="#menu">Default</a>
+			</div>
+			<nav id="menu">
+				<div>
+					<div id="menu-inner">
+						<h2><span>This</span> <em></em> customized transition effect <span>is powered by the <a href="http://mmenu.frebsite.nl" target="_blank">mmenu plugin</a>.</span></h2>
+						<p>Now pick an effect to close the menu:</p>
+						<a href="#page">Slide left</a>
+						<a href="#page">Slide right</a><br />
+						<a href="#page">Zoom left</a>
+						<a href="#page">Zoom right</a><br />
+						<a href="#page">3D left</a>
+						<a href="#page">3D right</a><br />
+						<a href="#page">Fade</a>
+						<a href="#page">Default</a>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</body>
+</html>

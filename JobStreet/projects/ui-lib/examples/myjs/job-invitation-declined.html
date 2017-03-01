@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta name="robots" content="noindex">
+	<title>Job Ad Decline</title>
+	<link rel="stylesheet" href="http://dna.jsstatic.com/myjs/myjs-1.2.12.css">
+	<link rel="stylesheet" href="http://dna.jsstatic.com/pi/icon-font/2.1/icon-font.css">
+</head>
+<body>
+		
+<!--// NAVBAR //-->
+<div class="navbar navbar-default navbar-center">
+  <div class="container">
+    <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2">
+    	<div class="navbar-header">
+            <div class="navbar-brand">
+            	<span class="jslogo"></span>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+<!--// NAVBAR END //-->
+
+	<div class="container" >
+
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2 orphan-page">
+				<div class="panel panel-basic">
+
+					<div class="panel-header text-center margin-2">
+						<div class="title">One more step...</div>
+						<span>Let the employer know your reason below</span>
+					</div>
+					
+					<div class="panel-body content-page">
+						
+						<!-- Reason option(s) -->
+						<div class="row">
+							<div class="col-xs-12 col-sm-6 col-lg-4 feedback-reason">
+								<div class="option-border" role="button">
+									<div class="option-table">
+										<span><img src="//dna.jsstatic.com/img/myjs/icon-time-not-suitable.png" alt="Time not suitable"></span>
+								    	<span class="text">Time not suitable</span>
+									</div>
+								</div>
+							</div>
+                            <div class="col-xs-12 col-sm-6 col-lg-4 feedback-reason">
+								<div class="option-border" role="button">
+									<div class="option-table">
+										<span><img src="//dna.jsstatic.com/img/myjs/icon-not-relevant.png" alt="Job not relevant"></span>
+								    	<span class="text">Job not relevant</span>
+									</div>
+								</div>
+							</div>
+                            <div class="col-xs-12 col-sm-6 col-lg-4 feedback-reason">
+								<div class="option-border" role="button">
+									<div class="option-table">
+										<span><img src="//dna.jsstatic.com/img/myjs/icon-happy.png" alt="Happy with my current job"></span>
+								    	<span class="text">Happy with my current job</span>
+									</div>
+								</div>
+							</div>
+                            <div class="col-xs-12 col-sm-6 col-lg-4 feedback-reason">
+								<div class="option-border" role="button">
+									<div class="option-table">
+										<span><img src="//dna.jsstatic.com/img/myjs/icon-not-interest-company.png" alt="Not interested in company"></span>
+								    	<span class="text">Not interested in company</span>
+									</div>
+								</div>
+							</div>
+                            <div class="col-xs-12 col-sm-6 col-lg-4 feedback-reason">
+								<div class="option-border" role="button">
+									<div class="option-table">
+										<span><img src="//dna.jsstatic.com/img/myjs/icon-not-interest-job.png" alt="Not interested in job"></span>
+								    	<span class="text">Not interested in job</span>
+									</div>
+								</div>
+							</div>
+                            <div class="col-xs-12 col-sm-6 col-lg-4 feedback-reason">
+								<div class="option-border" role="button">
+									<div class="option-table">
+										<span><img src="//dna.jsstatic.com/img/myjs/icon-more.png" alt="Others"></span>
+								    	<span class="text">Others</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- End of Reason options(s) -->
+
+                        <!--Option textarea-->
+                        <div class="textarea-submit" style="display: none;">
+	                        <div class="textarea-container">
+		                        <div class="selected-option"></div>
+		                        <div class="textarea-close">
+									<button type="button" class="close">×</button>
+									<textarea class="form-control" rows="3" placeholder="Further elaborate (optional)"></textarea>
+									<span class="character-count">0 of 300 character(s) typed.</span>
+								</div>
+							</div>
+							<div class="text-center margin-4">
+								<a href="job-invitation-success-respond.html" role="button" class="btn btn-info">Submit</a>
+							</div>
+                        </div>
+                        
+						<!-- End of Option textarea -->
+
+					</div>
+				</div>
+
+				<div class="panel">
+					<div class="panel-body most-footer">
+						<ul class="list-inline text-center">
+							<li>
+								<img src="//dna.jsstatic.com/img/icon-trust.png" alt="Most Trusted">
+								Most Trusted
+							</li>
+							<li>
+								<img src="//dna.jsstatic.com/img/icon-employer.png" alt="Most Quality Employers">
+								Most Quality Employers
+							</li>
+							<li>
+								<img src="//dna.jsstatic.com/img/icon-job.png" alt="Most Quality Jobs">
+								Most Quality Jobs
+							</li>
+						</ul>
+					</div>	
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<footer>
+	  	<div class="container">
+	    	<p class="text-copyright">Copyright &copy; 2016 JobStreet.com</p>
+	  	</div>
+	</footer>
+	
+	<!--// JAVASCRIPT //-->
+	<script src="http://dna.jsstatic.com/js/jquery.js"></script>
+	<script src="http://dna.jsstatic.com/js/bootstrap.js"></script>
+    
+    <script>
+    $(document).ready(function(){
+
+    	// Check 'wrong_time=show' from URL
+		$.urlParam = function(name){
+			var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+			if (results==null){
+		       return null;
+		    }
+		    else{
+		       return results[1] || 0;
+		    }
+		}
+        var $wrong_time = $.urlParam('wrong_time'); 
+
+        if($wrong_time=="show"){
+            $(".feedback-reason").hide();
+            $(".textarea-submit").fadeIn();
+            $('.selected-option').html('<span><img src="images/icon-time-not-suitable.png" alt="Time not suitable"></span><span class="text">Time not suitable</span>');
+        }
+      
+        $(".feedback-reason").click(function(){
+            $(".feedback-reason").hide();
+            $(".textarea-submit").fadeIn();
+            $('.selected-option').html($(this).find('.option-table').html());
+        });
+
+        $(".textarea-submit .close").click(function(){
+            $(".feedback-reason").fadeIn();
+            $(".textarea-submit").hide();
+        });
+        
+    });
+    </script>
+
+</body>
+</html>

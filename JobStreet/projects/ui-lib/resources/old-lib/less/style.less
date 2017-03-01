@@ -1,0 +1,319 @@
+@import "variables.less";
+@import "mixins.less";
+
+/* Layout */
+#wrap{
+	min-height: 100%;
+	height: auto!important;
+	height: 100%;
+	margin: 0 auto -100px;
+	padding: 0 0 100px;
+}
+
+/* Coverpage */
+.backdrop{
+	background-image: none;	
+	@media(min-width:768px){
+		display: initial;
+		position: absolute;
+		z-index: -2;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		margin: auto;
+		background-image: url('http://dna.jsstatic.com/img/gp/bg4.jpg');
+		background-position: center center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+	}
+	>.container{
+		&.index{
+			margin-top: 15%;
+			max-width: 600px;
+		}
+		.text-center{
+			margin-top: 30px;
+			>.btn{
+				font-weight: bold;
+			}
+		}
+	}
+}
+
+/* Menubar */
+/*.navbar-pi{
+	background-color: @GrayDark;
+	border:0px!important;
+	.nav{
+		li{
+			a{
+				color: @GrayLighter;
+				&:hover{
+					background-color: transparent;
+					color: #fff;
+				}
+			}
+			&.active
+			{
+				a{
+					color: #fff;
+					background-color: @FavColor;
+				}
+			}
+		}
+	}
+	.dropdown-menu{
+		background-color: @GrayDark;
+		border:0px!important;
+		a{
+			background-color: transparent!important;
+			&:hover{
+				background-color: @FavColor!important;
+			}
+		}
+		.active{
+			a{
+				background-color: @FavColor!important;
+			}
+		}
+	}
+}*/
+
+.navbar{
+	border-radius: 0;
+}
+
+.navbar-pi-collapse{
+	@media(min-width:768px){
+		display: block;
+		visibility: visible;
+	}
+}
+
+.navbar-toggle{
+	.icon-bar{
+		background-color: @FavColor;
+	}
+}
+
+/* Demo Menubar */
+.navbar-brand-demo{
+		display: inline-block;
+		margin: 10px 0 0 10px;
+		color: #666;
+}	
+.navbar-inverse{
+	.navbar-brand-demo{
+		color: #fff;
+	}	
+}
+
+/* Project Pi & Brand Logo */
+.pi-logo{
+	width: 100%;
+	height: 250px;
+	background: url(../ico/icon-300.png) no-repeat 0 50%;
+	background-size: 100%;
+	margin: 20px 0;
+}
+
+.navbar-brand{
+	margin: 8px 0 0 10px;
+	width: 32px;
+	height: 32px;
+	background: url(../ico/favicon.png) no-repeat;
+	@media(min-width:768px){
+		margin: 8px 30px 0 0;
+	}
+}
+
+/* Cover Page */
+.cover-page{
+	//background-color: #000;
+}
+
+/* Footer */
+#footer{
+	min-height: 100px;
+	//background-color: @GrayBase;
+
+  > .container{
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+
+		.footer-text{
+			margin-top: 30px;
+			color: @Gray;
+			font-size: 12px;
+			@media(min-width: 768px){font-size: 100%;}
+
+			a{
+				color: @GrayLight;
+			}
+
+			[class^="icon-"],[class*=" icon-"]{
+				text-decoration: none;
+				color: @Gray;
+				cursor: pointer;
+				font-size: 16px;
+				&:hover{color: @GrayBase;}
+			}
+		}
+	}
+}
+
+/* General Card Design */
+.card{
+	margin-bottom: 40px;
+	.BorderRadius(@BorderRadiusBase);
+	@media(min-width: 768px){
+		margin-bottom: 50px;
+		}
+}
+
+/* Page Header */
+.page-header{
+	margin-bottom: 30px;
+	h3{
+		color: @GrayDark;
+		font-weight: normal;
+		border-bottom: 0;
+		margin: 0;
+		padding: 0;
+	}
+}
+
+/* Blockquote */
+blockquote{
+	border-width: 0 0 0 5px;
+	border-style: solid;
+	border-color: @GrayLighter;
+	
+	h4{
+		font-weight: bold;
+		margin: 0 0 5px 0;
+	}
+	p{
+		font-size: 14px;
+	}
+
+	&.important{
+		border-color: @BlockquoteImportantBorder;
+		background-color: @BlockquoteImportantBg;
+	}
+
+	&.info{
+		border-color: @BlockquoteInfoBorder;
+		background-color: @BlockquoteInfoBg;
+	}
+}
+
+/* Icons */
+.icons-showcase{
+	[class^="icon-"],[class*="icon-"]{
+		margin-right: 5px;
+		font-size: 1.2em;
+		min-width: 28px;
+		text-align: center;
+	}
+	.col-sm-3{
+		cursor: default;
+		vertical-align: middle;
+		padding: 5px;
+		margin: 3px 0;
+	
+		&:hover{
+			background-color: @FavColor;
+			color: #fff;
+		}
+	}
+}
+
+/* Code */
+pre{
+	&.well{
+		background: @GrayBase;
+		padding: 10px;
+		color: @GrayLighter;
+		font-size: 10px;
+		width: 100%;
+		height: auto;
+		min-height: auto;
+		max-height: 350px;
+		overflow-y: auto;
+		border: 1px dashed #fff;
+		margin: 20px 0px;
+		.InsetBoxShadow(6px);
+		@media(min-width: 768px){font-size: 100%;}
+	}
+
+	&.htag{
+		display: inline-block;
+		padding: 4px 6px;
+		margin: 0px;
+		font-size: 11px;
+		font-weight: bold;
+		line-height: 1;
+		background-color: darksalmon;
+		color: cornsilk;
+		.BorderRadius(3px);
+		border: 0;
+	}
+}
+
+/* Templates Examples */
+.examples{
+	margin-bottom: 50px;
+	
+	figcaption{
+		margin: 8px 0 3px;
+		font-size: 16px;
+		font-weight: bold;
+		color: @Gray;
+		@media(min-width:768px){
+			font-size: 14px;
+			font-weight: normal;
+		}
+	}
+
+	a.thumbnail{
+		background-color: #fff;
+		max-height: auto;
+		text-decoration: none;
+		line-height: 1.1;
+		color: @GrayDark;
+		padding: 10px 8px;
+	}
+}
+
+/* Balsamiq Template Library */
+.sbalsamiq-template-download{
+	padding-left: 50px;
+}
+
+/* Download panel for icon fonts */
+.iconfont-download{
+	margin-top: 20px;
+	float: left;
+	@media(min-width: 992px){
+		margin-top: 0;
+		float: right;
+	}
+}
+
+/* JS Fix Log */
+.table{
+	&.fix-log{
+		th{
+			width: 160px;
+			border-top: 0;
+		}
+		td{
+			padding: 6px;
+			border: 0;
+		}
+	}
+}

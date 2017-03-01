@@ -1,0 +1,10 @@
+.lead{
+	line-height:1.2;
+}
+.page-header{
+	color:#333;
+	margin:20px 0;
+	border-bottom:0;
+	font-weight:lighter;
+	letter-spacing:-0.03em;
+}

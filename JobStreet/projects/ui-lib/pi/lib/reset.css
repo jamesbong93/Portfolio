@@ -1,0 +1,50 @@
+body{
+	background-color:#e5e5e5;
+}
+a{
+	color:#1c3f94;
+	background:transparent;	
+	text-decoration:none;
+}
+a:hover,a:focus,a:active{
+	outline:0;
+	text-decoration:underline;
+}
+blockquote{
+	font-size:14px;
+}
+fieldset{
+	padding:5px;
+	margin:5px 0;
+	border:1px solid #ccc;
+}
+legend{
+	font-size:16px;
+	padding:0 5px;
+	line-height:inherit;
+	color:#666;
+	width:auto;
+	border:0;
+	margin:0;
+}
+pre,code{
+	border-radius:0;
+}
+textarea{
+	overflow:auto;
+	vertical-align:middle;
+	resize:none;
+}
+table{
+	max-width:100%;
+	width:100%;
+	background-color:transparent;
+}
+th{text-align:left;}
+table thead > tr > th,
+table tbody > tr > td{
+	padding:6px;
+	vertical-align:top;
+	line-height:1.428571429;
+}
+table thead > tr > th{vertical-align:bottom;}
