@@ -1,0 +1,1411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Siva Template - Talent Search resume</title>
+	<link rel="stylesheet" href="http://dna.jsstatic.com/siva/siva-1.2.17.css">
+	<link rel="stylesheet" href="http://dna.jsstatic.com/pi/icon-font/2.1/icon-font.css">
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="../../ico/favicon.png">
+	<link rel="apple-touch-icon" href="../../ico/touch-icon-iphone.png">
+	<link rel="apple-touch-icon" sizes="76x76" href=../../"ico/touch-icon-ipad.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="../../ico/touch-icon-iphone-retina.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="../../ico/touch-icon-ipad-retina.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="../../ico/touch-icon-iphone6p-ios8.png">
+	<!-- End of Favicon -->
+</head>
+<body>
+
+<!--// NAVBAR //-->
+<div class="navbar navbar-default navbar-static">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#">
+				<span class="jslogo"></span>
+			</a>
+        </div>
+        <div class="collapse navbar-collapse">
+			<ul class="nav navbar-nav">
+				<li><a href="#">Job Ads</a></li>
+				<li class="active"><a href="#">Talent Search</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li class="dropdown bell hidden-xs">
+		            <a class="bell" href="" data-toggle="dropdown">
+		            	<i class="icon-bell alert"></i>
+		            </a>
+		            <div class="dropdown-menu notifications">
+		               <div class="title">Notifications <a href="javascript:;" id="clearNotification" class="small pull-right">Clear All</a></div>
+		               <ul class="notification-content">
+		                  <li>
+		                    <h5>Scheduled server maintenance &#183; 1hr ago</h5>
+		                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis metus lacus, fringilla sed tristique ac, aliquet quis nibh. In interdum, leo ac dapibus faucibus, libero mi interdum eros, quis dignissim massa purus at neque. Morbi ut mi ut nisl egestas hendrerit et porttitor lectus.</p>
+		                  </li>
+		               </ul>
+		               <div class="notification-empty" style="display:none">
+		                	<span><i class="icon-bell-o x2"></i><br>Nothing new right now</span>
+		               </div>
+		            </div>
+		        </li>
+				<li class="dropdown">
+					<a href="javascript:;" data-toggle="dropdown">
+						<span>Right Handed</span> <span class="caret"></span>
+						<span class="text-muted">JobStreet.com</span>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Your Profile</a></li>
+						<li><a href="#">All Users</a></li>
+						<li><a href="#">Company Profile</a></li>
+						<li class="divider"></li>
+						<li><a href="#">Credits</a></li>
+						<li><a href="#">Logout</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!--// NAVBAR END //-->
+
+<div class="container">
+	<!--// TOP BAR //-->
+	<div class="panel topbar">
+		<div class="panel-body">
+			<div class="topbar-heading">
+				<div class="topbar-title">
+					<a href="" class="back visible-xs"><span class="icon-angle-left"></span></a>
+					<h1>Page Title</h1> <a href="#" class="btn btn-link" role="button"><span class="icon-search"></span></a>
+				</div>
+				<div class="topbar-search">
+					<form class="form-group">
+						<span class="icon-search"></span>
+						<span class="icon-close"></span>
+						<input type="text" class="form-control" placeholder="Search for job ads...">
+					</form>
+				</div>
+			</div>
+			<div title="Filter Candidates" class="btn btn-icon facet pull-right visible-sm visible-md">
+				<span class="icon-filter pull-left"></span>
+			</div>
+			<ul class="nav nav-pills pull-right">
+				<li class="active"><a href="#">Menu Item <span class="fig">10</span></a></li>
+				<li><a href="#">Menu Item <span class="fig">2</span></a></li>
+				<li><a href="#">Menu Item <span class="fig">13</span></a></li>
+				<li><a href="#">Menu Item <span class="fig">0</span></a></li>
+				<span class="icon-ellipsis-v more visible-xs"></span>
+			</ul>
+		</div>
+	</div>
+	<!--// TOP BAR END //-->
+	
+	<div id="loadContent">
+		
+		<!--Loading screen-->
+    	<div class="loader-wrap">
+            <div class="loading-container">
+            <div class="loading"></div>
+            <div id="loading-text">Loading Candidates</div>
+            </div>
+        </div>
+        <!--Loading screen end-->
+
+		<div class="panel hidden-xs hidden-sm hidden-md col-sm-12 col-md-12 col-lg-3 accordion-facet">
+			<div class="panel-body">
+				<div class="panel-default" style="display:none">
+					<a type="button" class="btn btn-pale btn-block filter-clear"><span class="icon-close-disc"></span>CLEAR FILTERS</a>
+				</div>
+
+				<div class="panel-default">
+					<div class="panel-heading" data-toggle="collapse" href="#collapse1" aria-expanded="true">
+						<h5>
+							<strong>Location</strong>
+							<span class="icon-caret-up pull-right"></span>
+						</h5>
+					</div>
+					<div id="collapse1" class="panel-collapse collapse in" aria-expanded="true">
+						<div class="panel-body">
+							
+							<div class="label-container">
+								<span class="facet-count">(100)</span>
+								<input type="checkbox" id="facet1">
+								<span class="facet-checkbox"></span>
+								
+								<label for="facet1">
+									<div class="ellipsis" title="Kuala Lumpur">
+								       Kuala Lumpur
+								    </div>
+							    </label>
+							</div>
+
+							<div class="label-container">
+								<span class="facet-count">(543)</span>
+								<input type="checkbox" id="facet2">
+								<span class="facet-checkbox"></span>
+								<label for="facet2">
+									<div class="ellipsis" title="Anywhere in Malsyaia">
+								       Anywhere in Malaysia
+								    </div>
+							    </label>
+							</div>
+
+							<div class="label-container">
+								<span class="facet-count">(231)</span>
+								<input type="checkbox" id="facet3">
+								<span class="facet-checkbox"></span>
+								<label for="facet3">
+									<div class="ellipsis" title="Anywhere in Singapore">
+								       Anywhere in Singapore
+								    </div>
+							    </label>
+							</div>
+
+							<div class="label-container">
+								<span class="facet-count">(34)</span>
+								<input type="checkbox" id="facet4">
+								<span class="facet-checkbox"></span>
+								<label for="facet4">
+									<div class="ellipsis" title="Putrajaya">
+								       Putrajaya 
+								    </div>
+							    </label>
+							</div>
+
+							<div class="label-container">
+								<span class="facet-count">(25)</span>
+								<input type="checkbox" id="facet5">
+								<span class="facet-checkbox"></span>
+								<label for="facet5">
+									<div class="ellipsis" title="Selangor">
+								       Selangor
+								    </div>
+							    </label>
+							</div>
+
+							<form class="form-inline facet-filter">
+								<input type="text" class="filter form-control">
+								<a href="#" class="add-item">
+									<span class="icon-positive-disc add-filter"></span>
+									<span class="add-filter">Add</span>
+								</a>
+							</form>
+						</div>
+					</div>
+				</div>
+
+				<div class="panel-default">
+					<div class="panel-heading"  data-toggle="collapse"  href="#collapse2" aria-expanded="true">
+						<h5>
+							<strong>Industry</strong>
+							<span class="icon-caret-up pull-right"></span>
+						</h5>
+					</div>
+					<div id="collapse2" class="panel-collapse collapse in" aria-expanded="true">
+						<div class="panel-body">
+
+							<div class="label-container">
+								<span class="facet-count">(10)</span>
+								<input type="checkbox" id="facet6">
+								<span class="facet-checkbox"></span>
+								<label for="facet6">
+									<div class="ellipsis" title="Engineering (Electrical)">
+								       Engineering (Electrical)
+								    </div>
+							    </label>
+							</div>
+
+							<div class="label-container">
+								<span class="facet-count">(210)</span>
+								<input type="checkbox" id="facet7">
+								<span class="facet-checkbox"></span>
+								<label for="facet7">
+									<div class="ellipsis" title="Computer / Information Technology (Software)">
+								       Computer / Information Technology (Software)
+								    </div>
+							    </label>
+							</div>
+
+							<div class="label-container">
+								<span class="facet-count">(41)</span>
+								<input type="checkbox" id="facet8">
+								<span class="facet-checkbox"></span>
+								<label for="facet8">
+									<div class="ellipsis" title="Advertising / Marketing / Promotion / PR">
+								       Advertising / Marketing / Promotion / PR
+								    </div>
+							    </label>
+							</div>
+
+							<div class="label-container">
+								<span class="facet-count">(25)</span>
+								<input type="checkbox" id="facet9">
+								<span class="facet-checkbox"></span>
+								<label for="facet9">
+									<div class="ellipsis" title="Consulting (IT, Science, Engineering & Technician)">
+								       Consulting (IT, Science, Engineering & Technician)
+								    </div>
+							    </label>
+							</div>
+
+							<div class="label-container">
+								<span class="facet-count">(2)</span>
+								<input type="checkbox" id="facet10">
+								<span class="facet-checkbox"></span>
+								<label for="facet10">
+									<div class="ellipsis" title="Construction / Building / Engineering">
+								       Construction / Building / Engineering
+								    </div>
+							    </label>
+							</div>
+
+							<form class="form-inline facet-filter">
+								<input type="text" class="filter form-control">
+								<a href="#" class="add-item">
+									<span class="icon-positive-disc add-filter"></span>
+									<span class="add-filter">Add</span>
+								</a>
+							</form>
+						</div>
+					</div>
+				</div>
+
+				<div class="panel-default">
+					<div class="panel-heading"  data-toggle="collapse" href="#collapse3" aria-expanded="true">
+						<h5>
+							<strong>Salary</strong>
+							<span class="icon-caret-up pull-right"></span>
+						</h5>
+					</div>
+					<div id="collapse3" class="panel-collapse collapse in" aria-expanded="true">
+						<div class="panel-body">
+							<div class="label-container content-highlight">
+								<div class="col-sm-12 well well-sm currency-well">
+									<div class="col-sm-5">
+										<span class="text">Currency</span>
+									</div>
+									<div class="col-sm-7">
+										<select class="form-control" name="salary_currency_code" id="salary_currency_code" tabindex="-1" data-placeholder="Currency">
+											<option value=""></option>
+											<option value="1" selected="selected">MYR</option>
+											<option value="2">SGD</option>
+											<option value="3">PHP</option>
+											<option value="4">USD</option>
+											<option value="5">INR</option>
+											<option value="6">AUD</option>
+											<option value="7">IDR</option>
+											<option value="8">THB</option>
+											<option value="9">HKD</option>
+										</select>
+									</div>
+								</div>
+								<form>
+									<div class="row text-center">
+										<div class="col-sm-6" style="padding-right:0px;">
+											<span class="control-label">Min.</span>
+											<input id="minSalary" type="number" class="form-control" placeholder="1000" value="2000">
+										</div>
+										<div class="col-sm-6" style="padding-left:0px;">
+											<span class="control-label">Max.</span>
+											<input id="maxSalary" type="number" class="form-control" placeholder="2000" value="3500">
+										</div>
+									</div>
+									<p>
+										<span id="inputErrorSalary" class="sr-only">(error)</span>
+										<span class="text-danger error-status">Please enter salary</span>
+									</p>
+									<a id="applySalary" class="btn btn-pale btn-block">Apply</a>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="panel-default">
+					<div class="panel-heading"  data-toggle="collapse"  href="#collapse4" aria-expanded="true">
+						<h5>
+							<strong>Company</strong>
+							<span class="icon-caret-up pull-right"></span>
+						</h5>
+					</div>
+					<div id="collapse4" class="panel-collapse collapse in" aria-expanded="true">
+						<div class="panel-body">
+
+							<div class="label-container">
+								<span class="facet-count">(30)</span>
+								<input type="checkbox" id="facet11">
+								<span class="facet-checkbox"></span>
+								<label for="facet11">
+									<div class="ellipsis" title="Seek Asia .Inc">
+								      Seek Asia .Inc
+								    </div>
+							    </label>
+							</div>
+
+							<div class="label-container">
+								<span class="facet-count">(3)</span>
+								<input type="checkbox" id="facet12">
+								<span class="facet-checkbox"></span>
+								<label for="facet12">
+									<div class="ellipsis" title="Appandus Sdn Bhd">
+								      Appandus Sdn Bhd
+								    </div>
+							    </label>
+							</div>
+
+							<div class="label-container">
+								<span class="facet-count">(14)</span>
+								<input type="checkbox" id="facet13">
+								<span class="facet-checkbox"></span>
+								<label for="facet13">
+									<div class="ellipsis" title="Fusionex">
+								      Fusionex
+								    </div>
+							    </label>
+							</div>
+
+							<div class="label-container">
+								<span class="facet-count">(21)</span>
+								<input type="checkbox" id="facet14">
+								<span class="facet-checkbox"></span>
+								<label for="facet14">
+									<div class="ellipsis" title="Jabil Circuit">
+								      Jabil Circuit
+								    </div>
+							    </label>
+							</div>
+
+							<div class="label-container">
+								<span class="facet-count">(2)</span>
+								<input type="checkbox" id="facet15">
+								<span class="facet-checkbox"></span>
+								<label for="facet15">
+									<div class="ellipsis" title="Logistics Consulting Asia">
+								      Logistics Consulting Asia
+								    </div>
+							    </label>
+							</div>
+
+							<form class="form-inline facet-filter">
+								<input type="text" class="filter form-control">
+								<a href="#" class="add-item">
+									<span class="icon-positive-disc add-filter"></span>
+									<span class="add-filter">Add</span>
+								</a>
+							</form>
+						</div>
+					</div>
+				</div>
+
+				<div class="panel-default">
+					<div class="panel-heading"  data-toggle="collapse"  href="#collapse5" aria-expanded="true">
+						<h5>
+							<strong>Nationality</strong>
+							<span class="icon-caret-up pull-right"></span>
+						</h5>
+					</div>
+					<div id="collapse5" class="panel-collapse collapse in" aria-expanded="true">
+						<div class="panel-body">
+
+							<div class="label-container">
+								<span class="facet-count">(67)</span>
+								<input type="checkbox" id="facet16">
+								<span class="facet-checkbox"></span>
+								<label for="facet16">
+									<div class="ellipsis" title="Singapore">
+								      Singapore
+								    </div>
+							    </label>
+							</div>
+
+							<div class="label-container content-highlight">
+								<span class="facet-count">(74)</span>
+								<input type="checkbox" id="facet17" checked="checked">
+								<span class="facet-checkbox"></span>
+								<label for="facet17">
+									<div class="ellipsis pre-selected" title="Malaysia">
+								      Malaysia 
+								      <div class="info">
+								      	(Pre-selected option)
+								      </div>
+								    </div>
+							    </label>
+							</div>
+						
+							<div class="label-container">
+								<span class="facet-count">(21)</span>
+								<input type="checkbox" id="facet18">
+								<span class="facet-checkbox"></span>
+								<label for="facet18">
+									<div class="ellipsis" title="Philippina">
+								      Philippina
+								    </div>
+							    </label>
+							</div>
+
+							<div class="label-container">
+								<span class="facet-count">(32)</span>
+								<input type="checkbox" id="facet19">
+								<span class="facet-checkbox"></span>
+								<label for="facet19">
+									<div class="ellipsis" title="Vietnam">
+								      Vietnam
+								    </div>
+							    </label>
+							</div>
+
+							<div class="label-container">
+								<span class="facet-count">(123)</span>
+								<input type="checkbox" id="facet20">
+								<span class="facet-checkbox"></span>
+								<label for="facet20">
+									<div class="ellipsis" title="Indonesia">
+								      Indonesia
+								    </div>
+							    </label>
+							</div>
+
+							<form class="form-inline facet-filter">
+								<input type="text" class="filter form-control">
+								<a href="#" class="add-item">
+									<span class="icon-positive-disc add-filter"></span>
+									<span class="add-filter">Add</span>
+								</a>
+							</form>
+						</div>
+					</div>
+				</div>
+
+				<div class="panel-default">
+					<div class="panel-heading collapsed" data-toggle="collapse" href="#collapse6" aria-expanded="false">	
+						<h5>
+							<strong>Language</strong>
+							<span class="icon-caret-up pull-right"></span>
+						</h5>
+					</div>
+					<div id="collapse6" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+
+							<div class="label-container">
+								<span class="facet-count">(1024)</span>
+								<input type="checkbox" id="facet21">
+								<span class="facet-checkbox"></span>
+								<label for="facet21">
+									<div class="ellipsis" title="English">
+								      English
+								    </div>
+							    </label>
+							</div>
+
+							<div class="label-container">
+								<span class="facet-count">(256)</span>
+								<input type="checkbox" id="facet22">
+								<span class="facet-checkbox"></span>
+								<label for="facet22">
+									<div class="ellipsis" title="Mandarin">
+								      Mandarin
+								    </div>
+							    </label>
+							</div>
+
+							<div class="label-container">
+								<span class="facet-count">(128)</span>
+								<input type="checkbox" id="facet23">
+								<span class="facet-checkbox"></span>
+								<label for="facet23">
+									<div class="ellipsis" title="Malay">
+								      Malay
+								    </div>
+							    </label>
+							</div>
+
+							<div class="label-container">
+								<span class="facet-count">(64)</span>
+								<input type="checkbox" id="facet24">
+								<span class="facet-checkbox"></span>
+								<label for="facet24">
+									<div class="ellipsis" title="Cantonese">
+								      Cantonese
+								    </div>
+							    </label>
+							</div>
+
+							<form class="form-inline facet-filter">
+								<input type="text" class="filter form-control">
+								<a href="#" class="add-item">
+									<span class="icon-positive-disc add-filter"></span>
+									<span class="add-filter">Add</span>
+								</a>
+							</form>
+						</div>
+					</div>
+				</div>
+
+				<div class="panel-default">
+					<div class="panel-heading collapsed" data-toggle="collapse" href="#collapse7" aria-expanded="false">	
+						<h5>
+							<strong>Years of Experience</strong>
+							<span class="icon-caret-up pull-right"></span>
+						</h5>
+					</div>
+					<div id="collapse7" class="panel-collapse collapse" aria-expanded="false">
+						<div class="panel-body">
+							<div class="label-container">
+								<form>
+									<div class="row text-center">
+										<div class="col-sm-6" style="padding-right:0px;">
+											<span class="control-label">Min.</span>
+											<input id="minExp" type="number" class="form-control" placeholder="1">
+										</div>
+										<div class="col-sm-6" style="padding-left:0px;">
+											<span class="control-label">Max.</span>
+											<input id="maxExp" type="number" class="form-control" placeholder="2">
+										</div>
+									</div>
+									<p>
+										<span id="inputErrorExperience" class="sr-only">(error)</span>
+										<span class="text-danger error-status">Please enter experience</span>
+									</p>
+									<a id="applyYOE" class="btn btn-pale btn-block">Apply</a>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+          
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-9 panel-results">
+			<!--Action Btn-->
+            <div class="panel-action">
+				<div class="clearfix">
+					<ul class="nav nav-pills pull-left">
+						<li>
+							<div class="btn btn-default">
+								<input type="checkbox" id="selectAll">
+								<label for="selectAll">Select All</label>
+							</div>
+						</li>
+						<li class="dropdown hide">
+							<a href="#" class="btn btn-default">Move To <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Action 1</a></li>
+								<li><a href="#">Action 2</a></li>
+								<li><a href="#">Action 3</a></li>
+							</ul>
+						</li>
+					</ul>
+					<a href="#" class="btn btn-default btn-icon pull-right hidden-xs"><span class="icon-list"></span></a>
+				</div>
+            </div>
+            <!--Action Btn End--> 
+			
+			<blockquote class="alert-warning clearfix" role="alert">
+				<div class="form-control-static pull-left">You have insufficient credit to retrieve resumes. You may order more credits.&nbsp;&nbsp;</div>
+				<a type="button" class="btn btn-sm btn-pale pull-right">Order Now</a>
+			</blockquote>
+			
+			<div class="cards x3">
+				
+				<div class="col-xs-12 col-sm-6 col-md-4 card">
+					<div class="panel">
+						<div class="panel-body">
+							<div class="card-checkbox">
+								<input type="checkbox" class="multi-select">
+							</div>
+							<div class="card-body">
+								<div class="clearfix">
+									<div class="card-primary">
+										<h2 class="card-title x2"><span class="text">Senior Software Engineer/ Web Developer</span><span class="fig">(2 yrs)</span></h2>
+										<span class="info x2 no-fig"><span class="text">Mastek MSC Information Technology (Malaysia) SDN BHD</span></span>
+									</div>
+									<div class="card-secondary">
+										<span class="info"><span class="text">Software Engineer - End of position title text will fade off but year still remain</span><span class="fig">(1 yr)</span></span>
+										<span class="info no-fig"><span class="text">Mastek Limited</span></span>
+									</div>
+									<div class="card-tertiary">
+										<span class="info no-fig"><span class="icon-dollar-sign"></span><span class="text">MYR 4,500</span></span>
+										<span class="info">
+											<span class="icon-education"></span><span class="text">Higher Secondary/STPM/ &quot;A&quot; Level/Pre-U</span>
+											<span class="fig highlight" title="Graduating" data-placement="top" data-toggle="tooltip" data-container="body">(Jan 2015)</span>
+										</span>
+									</div>
+								</div>
+							</div>
+							<div class="priority-tag" title="Priority Candidate" data-placement="top" data-toggle="tooltip"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xs-12 col-sm-6 col-md-4 card">
+					<div class="panel">
+						<div class="panel-body">
+							<div class="card-checkbox">
+								<input type="checkbox" class="multi-select">
+							</div>
+							<div class="card-body">
+								<div class="clearfix">
+									<div class="card-primary">
+										<h2 class="card-title x2"><span class="text">Mobile App Engineer</span><span class="fig">(5 yrs)</span></h2>
+										<span class="info x2 no-fig"><span class="text">Nexus Professional & Consulting (Malaysia) Sdn Bhd</span></span>
+									</div>
+									<div class="card-secondary">
+										<span class="info"><span class="text">Software Engineer for Application</span><span class="fig">(1 yr)</span></span>
+										<span class="info no-fig"><span class="text">U Mobile</span></span>
+									</div>
+									<div class="card-tertiary">
+										<span class="info no-fig"><span class="icon-dollar-sign"></span><span class="text">MYR 3,600</span></span>
+										<span class="info">
+											<span class="icon-education"></span><span class="text">Degree</span>
+											<span class="fig highlight" title="Graduating" data-placement="top" data-toggle="tooltip" data-container="body">(Jan 2015)</span>
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-xs-12 col-sm-6 col-md-4 card active">
+					<div class="panel">
+						<div class="panel-body">
+							<div class="card-checkbox">
+								<input type="checkbox" class="multi-select">
+							</div>
+							<div class="card-body">
+								<div class="clearfix">
+									<div class="card-primary">
+										<h2 class="card-title x2"><span class="text">Software Engineer</span><span class="fig">(3 yrs)</span></h2>
+										<span class="info x2 no-fig"><span class="text">Yahoo! Malaysia</span></span>
+									</div>
+									<div class="card-secondary">
+										<span class="info"><span class="text">Software Engineer for Application</span><span class="fig">(1 yr)</span></span>
+										<span class="info no-fig"><span class="text">U Mobile</span></span>
+									</div>
+									<div class="card-tertiary">
+										<span class="info no-fig"><span class="icon-dollar-sign"></span><span class="text">MYR 3,600</span></span>
+										<span class="info no-fig"><span class="icon-education"></span><span class="text">Degree</span></span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-xs-12">
+					<div class="panel-group resume">
+						<div class="panel panel-basic resume-primary">
+							<div class="panel-body">
+								<div class="btn-close"><span class="icon-close"></span></div>
+								<div class="media no-photo">
+									<div class="media-body">
+										<div class="col-sm-5 col-md-6">
+											<div class="primary">
+												<h4 class="title">Software Engineer (3 yrs)</h4>
+												<div class="info"><span class="text">Yahoo! Malaysia</span></div>
+											</div>
+										</div>
+										<div class="col-xs-12 col-sm-7 col-md-6">
+											<div class="panel-action pull-right">
+												<div class="info text-right hidden-xs">
+													<span><label>last updated:</label> 3 months</span>
+													<span><label>last active:</label> 2 months</span>
+												</div>
+												<div class="btn-group pull-right hidden-xs">
+													<a type="button" class="btn btn-sm btn-pale">Retrieve Resume</a>
+													<a type="button" class="btn btn-sm btn-pale btn-spin btn-disabled"><span class='spinner'></span>Processing...</a>
+													<a type="button" class="btn btn-sm btn-pale btn-disabled">Retrieve Resume</a>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-12">
+											<ul class="info-list list-inline hidden-xs">
+												<li><span class="icon-phone"></span> <img src="//dna.jsstatic.com/img/blur-text.png" /></li>
+												<li><span class="icon-envelope"></span> <img src="//dna.jsstatic.com/img/blur-text.png" /></li>
+												<li><span class="icon-dollar-sign"></span>3,600</li>
+												<li><span class="icon-location"></span>Selangor - Petaling Jaya</li>
+												<li><span class="info-tooltip" data-trigger="hover" data-placement="top" data-toggle="tooltip" data-original-title="Candidate has submitted 2 applications to your company in the last 12 months" data-delay="5"><span class="icon-folder-open"></span>2 App</span></li>
+											</ul>    
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="btn-group btn-group-justified visible-xs">
+								<a type="button" class="btn btn-sm btn-pale">Retrieve Resume</a>
+							</div>
+						</div>
+						
+						<div class="resume-content">
+							<a href="javascript:;" class="btn-attached hidden-xs">
+								<i class="icon-paper-clip"></i><small>Uploaded Resume</small>
+							</a>	
+							
+							<div class="panel panel-basic visible-xs">
+								<div class="panel-body">
+									<ul class="info-list">
+										<li><span class="icon-phone"></span> <img src="//dna.jsstatic.com/img/blur-text.png" /></li>
+										<li><span class="icon-envelope"></span> <img src="//dna.jsstatic.com/img/blur-text.png" /></li>
+										<li><span class="icon-dollar-sign"></span> 3,600</li>
+										<li><span class="icon-location"></span> Petaling Jaya, Selangor </li>
+									</ul>    
+								</div>
+							</div>
+							
+							
+							<div class="panel panel-basic">
+								<div class="panel-header">
+									<h4>
+										<span class="icon-briefcase"></span>
+										<span>Experience</span>
+									</h4>
+								</div>
+								<div class="panel-body">
+									<div class="row">
+										<h5 class="col-sm-12">5 years of total experience</h5>
+									</div>
+									<div class="row resume-item">
+										<div class="col-xs-12 col-sm-3 hidden-xs">
+											<div>Jan 2013 - Present </div>
+											<div class="fig">1 year 10 months</div>
+										</div>
+										<div class="col-xs-12 col-sm-9">
+											<h4 class="title">
+												Senior Software Engineer
+											</h4>
+											<div class="key-info">
+												<span>Mastek MSC SDN BHD</span>
+												<span>| </span>
+												<span>Ang Mo Kio, Singapore</span>
+											</div>
+											<div class="info visible-xs">Jan 2013 - Present <span class="fig">(1 year 10 months)</span></div>
+											<div class="info-table">
+												<div class="row">
+													<label class="col-xs-4 col-sm-3">Industry</label>
+													<span class="info">Aerospace / Aviation / Airline</span>
+												</div>
+												<div class="row">
+													<label class="col-xs-4 col-sm-3">Specialization</label>
+													<span class="info">Arts/Creative/Graphics Design</span>
+												</div>
+												<div class="row">
+													<label class="col-xs-4 col-sm-3">Role</label>
+													<span class="info">Desktop Publishing Artist</span>
+												</div>
+												<div class="row">
+													<label class="col-xs-4 col-sm-3">Position Level</label>
+													<span class="info">Senior Executive</span>
+												</div>
+												<div class="row">
+													<label class="col-xs-4 col-sm-3">Monthly Salary</label>
+													<span class="info">MYR 3,200</span>
+												</div>
+												
+											</div>
+											<div class="sub-info">
+												Training Modules Design and Development. Currently working on the development of Entrepreneur Graduate Career Accelerated Programme modules.<br>
+												Contributed in the development of corporate training modules for SMECorp.
+											</div>
+										</div>
+									</div>
+									
+									<div class="row resume-item">
+										<div class="col-xs-12 col-sm-3 hidden-xs">
+											<div>Feb 2012 - Jan 2013</div>
+											<div class="fig">11 months</div>
+										</div>
+										<div class="col-xs-12 col-sm-9">
+											<h4 class="title">
+												Web Developer
+											</h4>
+											<div class="key-info">
+												<span>TMS Asia Sdn Bhd</span>
+												<span>| </span>
+												<span>Kuala Lumpur, KL</span>
+											</div>
+											<div class="info visible-xs">Feb 2012 - Jan 2013<span class="fig">(11 months)</span></div>
+											<div class="info-table">
+												<div class="row">
+													<label class="col-xs-4 col-sm-3">Industry</label>
+													<span class="info">Aerospace / Aviation / Airline</span>
+												</div>
+												<div class="row">
+													<label class="col-xs-4 col-sm-3">Specialization</label>
+													<span class="info">Arts/Creative/Graphics Design</span>
+												</div>
+												<div class="row">
+													<label class="col-xs-4 col-sm-3">Role</label>
+													<span class="info">Desktop Publishing Artist</span>
+												</div>
+												<div class="row">
+													<label class="col-xs-4 col-sm-3">Position Level</label>
+													<span class="info">Senior Executive</span>
+												</div>
+												<div class="row">
+													<label class="col-xs-4 col-sm-3">Monthly Salary</label>
+													<span class="info">MYR 2,600</span>
+												</div>
+												
+											</div>
+											<div class="sub-info">
+												Contributed in the development of corporate training modules for SMECorp.
+											</div>
+										</div>
+									</div>
+									
+									<div class="row resume-item">
+										<div class="col-xs-12 col-sm-3 hidden-xs">
+											<div>Jun 2011 - Aug 2011</div>
+											<div class="fig">3 months</div>
+										</div>
+										<div class="col-xs-12 col-sm-9">
+											<h4 class="title">
+												IT Internship
+											</h4>
+											<div class="key-info">
+												<span>Talent Software Bhd</span>
+												<span>| </span>
+												<span>Subang Jaya, Selangor</span>
+											</div>
+											<div class="info visible-xs">Jun 2011 - Aug 2011<span class="fig">(3 months)</span></div>
+											<div class="info-table">
+												<div class="row">
+													<label class="col-xs-4 col-sm-3">Industry</label>
+													<span class="info">Aerospace / Aviation / Airline</span>
+												</div>
+												<div class="row">
+													<label class="col-xs-4 col-sm-3">Specialization</label>
+													<span class="info">Arts/Creative/Graphics Design</span>
+												</div>
+												<div class="row">
+													<label class="col-xs-4 col-sm-3">Role</label>
+													<span class="info">Desktop Publishing Artist</span>
+												</div>
+												<div class="row">
+													<label class="col-xs-4 col-sm-3">Position Level</label>
+													<span class="info">Junior Executive</span>
+												</div>
+												<div class="row">
+													<label class="col-xs-4 col-sm-3">Monthly Salary</label>
+													<span class="info">MYR 800</span>
+												</div>
+												
+											</div>
+											<div class="sub-info">
+												EXPERIENCES GAINED:<br><br>
+												Experience in selling intangible/conceptual products/services/ software in Medical Imaging field. Recent sales experience to healthcare providers including hospitals and diagnostic imaging centers at executive level. (senior administration, board, committees, department heads and physicians,etc.)<br>
+												Experience in medical imaging/radiology, skilled in use of internet, software applications including PowerPoint, Word. Excellent oral and written communication skills and knowledge of health care information technology.
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="panel panel-basic">
+								<div class="panel-header">
+									<h4>
+										<span class="icon-education"></span>
+										<span>Education</span>
+									</h4>
+								</div>
+								<div class="panel-body">
+									<div class="row resume-item">
+										<div class="col-xs-12 col-sm-3 hidden-xs">
+											<div>May 2013</div>
+										</div>
+										<div class="col-xs-12 col-sm-9">
+											<h4 class="title">
+												Universiti Kebangsaan Malaysia (UKM)
+											</h4>
+											<div class="key-info">
+												<span>Bachelor's Degree in Finance/Accountancy/Banking</span>
+												<span>| </span>
+												<span>Malaysia</span>
+											</div>
+											<div class="info visible-xs">May 2013</div>
+											<div class="info-table">
+												<div class="row">
+													<label class="col-xs-4 col-sm-2">Major</label>
+													<div class="info">Finance</div>
+												</div>
+												<div class="row">
+													<label class="col-xs-4 col-sm-2">Grade</label>
+													<div class="info">1st Class</div>
+												</div>
+											</div>
+											<div class="sub-info">
+												Education in its general sense is a form of learning in which the knowledge, skills, values, beliefs and habits of a group of people are transferred from one generation to the next through storytelling, discussion, teaching, training, and or research. Education may also include informal transmission of such information from one human being to another. Education frequently takes place under the guidance of others, but learners may also educate themselve. Any experience that has a formative effect on the way one thinks, feels, or acts may be considered educational.
+											</div>
+										</div>
+									</div>
+									
+									<div class="row resume-item">
+										<div class="col-xs-12 col-sm-3 hidden-xs">
+											<div>Jan 2010</div>
+										</div>
+										<div class="col-xs-12 col-sm-9">
+											<h4 class="title">
+												Universiti 2
+											</h4>
+											<div class="key-info">
+												<span>Bachelor's Degree in Finance/Accountancy/Banking</span>
+												<span>| </span>
+												<span>Malaysia</span>
+											</div>
+											<div class="info visible-xs">Jan 2010</div>
+											<div class="info-table">
+												<div class="row">
+													<label class="col-xs-4 col-sm-2">Major</label>
+													<div class="info">Finance</div>
+												</div>
+												<div class="row">
+													<label class="col-xs-4 col-sm-2">Grade</label>
+													<div class="info">1st Class</div>
+												</div>
+											</div>
+											<div class="sub-info">
+												Education in its general sense is a form of learning in which the knowledge, skills, values, beliefs and habits of a group of people are transferred from one generation to the next through storytelling, discussion, teaching, training, and or research. Education may also include informal transmission of such information from one human being to another. Education frequently takes place under the guidance of others, but learners may also educate themselve. Any experience that has a formative effect on the way one thinks, feels, or acts may be considered educational.
+											</div>
+										</div>
+									</div>
+									
+									<div class="row resume-item">
+										<div class="col-xs-12 col-sm-3 hidden-xs">
+											<div>Jan 2009</div>
+										</div>
+										<div class="col-xs-12 col-sm-9">
+											<h4 class="title">
+												Universiti 3
+											</h4>
+											<div class="key-info">
+												<span>Bachelor's Degree in Finance/Accountancy/Banking</span>
+												<span>| </span>
+												<span>Malaysia</span>
+											</div>
+											<div class="info visible-xs">Jan 2009</div>
+											<div class="info-table">
+												<div class="row">
+													<label class="col-xs-4 col-sm-2">Major</label>
+													<div class="info">Finance</div>
+												</div>
+												<div class="row">
+													<label class="col-xs-4 col-sm-2">Grade</label>
+													<div class="info">1st Class</div>
+												</div>
+											</div>
+											<div class="sub-info">
+												Education in its general sense is a form of learning in which the knowledge, skills, values, beliefs and habits of a group of people are transferred from one generation to the next through storytelling, discussion, teaching, training, and or research. Education may also include informal transmission of such information from one human being to another. Education frequently takes place under the guidance of others, but learners may also educate themselve. Any experience that has a formative effect on the way one thinks, feels, or acts may be considered educational.
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="panel panel-basic">
+								<div class="panel-header">
+									<h4>
+										<span class="icon-math-compass"></span>
+										<span>Skills</span>
+									</h4>
+								</div>
+								<div class="panel-body">
+									<div class="row">
+										<div class="col-xs-12">
+											<div class="info-table">
+												<div class="row x2">
+													<label class="col-xs-12 col-sm-3">Advanced</label>
+													<div class="col-xs-12 col-sm-9 info">Adobe Photoshop, Adobe Dreamweaver, CorelDRAW, Project Management</div>
+												</div>
+												<div class="row x2">
+													<label class="col-xs-12 col-sm-3">Intermediate</label>
+													<div class="col-xs-12 col-sm-9 info">Auto CAD, Auto Desk 3D MAX</div>
+												</div>
+												<div class="row">
+													<label class="col-xs-12 col-sm-3">Beginner</label>
+													<div class="col-xs-12 col-sm-9 info">Vegas Pro</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="panel panel-basic">
+								<div class="panel-header">
+									<h4>
+										<span class="icon-comments-o"></span>
+										<span>Languages</span>
+									</h4>
+								</div>
+								<div class="panel-body">
+									<div class="row">
+										<div class="col-xs-12">
+											<div class="info-table">
+												<div class="row x2">
+													<div class="col-xs-12">
+														<div class="info">Proficiency level: 0 - Poor, 10 - Excellent</div>
+													</div>
+												</div>
+												<div class="row x2">
+													<div class="col-xs-6 col-sm-3">
+														<label>Language</label>
+													</div>
+													<div class="col-xs-3 col-sm-2">
+														<label>Spoken</label>
+													</div>
+													<div class="col-xs-3 col-sm-2">
+														<label>Written</label>
+													</div>
+												</div>
+												<div class="row x2">
+													<div class="col-xs-6 col-sm-3">
+														English
+													</div>
+													<div class="col-xs-3 col-sm-2">
+														10
+													</div>
+													<div class="col-xs-3 col-sm-2">
+														10
+													</div>
+												</div>
+												<div class="row x2">
+													<div class="col-xs-6 col-sm-3">
+														Chinese (Primary)
+													</div>
+													<div class="col-xs-3 col-sm-2">
+														10
+													</div>
+													<div class="col-xs-3 col-sm-2">
+														10
+													</div>
+												</div>
+												<div class="row x2">
+													<div class="col-xs-6 col-sm-3">
+														Bahasa Malaysia
+													</div>
+													<div class="col-xs-3 col-sm-2">
+														7
+													</div>
+													<div class="col-xs-3 col-sm-2">
+														7
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-xs-12">
+											<div class="info-table">
+												<div class="row x2">
+													<div class="col-xs-12">
+														Jobstreet English Language Assessment (JELA)
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-xs-6 col-sm-3">
+														<label>Data Taken</label>
+													</div>
+													<div class="col-xs-6 col-sm-2">
+														10 Apr 2014
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-xs-6 col-sm-3">
+														<label>Score</label>
+													</div>
+													<div class="col-xs-6 col-sm-3">
+														30/40
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="panel panel-basic">
+								<div class="panel-header">
+									<h4>
+										<span class="icon-menu"></span>
+										<span>Additional Information</span>
+									</h4>
+								</div>
+								<div class="panel-body">
+									<div class="row">
+										<div class="col-xs-12">
+											<div class="info-table">
+												<div class="row x2">
+													<label class="col-xs-12 col-sm-3">Expected Salary</label>
+													<div class="col-xs-12 col-sm-9">MYR 3,600</div>
+												</div>
+												<div class="row x2">
+													<label class="col-xs-12 col-sm-3">Preferred Work Locations</label>
+													<div class="col-xs-12 col-sm-9">
+													Kuala Lumpur, Penang, Anywhere in Malaysia
+													</div>
+												</div>
+												<!--<div class="row x2">
+													<label class="col-xs-12 col-sm-3">Preferred Specializations</label>
+													<div class="col-xs-12 col-sm-9">
+													IT - Software, Marketing/Business Dev, Analyst
+													</div>
+												</div>-->
+												<div class="row">
+													<label class="col-xs-12 col-sm-3">Other Information</label>
+													<div class="col-xs-12 col-sm-9">
+														CAREER OBJECTIVE:<br>
+														To contribute positively to Company growth, sustainability and profitability while enriching personal
+														career exposures and experiences. My goal is to continue my career pursuit in the lines of Project Management
+														and Communications & Content Planning and Development
+														<br><br>
+														PERSONAL ATTRIBUTES:<br>
+														Charismatic and responsible when leading a group/team.<br>
+														Strong analytic and diagnostic skills.<br>
+														Able to work independently or in a group/team.
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="panel panel-basic">
+								<div class="panel-header">
+									<h4>
+										<span class="icon-user"></span>
+										<span>About Me</span>
+									</h4>
+								</div>
+								<div class="panel-body">
+									<div class="row">
+										<div class="col-xs-12">
+											<div class="info-table">
+												<div class="row x2">
+													<label class="col-xs-12 col-sm-3">Gender</label>
+													<div class="col-xs-12 col-sm-9">Female/ Male</div>
+												</div>
+												
+												<div class="row x2">
+													<label class="col-xs-12 col-sm-3">Age</label>
+													<div class="col-xs-12 col-sm-9">
+													26
+													</div>
+												</div>
+												
+												<div class="row x2">
+													<label class="col-xs-12 col-sm-3">Telephone Number</label>
+													<div class="col-xs-12 col-sm-9">
+													(+60)18-8888888
+													</div>
+												</div>
+												
+												<div class="row x2">
+													<label class="col-xs-12 col-sm-3">Address</label>
+													<div class="col-xs-12 col-sm-9">
+													Jalan 123, Unit 456, Subang Jaya, 50300, Selangor, Malaysia
+													</div>
+												</div>
+												
+												<div class="row">
+													<label class="col-xs-12 col-sm-3">Nationality</label>
+													<div class="col-xs-12 col-sm-9">
+													Malaysia
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div> <!--panel-group-->
+				</div>
+				
+				<div class="col-xs-12 col-sm-6 col-md-4 card">
+					<div class="panel">
+						<div class="panel-body">
+							<div class="card-checkbox">
+								<input type="checkbox" class="multi-select">
+							</div>
+							<div class="card-body">
+								<div class="clearfix">
+									<div class="card-primary">
+										<h2 class="card-title x2"><span class="text">Senior Software Engineer/ Web Developer</span><span class="fig">(2 yrs)</span></h2>
+										<span class="info x2 no-fig"><span class="text">Mastek MSC Information Technology (Malaysia) SDN BHD</span></span>
+									</div>
+									<div class="card-secondary">
+										<span class="info"><span class="text">Software Engineer - End of position title text will fade off but year still remain</span><span class="fig">(1 yr)</span></span>
+										<span class="info no-fig"><span class="text">Mastek Limited</span></span>
+									</div>
+									<div class="card-tertiary">
+										<span class="info no-fig"><span class="icon-dollar-sign"></span><span class="text">MYR 4,500</span></span>
+										<span class="info">
+											<span class="icon-education"></span><span class="text">Higher Secondary/STPM/ &quot;A&quot; Level/Pre-U</span>
+											<span class="fig highlight" title="Graduating" data-placement="top" data-toggle="tooltip" data-container="body">(Jan 2015)</span>
+										</span>
+									</div>
+								</div>
+							</div>
+							<div class="priority-tag" title="Priority Candidate" data-placement="top" data-toggle="tooltip"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xs-12 col-sm-6 col-md-4 card">
+					<div class="panel">
+						<div class="panel-body">
+							<div class="card-checkbox">
+								<input type="checkbox" class="multi-select">
+							</div>
+							<div class="card-body">
+								<div class="clearfix">
+									<div class="card-primary">
+										<h2 class="card-title x2"><span class="text">Mobile App Engineer</span><span class="fig">(5 yrs)</span></h2>
+										<span class="info x2 no-fig"><span class="text">Nexus Professional & Consulting (Malaysia) Sdn Bhd</span></span>
+									</div>
+									<div class="card-secondary">
+										<span class="info"><span class="text">Software Engineer for Application</span><span class="fig">(1 yr)</span></span>
+										<span class="info no-fig"><span class="text">U Mobile</span></span>
+									</div>
+									<div class="card-tertiary">
+										<span class="info no-fig"><span class="icon-dollar-sign"></span><span class="text">MYR 3,600</span></span>
+										<span class="info">
+											<span class="icon-education"></span><span class="text">Degree</span>
+											<span class="fig highlight" title="Graduating" data-placement="top" data-toggle="tooltip" data-container="body">(Jan 2015)</span>
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-xs-12 col-sm-6 col-md-4 card">
+					<div class="panel">
+						<div class="panel-body">
+							<div class="card-checkbox">
+								<input type="checkbox" class="multi-select">
+							</div>
+							<div class="card-body">
+								<div class="clearfix">
+									<div class="card-primary">
+										<h2 class="card-title x2"><span class="text">Software Engineer</span><span class="fig">(3 yrs)</span></h2>
+										<span class="info x2 no-fig"><span class="text">Yahoo! Malaysia</span></span>
+									</div>
+									<div class="card-secondary">
+										<span class="info"><span class="text">Software Engineer for Application</span><span class="fig">(1 yr)</span></span>
+										<span class="info no-fig"><span class="text">U Mobile</span></span>
+									</div>
+									<div class="card-tertiary">
+										<span class="info no-fig"><span class="icon-dollar-sign"></span><span class="text">MYR 3,600</span></span>
+										<span class="info no-fig"><span class="icon-education"></span><span class="text">Degree</span></span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-xs-12 col-sm-6 col-md-4 card">
+					<div class="panel">
+						<div class="panel-body">
+							<div class="card-checkbox">
+								<input type="checkbox" class="multi-select">
+							</div>
+							<div class="card-body">
+								<div class="clearfix">
+									<div class="card-primary">
+										<h2 class="card-title x2"><span class="text">Senior Software Engineer/ Web Developer</span><span class="fig">(2 yrs)</span></h2>
+										<span class="info x2 no-fig"><span class="text">Mastek MSC Information Technology (Malaysia) SDN BHD</span></span>
+									</div>
+									<div class="card-secondary">
+										<span class="info"><span class="text">Software Engineer - End of position title text will fade off but year still remain</span><span class="fig">(1 yr)</span></span>
+										<span class="info no-fig"><span class="text">Mastek Limited</span></span>
+									</div>
+									<div class="card-tertiary">
+										<span class="info no-fig"><span class="icon-dollar-sign"></span><span class="text">MYR 4,500</span></span>
+										<span class="info">
+											<span class="icon-education"></span><span class="text">Higher Secondary/STPM/ &quot;A&quot; Level/Pre-U</span>
+											<span class="fig highlight" title="Graduating" data-placement="top" data-toggle="tooltip" data-container="body">(Jan 2015)</span>
+										</span>
+									</div>
+								</div>
+							</div>
+							<div class="priority-tag" title="Priority Candidate" data-placement="top" data-toggle="tooltip"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xs-12 col-sm-6 col-md-4 card">
+					<div class="panel">
+						<div class="panel-body">
+							<div class="card-checkbox">
+								<input type="checkbox" class="multi-select">
+							</div>
+							<div class="card-body">
+								<div class="clearfix">
+									<div class="card-primary">
+										<h2 class="card-title x2"><span class="text">Mobile App Engineer</span><span class="fig">(5 yrs)</span></h2>
+										<span class="info x2 no-fig"><span class="text">Nexus Professional & Consulting (Malaysia) Sdn Bhd</span></span>
+									</div>
+									<div class="card-secondary">
+										<span class="info"><span class="text">Software Engineer for Application</span><span class="fig">(1 yr)</span></span>
+										<span class="info no-fig"><span class="text">U Mobile</span></span>
+									</div>
+									<div class="card-tertiary">
+										<span class="info no-fig"><span class="icon-dollar-sign"></span><span class="text">MYR 3,600</span></span>
+										<span class="info">
+											<span class="icon-education"></span><span class="text">Degree</span>
+											<span class="fig highlight" title="Graduating" data-placement="top" data-toggle="tooltip" data-container="body">(Jan 2015)</span>
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</div>
+
+<!--// FOOTER //-->
+<footer id="footer">
+   <div class="container">
+      <div class="col-md-9 col-xs-12">
+         <ul class="list-inline">
+            <li><a href="#" data-toggle="modal" data-target="#contactUsModal">Contact Us</a></li>
+            |
+            <li>03 2176 0333 (Kuala Lumpur)</li>
+            <li>04 644 5912 (Penang)</li>
+            <li>07 861 1045 (Johor Bahru)</li>
+            <li>082 255 688 (Kuching)</li>
+         </ul>
+      </div>
+      <div class="col-md-3 col-xs-12">
+         <div class="text-left">
+            Copyright © Jobstreet |
+            <a id="linkTermOfUse" href="http://www.jobstreet.com.my/employers/terms_use.htm" target="_blank">Terms of Use</a>
+         </div>
+         <div class="clearfix"></div>
+      </div>
+   </div>
+</footer>
+<!--// FOOTER END //-->
+
+<!--// JAVASCRIPT //-->
+<script src="http://dna.jsstatic.com/js/jquery.js"></script>
+<script src="http://dna.jsstatic.com/js/bootstrap.js"></script>
+<script src="http://dna.jsstatic.com/js/siva.js"></script>
+<!--// JAVASCRIPT END //-->
+</body>
+</html>

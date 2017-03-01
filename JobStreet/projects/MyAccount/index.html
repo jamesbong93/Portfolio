@@ -1,0 +1,1167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>JobStreet.com - Edit Resume</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Cache-Control" content="Public">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <link rel="stylesheet" href="http://dna.jsstatic.com/myjs/myjs-1.2.12.css">
+    <link rel="stylesheet" href="http://dna.jsstatic.com/select2/select2.css">
+    <link rel="stylesheet" href="https://dna.jsstatic.com/pi/icon-font/2.1/icon-font.css">
+    <link rel="stylesheet" href="my-account.css">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../../ico/favicon.png">
+    <link rel="apple-touch-icon" href="../../ico/touch-icon-iphone.png">
+    <link rel="apple-touch-icon" sizes="76x76" href=../../ "ico/touch-icon-ipad.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../../ico/touch-icon-iphone-retina.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../../ico/touch-icon-ipad-retina.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../ico/touch-icon-iphone6p-ios8.png">
+    <!-- End of Favicon -->
+
+    <style>
+    </style>
+</head>
+
+<body class="body-mobile-align">
+
+    <!--=====================================================Header========================================================================-->
+    <div class="mobile-navbar-fixed-top">
+        <div class="navbar navbar-inverse navbar-static">
+            <div class="container">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" data-canvas="body" type="button" onclick="$('#mobile_search_bar').removeClass('active');">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <span class="jslogo jslogo-mobile visible-xs"></span>
+                    <!--Mobile View Search Bar toggle button-->
+                    <div class="search-toggle">
+                        <a href="#"><span class="icon-search visible-xs"></span></a>
+                    </div>
+                    <div class="navbar-search toggle">
+                        <div class="container visible-xs">
+                            <div class="col-xs-12">
+                                <form id="frmSearch_mobile" name="frmSearch-mobile" action="http://job-search-dev.jobstreet.com.my/malaysia/job-opening.php" method="get">
+                                    <div class="input-group">
+                                        <input class="form-control" id="search_box_keyword_mobile" name="key" type="text" placeholder="Search Jobs By Title, Skills or Keywords...">
+                                        <span class="input-group-btn">
+										<a class="btn btn-default" id="header_searchbox_btn_mobile" type="button">Search</a>
+										</span>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="navbar-collapse navbar-collapse-align collapse" aria-expanded="false" style="height: 1px;">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="http://www.jobstreet.com.my" title="Leading Job Site in Malaysia - Find Jobs in Malaysia">Home</a>
+                        </li>
+                        <li><a id="header-job-link" href="http://job-search-dev.jobstreet.com.my/malaysia/job-opening.php" title="Search Jobs @ Job Search JobStreet.com Malaysia">Search Jobs</a>
+                        </li>
+                        <li><a href="http://www.jobstreet.com.my/en/companies" title="company profiles">Company Profiles</a>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:;" aria-expanded="false">MyJobStreet&nbsp;<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-header hidden-xs">My Resume</li>
+                                <li class="hidden-xs"><a href="http://myjobstreet-dev.jobstreet.com.my/resume/preview-resume.php?x=a2p6dkp4hosoojv84nsr44ecp4">Preview Resume</a>
+                                </li>
+                                <li class="hidden-xs"><a href="http://myjobstreet-dev.jobstreet.com.my/resume/edit-work-experience.php?x=a2p6dkp4hosoojv84nsr44ecp4">Edit Resume</a>
+                                </li>
+                                <li class="divider hidden-xs"></li>
+                                <li class="dropdown-header">My Applications</li>
+                                <li><a href="http://myjobstreet-dev.jobstreet.com.my/application/application-status.php?view=0&amp;x=a2p6dkp4hosoojv84nsr44ecp4">Online Applications</a>
+                                </li>
+                                <li><a href="http://myjobstreet-dev.jobstreet.com.my/application/interview-request.php?view=latest&amp;x=a2p6dkp4hosoojv84nsr44ecp4">Interview Requests</a>
+                                </li>
+                                <li class="hidden-xs"><a id="header_emp_request_link" href="http://myjobstreet-dev.jobstreet.com.my/application/employer-request.php?x=a2p6dkp4hosoojv84nsr44ecp4">Resume Requests</a>
+                                </li>
+                                <li class="divider hidden-xs"></li>
+                                <li class="dropdown-header hidden-xs">Career Enhancers</li>
+                                <li class="hidden-xs"><a href="http://myjobstreet-dev.jobstreet.com.my/career-enhancer/pa-summary.php?x=a2p6dkp4hosoojv84nsr44ecp4">Priority Application</a>
+                                </li>
+                                <li class="hidden-xs"><a href="http://myjobstreet-dev.jobstreet.com.my/career-enhancer/salary-report.php?x=a2p6dkp4hosoojv84nsr44ecp4">Salary Report</a>
+                                </li>
+                                <li class="hidden-xs"><a href="javascript: popup_win8('http://myjobstreet-dev.jobstreet.com.my/career-enhancer/assessment.php?x=a2p6dkp4hosoojv84nsr44ecp4', 1000,700,'JELA');">English Assessment</a>
+                                </li>
+                                <li class="hidden-xs">
+                                    <a class="hidden-xs" href="javascript: popup_win8('http://www.jobstreet.com.my/career-resources/', 1000,700,'JELA');">
+									Career Resources</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown hidden-xs">
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#" aria-expanded="false">Learning&nbsp;<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="http://www.jobstreet.com.my/learning/">View Course</a>
+                                </li>
+                                <li><a href="http://myjobstreet-dev.jobstreet.com.my/learning/learning-profile.php?x=g8q1cqbllnaoieol1h0ulno8h2">Edit Learning Profile</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown hidden-xs">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:;" aria-expanded="false">More&nbsp;<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="http://job-search-dev.jobstreet.com.my/malaysia/browse/oversea.html">Overseas Jobs</a>
+                                </li>
+                                <li><a href="http://www.jobstreet.com.my/campus/">Fresh Grad Jobs</a>
+                                </li>
+                                <li><a href="http://job-search-dev.jobstreet.com.my/malaysia/job-classified.php">Classified Jobs</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown" style="display: list-item;">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:;" aria-expanded="false">
+                                <span class="-hide">
+							<span class="display-name">Lucas Lee</span>&nbsp;
+                                <span><b class="caret"></b></span>
+                                </span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="http://myjobstreet-dev.jobstreet.com.my/home/logout.php?x=g8q1cqbllnaoieol1h0ulno8h2">Logout</a>
+                                </li>
+                                <li class="hidden-xs"><a href="http://myjobstreet-dev.jobstreet.com.my/home/help.php?x=g8q1cqbllnaoieol1h0ulno8h2&amp;site=my">Help</a>
+                                </li>
+                                <li class="hidden-xs"><a class="language-separator" href="http://myjobstreet-dev.jobstreet.com.my/registration/update-account.php?x=g8q1cqbllnaoieol1h0ulno8h2">My Account</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li style="display: none;">
+                            <a href="https://myjobstreet-dev.jobstreet.com.my/home/login.php?site=my&amp;language_code=3">Log In</a>
+                        </li>
+                        <li class="hidden-xs" style="display: none;"> <span>|</span> </li>
+                        <li style="display: none;">
+                            <a href="https://myjobstreet-dev.jobstreet.com.my/registration/simple-signup.php?site=my&amp;language_code=3">Sign Up</a>
+                        </li>
+                        <ul></ul>
+                    </ul>
+                </div>
+                <!--/.nav-collapse -->
+            </div>
+            <div class="navbar-lower-deck hidden-xs">
+                <div class="container">
+                    <div class="col-lg-3 col-md-3 col-sm-4 hidden-xs">
+                        <a class="jslogo my" id="header-logo-link" href="http://www.jobstreet.com.my" title="Leading Job Site in Malaysia - Find Jobs, Advertise Jobs in Malaysia"></a>
+                    </div>
+                    <div class="col-lg-5 col-md-5 col-sm-6">
+                        <div class="search-area">
+                            <form id="frmSearch" name="frmSearch" action="http://job-search-dev.jobstreet.com.my/malaysia/job-opening.php" method="get">
+                                <div class="input-group">
+                                    <input class="form-control" name="key" type="text" placeholder="Search Jobs By Title, Skills or Keywords...">
+                                    <span class="input-group-btn"><a class="btn btn-default" type="button" ><span class="icon-search"></span>
+                                    </a>
+                                    </span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 hidden-sm hidden-xs">
+                        <a class="btn btn-link" href="http://job-search-dev.jobstreet.com.my/malaysia/advance-job-search.php?area=1&amp;option=1&amp;job-source=1%2C64&amp;classified=1&amp;job-posted=0&amp;sort=1&amp;order=0" title="Advanced Job Search @ JobStreet.com ">Advanced</a>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs text-right">
+                        <a class="btn btn-link employer-link" id="header-employer-link" href="http://www.jobstreet.com.my/employers/" title="Post a Job Ad: +603-­2176 0333">Employers</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--===============================================End of header=============================================================================================-->
+
+    <div class="container">
+        <div class="col-xs-12 col-sm-12 col-md-3 hidden-print">
+            <div class="panel panel-basic panel-sidenav">
+                <div class="panel-body panel-body-nav">
+
+                    <div class="visible-md visible-lg">
+
+                        <div class="col-md-12" style="padding:15px 15px;">
+                            <div class="row">
+                                <h4 style="font-weight:bold;">
+                                    My Account
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 side-menu">
+                            <ul class="list-unstyled my-account-sidebar-list">
+                                <li>
+                                    <a id="nav_experience" href="index.html" class="active"><span class="icon-user" id="icon-user"></span><span id="nav-lbl-experience">Contact Info</span></a>
+                                </li>
+                                <li>
+                                    <a id="nav_education" href="company_follows.html"><span class="icon-building" id="icon-building"></span><span id="nav-lbl-education">Company Follows</span></a>
+                                </li>
+                                <li>
+                                    <a id="nav_skills" href="subscription.html"><span class="icon-check-board" id="icon-check-board"></span><span id="nav-lbl-skill">Subscription</span></a>
+                                </li>
+                                <li>
+                                    <a id="nav_languages" href="change_password.html"><span class="icon-locked" id="icon-locked"></span><span >Change Password</span></a>
+                                </li>
+
+                            </ul>
+
+                            <div >
+                                
+                                <div class="Fb-unlink text-center" style="display:none;">
+                                   
+                                    <img src="images/fb_connect.png" >
+                                    <p>See where your friends are working!</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="visible-xs visible-sm">
+
+                        <div class="row resume-tabs my-account-sidebar">
+
+                            <div class="col-xs-12">
+                                <div id="nav_edit_tab">
+                                    <h4 role="button" id="nav_edit">My Account <span class="caret pull-right" id="arrow_down_open"></span></h4>
+                                </div>
+                            </div>
+                        </div>
+                        
+                            <div class="col-xs-12 side-menu c-hide" id="nav_edit_mobile" style="display: none;">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a id="nav_experience" href="index.html" class="active"><span class="icon-user" id="icon-user"></span><span id="nav-lbl-experience">Contact Info</span></a>
+                                    </li>
+                                    <li>
+                                        <a id="nav_education" href="company_follows.html"><span class="icon-building" id="icon-building"></span><span id="nav-lbl-education">Company Follows</span></a>
+                                    </li>
+                                    <li>
+                                        <a id="nav_skills" href="subscription.html"><span class="icon-check-board" id="icon-check-board"></span><span id="nav-lbl-skill">Subscription</span></a>
+                                    </li>
+                                    <li>
+                                        <a id="nav_languages" href="change_password.html"><span class="icon-locked" id="icon-locked"></span><span id="nav-lbl-language">Change Password</span></a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+
+         <div class="col-xs-12 col-sm-12 col-md-9">
+            <div class="panel panel-default resume-panel " id="panel" style="min-height: 427px;">
+                <div class="panel-body">
+                    <div class="row my-title">
+                        <div class="col-xs-12">
+                            <div class="row title">
+                               
+                                    <div class="col-sm-12">
+                                        <div class="row">
+                                            <span class="icon-user hidden-xs hidden-sm"></span>
+                                            <span class="icon-user x2 hidden-md hidden-lg"></span>                            
+                                            <span class="resume-section-title" id="lbl_about_me">Contact Info</span>
+                                            <span class="edit-icon-padding "><a id="edit_about_me" href="javascript:;" title="Edit"><span class="icon-edit icon-style"></span>
+                                            </a>
+                                            </span>
+                                        </div>
+                                    </div>
+                                
+                              
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="form-horizontal resume-section-content " id="list_about_me">
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label custom-control-label c-text-left" id="lbl_about_me_name">Name</label>
+                            <div class="col-sm-9">
+                                <label class="control-label c-text-left" id="lbl_about_me_name_output">Wen Han, Bong</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label custom-control-label c-text-left" id="lbl_about_me_gender">Email</label>
+                            <div class="col-sm-9">
+                                <label class="control-label c-text-left" id="lbl_about_me_gender_output">freebong717@gmail.com</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label custom-control-label c-text-left" id="lbl_about_me_tel">Telephone No</label>
+                            <div class="col-sm-9">
+                                <label class="control-label c-text-left" id="lbl_about_me_tel_output">(+60) 034412547 </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label custom-control-label c-text-left" id="lbl_about_me_email">Mobile No</label>
+                            <div class="col-sm-9">(+60) 171234567</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label custom-control-label c-text-left" id="lbl_about_me_address">Address</label>
+                            <div class="col-sm-9">
+                                <label class="control-label c-text-left" id="lbl_about_me_address_output">D-5-8 The Arc Condominium, 63000, Cyberjaya, Kuala Lumpur, Malaysia</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-3 control-label custom-control-label c-text-left" id="lbl_about_me_dob">Alternative Email</label>
+                            <div class="col-sm-9">
+                                <label class="control-label c-text-left" id="lbl_about_me_dob_output">(not provided)</label>
+                            </div>
+                        </div>
+                    <div class="contact-footer">
+                       <div class="Fb-linked">
+                                    <span class="icon-facebook" ></span>
+                                    <span class="Fb-text">
+                                    Linked with Facebook
+                                    <span class = "link-status btn-link" role="button" data-toggle="modal" data-target="#UnlinkFbModal">
+                                    Unlink
+                                    </span>
+                                    </span>
+                                </div>
+                        <div class="account-delete">
+                            
+                            <span class="icon-warning">
+                            </span>
+                            <span class="btn-link" role="button" data-toggle="modal" data-target="#DeleteModal">Delete My Account</span>
+
+                        </div>
+                    
+                    
+                    
+                    
+                    </div>
+                         
+                    </div>
+
+
+
+                    <div class="resume-content-form c-hide" id="resume_content_form" style="display:none;">
+                        <div class="well">Any changes here will be reflected on your resume.</div>
+                        <form class="form-horizontal" id="frmAboutMe" name="frmAboutMe" action="about-me.php?x=136nb7ntgvnke03tqqcbf6ctk5" method="post">
+                            <input id="SaveAboutMe" name="SaveAboutMe" type="hidden" />
+                            <input id="location_code" name="location_code" type="hidden" value="0">
+                            <input id="prev_email" name="prev_email" type="hidden" value="freebong717@gmail.com">
+                            <input id="prev_city" name="prev_city" type="hidden" value="Cyberjaya">
+                            <input id="relogin" name="relogin" type="hidden" value="">
+                            <input id="prev_handphone_country_code" name="prev_handphone_country_code" type="hidden" value="60">
+                            <input id="prev_handphone_no" name="prev_handphone_no" type="hidden" value="176961042">
+                            <input id="candidate_personal_id" name="candidate_personal_id" type="hidden" value="23684221">
+                            <input id="candidate_personal_codified_id" name="candidate_personal_codified_id" type="hidden" value="17757293">
+                            <input id="focus_mobile" name="focus_mobile" type="hidden" value="">
+
+                            <div class="form-section">
+                                <div class="form-group">
+                                    <div class="col-xs-12 parent-box ">
+                                        <div class="row">
+                                            <label class="col-xs-12 control-label custom-control-label required c-text-left " id="lbl_name">Name</label>
+                                            <div class="col-xs-12 col-sm-6 top-row">
+                                                <input class="form-control " id="first_name" name="first_name" type="text" placeholder="First Name" maxLength="40" value="Bong" />
+                                            </div>
+                                            <div class="col-xs-12 col-sm-6">
+                                                <input class="form-control " id="last_name" name="last_name" type="text" placeholder="Last Name" maxLength="40" value="Wen han" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="form-group">
+                                    <div class="col-sm-6 parent-box ">
+                                        <div class="row">
+                                            <label class="col-xs-12 control-label custom-control-label required c-text-left" id="lbl_email">Email</label>
+                                            <div class="col-xs-12">
+                                                <input class="form-control" id="email" name="email" type="text" maxLength="100" value="freebong717@gmail.com" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 parent-box ">
+                                        <div class="row">
+                                            <label class="col-xs-12 control-label custom-control-label" id="lbl_email">Alternative Email</label>
+                                            <div class="col-xs-12">
+                                                <input class="form-control" id="alt_email" name="alt_email" type="text" maxLength="100" value="" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="form-group">
+                                    <div class="col-sm-6 top-row parent-box">
+                                        <div class="row">
+                                            <label class="col-xs-12 control-label custom-control-label c-text-left  " id="lbl_mobile_number">Mobile Number<span class="required"></span>
+                                                <span class="icon-question-circle icon-style icon-question-mark" id="mobile_number_tip" tabindex="0" role="button" data-html="true" data-container="body" data-toggle="popover" data-placement="top" data-trigger="hover" data-content="<div class='row'>
+                                                                        <span class='col-xs-12'>If the country code is not listed, please select 'Other'. <br/><br/></span>
+                                                                      
+                                                                      <span class='col-xs-6'><b>Country Code</b></span>
+                                                                      <span class='col-xs-6'><b>Mobile Number</b></span>
+                                                                      
+                                                                      <span class='col-xs-6 col-xs-offset-6'><b>(incl. prefix)</b></span>
+                                                                    
+                                                                      <span class='col-xs-6'>60 (Malaysia)</span>
+                                                                      <span class='col-xs-6'>0171234567</span>
+                                                                      
+                                                                      <span class='col-xs-6'>62 (Indonesia)</span>
+                                                                      <span class='col-xs-6'>08161234567</span>
+                                                                      
+                                                                      <span class='col-xs-6'>63 (Philippines)</span>
+                                                                      <span class='col-xs-6'>09211234567</span>
+                                                                      
+                                                                      <span class='col-xs-6'>65 (Singapore)</span>
+                                                                      <span class='col-xs-6'>98765432</span>
+                                                                      
+                                                                      <span class='col-xs-6'>84 (Vietnam)</span>
+                                                                      <span class='col-xs-6'>0912345678</span>
+                                                                      
+                                                                      <span class='col-xs-6'>91 (India)</span>
+                                                                      <span class='col-xs-6'>9876543210</span>
+                                                                      </div>" data-original-title="" title="">
+                                                </span>
+                                            </label>
+                                            <div class="col-xs-12 sub-top-row">
+                                                <select id="handphone_country_code" name="handphone_country_code" data-placeholder="Country Code">
+                                                    <option value=""></option>
+                                                    <option value="880">88 (Bangladesh)</option>
+                                                    <option value="91">91 (India)</option>
+                                                    <option value="62">62 (Indonesia)</option>
+                                                    <option value="60" selected>60 (Malaysia)</option>
+                                                    <option value="63">63 (Philippines)</option>
+                                                    <option value="65">65 (Singapore)</option>
+                                                    <option value="66">66 (Thailand)</option>
+                                                    <option value="84">84 (Vietnam)</option>
+                                                    <option value="0">Other</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-xs-12">
+                                                <input class="form-control " id="handphone_no" name="handphone_no" type="tel" pattern="[0-9]*" min="0" maxlength="15" value="176961042" placeholder="Number" />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-6 parent-box">
+                                        <div class="row">
+                                            <label class="col-xs-12 control-label custom-control-label c-text-left" id="lbl_phone_number">Other Phone Number</label>
+                                            <div class="col-xs-12 sub-top-row">
+                                                <select id="tel_country_code" name="tel_country_code">
+                                                    <option value="">Country Code</option>
+                                                    <option value="880">88 (Bangladesh)</option>
+                                                    <option value="91">91 (India)</option>
+                                                    <option value="62">62 (Indonesia)</option>
+                                                    <option value="60">60 (Malaysia)</option>
+                                                    <option value="63">63 (Philippines)</option>
+                                                    <option value="65">65 (Singapore)</option>
+                                                    <option value="66">66 (Thailand)</option>
+                                                    <option value="84">84 (Vietnam)</option>
+                                                    <option value="0">Other</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-xs-5">
+                                                <input class="form-control" id="tel_area_code" name="tel_area_code" type="tel" pattern="[0-9]*" min="0" maxlength="5" value="" placeholder="Area Code" />
+                                            </div>
+                                            <div class="col-xs-7">
+                                                <input class="form-control" id="tel_no" name="tel_no" type="text" maxlength="20" value="" placeholder="Number" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-section">
+                                <div class="form-group">
+                                    <div class="col-xs-12 parent-box">
+                                        <div class="row">
+                                            <label class="col-xs-12 control-label custom-control-label c-text-left " id="lbl_residing_address">Residing Address</label>
+                                            <div class="col-xs-12 col-sm-6 top-row">
+                                                <input class="form-control " id="address1" name="address1" type="text" maxlength="50" value="D-5-8 The Arc Condominium" placeholder="Address 1" />
+                                            </div>
+                                            <div class="col-xs-12 col-sm-6">
+                                                <input class="form-control " id="address2" name="address2" type="text" maxlength="50" value="" placeholder="Address 2" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="col-sm-6 top-row parent-box ">
+                                        <div class="row">
+                                            <label class="col-xs-12 control-label custom-control-label c-text-left" id="lbl_city">City</label>
+                                            <div class="col-xs-12">
+                                                <input class="form-control" id="city" name="city" type="text" maxlength="20" value="Cyberjaya" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 parent-box ">
+                                        <div class="row">
+                                            <label class="col-xs-12 control-label custom-control-label c-text-left" id="lbl_postal_code">Postal Code</label>
+                                            <div class="col-xs-12">
+                                                <input class="form-control" id="postcode" name="postcode" type="text" maxlength="20" value="63000" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="col-sm-6 top-row parent-box ">
+                                        <div class="row">
+                                            <label class="col-xs-12 control-label custom-control-label required c-text-left" id="lbl_country">Country</label>
+                                            <div class="col-xs-12">
+                                                <select id="country_code" name="country_code" data-placeholder="Country">
+                                                    <option value=""></option>
+                                                    <option value="3">Afghanistan</option>
+                                                    <option value="6">Albania</option>
+                                                    <option value="59">Algeria</option>
+                                                    <option value="12">American Samoa</option>
+                                                    <option value="1">Andorra</option>
+                                                    <option value="9">Angola</option>
+                                                    <option value="5">Anguilla</option>
+                                                    <option value="10">Antarctica</option>
+                                                    <option value="4">Antigua and Barbuda</option>
+                                                    <option value="11">Argentina</option>
+                                                    <option value="7">Armenia</option>
+                                                    <option value="15">Aruba</option>
+                                                    <option value="14">Australia</option>
+                                                    <option value="13">Austria</option>
+                                                    <option value="16">Azerbaijan</option>
+                                                    <option value="30">Bahamas</option>
+                                                    <option value="23">Bahrain</option>
+                                                    <option value="19">Bangladesh</option>
+                                                    <option value="18">Barbados</option>
+                                                    <option value="34">Belarus</option>
+                                                    <option value="20">Belgium</option>
+                                                    <option value="35">Belize</option>
+                                                    <option value="25">Benin</option>
+                                                    <option value="26">Bermuda</option>
+                                                    <option value="31">Bhutan</option>
+                                                    <option value="28">Bolivia</option>
+                                                    <option value="17">Bosnia Hercegovina</option>
+                                                    <option value="33">Botswana</option>
+                                                    <option value="32">Bouvet Island</option>
+                                                    <option value="29">Brazil</option>
+                                                    <option value="101">British Indian Ocean Territory</option>
+                                                    <option value="27">Brunei Darussalam</option>
+                                                    <option value="22">Bulgaria</option>
+                                                    <option value="21">Burkina Faso</option>
+                                                    <option value="24">Burundi</option>
+                                                    <option value="111">Cambodia</option>
+                                                    <option value="45">Cameroon</option>
+                                                    <option value="36">Canada</option>
+                                                    <option value="50">Cape Verde</option>
+                                                    <option value="118">Cayman Islands</option>
+                                                    <option value="39">Central African Republic</option>
+                                                    <option value="205">Chad</option>
+                                                    <option value="44">Chile</option>
+                                                    <option value="46">China</option>
+                                                    <option value="51">Christmas Island</option>
+                                                    <option value="37">Cocos (Keeling) Islands</option>
+                                                    <option value="47">Colombia</option>
+                                                    <option value="113">Comoros</option>
+                                                    <option value="40">Congo</option>
+                                                    <option value="43">Cook Islands</option>
+                                                    <option value="48">Costa Rica</option>
+                                                    <option value="42">Cote D'ivoire</option>
+                                                    <option value="94">Croatia</option>
+                                                    <option value="49">Cuba</option>
+                                                    <option value="52">Cyprus</option>
+                                                    <option value="53">Czech Republic</option>
+                                                    <option value="56">Denmark</option>
+                                                    <option value="55">Djibouti</option>
+                                                    <option value="57">Dominica</option>
+                                                    <option value="58">Dominican Republic</option>
+                                                    <option value="214">East Timor</option>
+                                                    <option value="60">Ecuador</option>
+                                                    <option value="62">Egypt</option>
+                                                    <option value="201">EL Salvador</option>
+                                                    <option value="84">Equatorial Guinea</option>
+                                                    <option value="64">Eritrea</option>
+                                                    <option value="61">Estonia</option>
+                                                    <option value="66">Ethiopia</option>
+                                                    <option value="69">Falkland Islands (Malvinas)</option>
+                                                    <option value="71">Faroe Islands</option>
+                                                    <option value="68">Fiji</option>
+                                                    <option value="67">Finland</option>
+                                                    <option value="72">France</option>
+                                                    <option value="77">French Guiana</option>
+                                                    <option value="168">French Polynesia</option>
+                                                    <option value="206">French Southern Territories</option>
+                                                    <option value="73">Gabon</option>
+                                                    <option value="81">Gambia</option>
+                                                    <option value="76">Georgia</option>
+                                                    <option value="54">Germany</option>
+                                                    <option value="78">Ghana</option>
+                                                    <option value="79">Gibraltar</option>
+                                                    <option value="85">Greece</option>
+                                                    <option value="80">Greenland</option>
+                                                    <option value="75">Grenada</option>
+                                                    <option value="83">Guadeloupe</option>
+                                                    <option value="88">Guam</option>
+                                                    <option value="87">Guatemala</option>
+                                                    <option value="82">Guinea</option>
+                                                    <option value="89">Guinea-Bissau</option>
+                                                    <option value="90">Guyana</option>
+                                                    <option value="95">Haiti</option>
+                                                    <option value="92">Heard and Mc Donald Islands</option>
+                                                    <option value="93">Honduras</option>
+                                                    <option value="91">Hong Kong</option>
+                                                    <option value="96">Hungary</option>
+                                                    <option value="104">Iceland</option>
+                                                    <option value="100">India</option>
+                                                    <option value="97">Indonesia</option>
+                                                    <option value="103">Iran</option>
+                                                    <option value="102">Iraq</option>
+                                                    <option value="98">Ireland</option>
+                                                    <option value="99">Israel</option>
+                                                    <option value="105">Italy</option>
+                                                    <option value="106">Jamaica</option>
+                                                    <option value="108">Japan</option>
+                                                    <option value="107">Jordan</option>
+                                                    <option value="119">Kazakhstan</option>
+                                                    <option value="109">Kenya</option>
+                                                    <option value="112">Kiribati</option>
+                                                    <option value="115">Korea (North)</option>
+                                                    <option value="116">Korea (South)</option>
+                                                    <option value="117">Kuwait</option>
+                                                    <option value="110">Kyrgyzstan</option>
+                                                    <option value="120">Laos</option>
+                                                    <option value="129">Latvia</option>
+                                                    <option value="121">Lebanon</option>
+                                                    <option value="126">Lesotho</option>
+                                                    <option value="125">Liberia</option>
+                                                    <option value="130">Libyan Arab Jamahiriya</option>
+                                                    <option value="123">Liechtenstein</option>
+                                                    <option value="127">Lithuania</option>
+                                                    <option value="128">Luxembourg</option>
+                                                    <option value="140">Macau</option>
+                                                    <option value="136">Macedonia</option>
+                                                    <option value="134">Madagascar</option>
+                                                    <option value="148">Malawi</option>
+                                                    <option value="150" selected="selected">Malaysia</option>
+                                                    <option value="147">Maldives</option>
+                                                    <option value="137">Mali</option>
+                                                    <option value="145">Malta</option>
+                                                    <option value="135">Marshall Islands</option>
+                                                    <option value="142">Martinique</option>
+                                                    <option value="143">Mauritania</option>
+                                                    <option value="146">Mauritius</option>
+                                                    <option value="236">Mayotte</option>
+                                                    <option value="149">Mexico</option>
+                                                    <option value="70">Micronesia</option>
+                                                    <option value="132">Monaco</option>
+                                                    <option value="139">Mongolia</option>
+                                                    <option value="144">Montserrat</option>
+                                                    <option value="131">Morocco</option>
+                                                    <option value="151">Mozambique</option>
+                                                    <option value="138">Myanmar</option>
+                                                    <option value="152">Nambia</option>
+                                                    <option value="161">Nauru</option>
+                                                    <option value="160">Nepal</option>
+                                                    <option value="158">Netherlands</option>
+                                                    <option value="8">Netherlands Antilles</option>
+                                                    <option value="153">New Caledonia</option>
+                                                    <option value="163">New Zealand</option>
+                                                    <option value="157">Nicaragua</option>
+                                                    <option value="154">Niger</option>
+                                                    <option value="156">Nigeria</option>
+                                                    <option value="162">Niue</option>
+                                                    <option value="155">Norfolk Island</option>
+                                                    <option value="141">Northern Mariana Islands</option>
+                                                    <option value="159">Norway</option>
+                                                    <option value="164">Oman</option>
+                                                    <option value="165">Others</option>
+                                                    <option value="171">Pakistan</option>
+                                                    <option value="178">Palau</option>
+                                                    <option value="176">Palestinian Territory, Occupied</option>
+                                                    <option value="166">Panama</option>
+                                                    <option value="169">Papua New Guinea</option>
+                                                    <option value="179">Paraguay</option>
+                                                    <option value="167">Peru</option>
+                                                    <option value="170">Philippines</option>
+                                                    <option value="174">Pitcairn</option>
+                                                    <option value="172">Poland</option>
+                                                    <option value="177">Portugal</option>
+                                                    <option value="175">Puerto Rico</option>
+                                                    <option value="180">Qatar</option>
+                                                    <option value="133">Republic Of Moldova</option>
+                                                    <option value="181">Reunion</option>
+                                                    <option value="182">Romania</option>
+                                                    <option value="183">Russia</option>
+                                                    <option value="184">Rwanda</option>
+                                                    <option value="114">Saint Kitts And Nevis</option>
+                                                    <option value="122">Saint Lucia</option>
+                                                    <option value="227">Saint Vincent and The Grenadines</option>
+                                                    <option value="234">Samoa</option>
+                                                    <option value="196">San Marino</option>
+                                                    <option value="200">Sao Tome and Principe</option>
+                                                    <option value="185">Saudi Arabia</option>
+                                                    <option value="197">Senegal</option>
+                                                    <option value="187">Seychelles</option>
+                                                    <option value="195">Sierra Leone</option>
+                                                    <option value="190">Singapore</option>
+                                                    <option value="194">Slovakia</option>
+                                                    <option value="192">Slovenia</option>
+                                                    <option value="186">Solomon Islands</option>
+                                                    <option value="198">Somalia</option>
+                                                    <option value="238">South Africa</option>
+                                                    <option value="86">South Georgia And South Sandwich Islands</option>
+                                                    <option value="65">Spain</option>
+                                                    <option value="124">Sri Lanka</option>
+                                                    <option value="191">St. Helena</option>
+                                                    <option value="173">St. Pierre and Miquelon</option>
+                                                    <option value="188">Sudan</option>
+                                                    <option value="199">Suriname</option>
+                                                    <option value="193">Svalbard and Jan Mayen Islands</option>
+                                                    <option value="203">Swaziland</option>
+                                                    <option value="189">Sweden</option>
+                                                    <option value="41">Switzerland</option>
+                                                    <option value="202">Syrian Arab Republic</option>
+                                                    <option value="218">Taiwan</option>
+                                                    <option value="209">Tajikistan</option>
+                                                    <option value="219">Tanzania</option>
+                                                    <option value="208">Thailand</option>
+                                                    <option value="207">TOGO</option>
+                                                    <option value="210">Tokelau</option>
+                                                    <option value="213">Tonga</option>
+                                                    <option value="216">Trinidad and Tobago</option>
+                                                    <option value="212">Tunisia</option>
+                                                    <option value="215">Turkey</option>
+                                                    <option value="211">Turkmenistan</option>
+                                                    <option value="204">Turks and Caicos Islands</option>
+                                                    <option value="217">Tuvalu</option>
+                                                    <option value="221">Uganda</option>
+                                                    <option value="220">Ukraine</option>
+                                                    <option value="2">United Arab Emirates</option>
+                                                    <option value="74">United Kingdom</option>
+                                                    <option value="223">United States</option>
+                                                    <option value="222">United States Minor Outlying Islands</option>
+                                                    <option value="224">Uruguay</option>
+                                                    <option value="225">Uzbekistan</option>
+                                                    <option value="232">Vanuatu</option>
+                                                    <option value="226">Vatican City State (Holy See)</option>
+                                                    <option value="228">Venezuela</option>
+                                                    <option value="231">Vietnam</option>
+                                                    <option value="229">Virgin Islands (British)</option>
+                                                    <option value="230">Virgin Islands (U.S.)</option>
+                                                    <option value="233">Wallis and Futuna Islands</option>
+                                                    <option value="63">Western Sahara</option>
+                                                    <option value="235">Yemen</option>
+                                                    <option value="237">Yugoslavia</option>
+                                                    <option value="38">Zaire</option>
+                                                    <option value="239">Zambia</option>
+                                                    <option value="240">Zimbabwe</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 parent-box">
+                                        <div class="row">
+                                            <label class="col-xs-12 control-label custom-control-label required c-text-left " id="lbl_stage_region">State/Region</label>
+                                            <div class="col-xs-12" id="state_code_box">
+                                                <select id="state_code" name="state_code">
+                                                    <option value=""></option>
+                                                    <option value="0">Not Specified</option>
+                                                    <option value="7">A.C.T</option>
+                                                    <option value="97">New South Wales</option>
+                                                    <option value="94">Northern Territory</option>
+                                                    <option value="107">Queensland</option>
+                                                    <option value="111">South Australia</option>
+                                                    <option value="140">Tasmania</option>
+                                                    <option value="144">Victoria</option>
+                                                    <option value="146">Western Australia</option>
+                                                    <option value="16">Barisal</option>
+                                                    <option value="20">Chittagong</option>
+                                                    <option value="30">Dhaka</option>
+                                                    <option value="71">Khulna</option>
+                                                    <option value="109">Rajshahi</option>
+                                                    <option value="153">Sylhet</option>
+                                                    <option value="46">Hong Kong</option>
+                                                    <option value="1">Aceh</option>
+                                                    <option value="9">Bali</option>
+                                                    <option value="10">Bangka Belitung</option>
+                                                    <option value="14">Banten</option>
+                                                    <option value="11">Bengkulu</option>
+                                                    <option value="37">Gorontalo</option>
+                                                    <option value="54">Jakarta Raya</option>
+                                                    <option value="55">Jambi</option>
+                                                    <option value="61">Jawa Barat</option>
+                                                    <option value="62">Jawa Tengah</option>
+                                                    <option value="64">Jawa Timur</option>
+                                                    <option value="67">Kalimantan Barat</option>
+                                                    <option value="72">Kalimantan Selatan</option>
+                                                    <option value="74">Kalimantan Tengah</option>
+                                                    <option value="75">Kalimantan Timur</option>
+                                                    <option value="310">Kalimantan Utara</option>
+                                                    <option value="233">Kepulauan Riau</option>
+                                                    <option value="79">Lampung</option>
+                                                    <option value="86">Maluku</option>
+                                                    <option value="84">Maluku Utara</option>
+                                                    <option value="90">Nusa Tenggara Barat</option>
+                                                    <option value="96">Nusa Tenggara Timur</option>
+                                                    <option value="52">Papua</option>
+                                                    <option value="234">Papua Barat</option>
+                                                    <option value="110">Riau</option>
+                                                    <option value="235">Sulawesi Barat</option>
+                                                    <option value="115">Sulawesi Selatan</option>
+                                                    <option value="116">Sulawesi Tengah</option>
+                                                    <option value="118">Sulawesi Tenggara</option>
+                                                    <option value="120">Sulawesi Utara</option>
+                                                    <option value="121">Sumatera Barat</option>
+                                                    <option value="124">Sumatera Selatan</option>
+                                                    <option value="125">Sumatera Utara</option>
+                                                    <option value="141">Timor Timur</option>
+                                                    <option value="152">Yogyakarta</option>
+                                                    <option value="3">Andaman &amp; Nicobar</option>
+                                                    <option value="4">Andhra Pradesh</option>
+                                                    <option value="8">Arunachal Pradesh</option>
+                                                    <option value="6">Assam</option>
+                                                    <option value="12">Bihar</option>
+                                                    <option value="19">Chandigarh</option>
+                                                    <option value="26">Chhattisgarh</option>
+                                                    <option value="31">Dadra &amp; Nagar Haveli</option>
+                                                    <option value="28">Daman &amp; Diu</option>
+                                                    <option value="29">Delhi</option>
+                                                    <option value="36">Goa</option>
+                                                    <option value="39">Gujarat</option>
+                                                    <option value="42">Haryana</option>
+                                                    <option value="49">Himachal Pradesh</option>
+                                                    <option value="57">Jammu &amp; Kashmir</option>
+                                                    <option value="59">Jharkhand</option>
+                                                    <option value="66">Karnataka</option>
+                                                    <option value="68">Kerala</option>
+                                                    <option value="76">Lakshadweep</option>
+                                                    <option value="88">Madhya Pradesh</option>
+                                                    <option value="80">Maharashtra</option>
+                                                    <option value="87">Manipur</option>
+                                                    <option value="82">Meghalaya</option>
+                                                    <option value="83">Mizoram</option>
+                                                    <option value="89">Nagaland</option>
+                                                    <option value="99">Orissa</option>
+                                                    <option value="103">Pondicherry</option>
+                                                    <option value="105">Punjab</option>
+                                                    <option value="108">Rajasthan</option>
+                                                    <option value="119">Sikkim</option>
+                                                    <option value="138">Tamil Nadu</option>
+                                                    <option value="139">Tripura</option>
+                                                    <option value="142">Uttar Pradesh</option>
+                                                    <option value="143">Uttaranchal</option>
+                                                    <option value="147">West Bengal</option>
+                                                    <option value="60">Japan</option>
+                                                    <option value="56">Johor</option>
+                                                    <option value="69">Kedah</option>
+                                                    <option value="73">Kelantan</option>
+                                                    <option value="70" selected="selected">Kuala Lumpur</option>
+                                                    <option value="77">Labuan</option>
+                                                    <option value="85">Melaka</option>
+                                                    <option value="95">Negeri Sembilan</option>
+                                                    <option value="101">Pahang</option>
+                                                    <option value="100">Penang</option>
+                                                    <option value="102">Perak</option>
+                                                    <option value="104">Perlis</option>
+                                                    <option value="232">Putrajaya</option>
+                                                    <option value="112">Sabah</option>
+                                                    <option value="127">Sarawak</option>
+                                                    <option value="122">Selangor</option>
+                                                    <option value="136">Terengganu</option>
+                                                    <option value="5">Armm</option>
+                                                    <option value="15">Bicol Region</option>
+                                                    <option value="17">C.A.R</option>
+                                                    <option value="18">Cagayan Valley</option>
+                                                    <option value="126">Calabarzon &amp; Mimaropa</option>
+                                                    <option value="25">Caraga</option>
+                                                    <option value="21">Central Luzon</option>
+                                                    <option value="27">Central Visayas</option>
+                                                    <option value="123">Davao</option>
+                                                    <option value="32">Eastern Visayas</option>
+                                                    <option value="53">Ilocos Region</option>
+                                                    <option value="91">National Capital Reg</option>
+                                                    <option value="93">Northern Mindanao</option>
+                                                    <option value="22">Soccskargen</option>
+                                                    <option value="149">Western Visayas</option>
+                                                    <option value="148">Zamboanga</option>
+                                                    <option value="240">Central</option>
+                                                    <option value="238">East</option>
+                                                    <option value="236">North</option>
+                                                    <option value="237">North-East</option>
+                                                    <option value="117">Singapore</option>
+                                                    <option value="239">West</option>
+                                                    <option value="192">Ang Thong</option>
+                                                    <option value="193">Bangkok</option>
+                                                    <option value="174">Buri Ram</option>
+                                                    <option value="132">Central</option>
+                                                    <option value="194">Cha Choeng Sao</option>
+                                                    <option value="195">Chai Nat</option>
+                                                    <option value="175">Chaiyaphum</option>
+                                                    <option value="214">Chanthaburi</option>
+                                                    <option value="156">Chiang Mai</option>
+                                                    <option value="157">Chiang Rai</option>
+                                                    <option value="215">Chon Buri</option>
+                                                    <option value="218">Chumphon</option>
+                                                    <option value="133">Eastern</option>
+                                                    <option value="176">Kalasin</option>
+                                                    <option value="158">Kamphaeng Phet</option>
+                                                    <option value="196">Kanchanaburi</option>
+                                                    <option value="177">Khon Kaen</option>
+                                                    <option value="219">Krabi</option>
+                                                    <option value="159">Lampang</option>
+                                                    <option value="160">Lamphun</option>
+                                                    <option value="178">Loei</option>
+                                                    <option value="197">Lop Buri</option>
+                                                    <option value="161">Mae Hong Son</option>
+                                                    <option value="179">Maha Sarakham</option>
+                                                    <option value="180">Mukdahan</option>
+                                                    <option value="198">Nakhon Nayok</option>
+                                                    <option value="199">Nakhon Pathom</option>
+                                                    <option value="181">Nakhon Phanom</option>
+                                                    <option value="182">Nakhon Ratchasima</option>
+                                                    <option value="162">Nakhon Sawan</option>
+                                                    <option value="220">Nakhon Si Thammarat</option>
+                                                    <option value="163">Nan</option>
+                                                    <option value="221">Narathiwat</option>
+                                                    <option value="184">Nong Khai</option>
+                                                    <option value="183">Nongbua Lumphoo</option>
+                                                    <option value="200">Nonthaburi</option>
+                                                    <option value="130">North</option>
+                                                    <option value="131">North Eastern</option>
+                                                    <option value="201">Pathum Thani</option>
+                                                    <option value="222">Pattani</option>
+                                                    <option value="223">Phang Nga</option>
+                                                    <option value="224">Phatthalung</option>
+                                                    <option value="164">Phayao</option>
+                                                    <option value="165">Phetchabun</option>
+                                                    <option value="202">Phetchaburi</option>
+                                                    <option value="166">Phichit</option>
+                                                    <option value="167">Phitsanulok</option>
+                                                    <option value="203">Phra Nakhon Si Ayuttaya</option>
+                                                    <option value="168">Phrae</option>
+                                                    <option value="225">Phuket</option>
+                                                    <option value="204">Prachin Buri</option>
+                                                    <option value="205">Prachuap Khiri Khan</option>
+                                                    <option value="226">Ranong</option>
+                                                    <option value="206">Ratchaburi</option>
+                                                    <option value="216">Rayong</option>
+                                                    <option value="185">Roi Et</option>
+                                                    <option value="207">Sa kaew</option>
+                                                    <option value="186">Sakon Nakhon</option>
+                                                    <option value="208">Samut Prakan</option>
+                                                    <option value="209">Samut Sakhon</option>
+                                                    <option value="210">Samut Songkhram</option>
+                                                    <option value="211">Saraburi</option>
+                                                    <option value="227">Satun</option>
+                                                    <option value="187">Si Sa Ket</option>
+                                                    <option value="212">Sing Buri</option>
+                                                    <option value="228">Song Khla</option>
+                                                    <option value="134">South</option>
+                                                    <option value="169">Sukhothai</option>
+                                                    <option value="213">Suphan Buri</option>
+                                                    <option value="229">Surat Thani</option>
+                                                    <option value="188">Surin</option>
+                                                    <option value="170">Tak</option>
+                                                    <option value="230">Trang</option>
+                                                    <option value="217">Trat</option>
+                                                    <option value="189">Ubon Ratchathani</option>
+                                                    <option value="190">Udon Thani</option>
+                                                    <option value="173">Umnad Chareun</option>
+                                                    <option value="171">Uthai Thani</option>
+                                                    <option value="172">Uttaradit</option>
+                                                    <option value="231">Yala</option>
+                                                    <option value="191">Yasothon</option>
+                                                    <option value="241">An Giang</option>
+                                                    <option value="242">Ba Ria-Vung Tau</option>
+                                                    <option value="243">Bac Can</option>
+                                                    <option value="244">Bac Giang</option>
+                                                    <option value="245">Bac Lieu</option>
+                                                    <option value="246">Bac Ninh</option>
+                                                    <option value="247">Ben Tre</option>
+                                                    <option value="248">Binh Dinh</option>
+                                                    <option value="249">Binh Duong</option>
+                                                    <option value="250">Binh Phuoc</option>
+                                                    <option value="251">Binh Thuan</option>
+                                                    <option value="252">Ca Mau</option>
+                                                    <option value="253">Can Tho</option>
+                                                    <option value="254">Cao Bang</option>
+                                                    <option value="255">Da Nang</option>
+                                                    <option value="256">Dac Lac</option>
+                                                    <option value="309">Dak Nong</option>
+                                                    <option value="304">Dien Bien</option>
+                                                    <option value="257">Dong Nai</option>
+                                                    <option value="258">Dong Thap</option>
+                                                    <option value="259">Gia Lai</option>
+                                                    <option value="260">Ha Giang</option>
+                                                    <option value="261">Ha Nam</option>
+                                                    <option value="262">Ha Noi</option>
+                                                    <option value="263">Ha Tay</option>
+                                                    <option value="264">Ha Tinh</option>
+                                                    <option value="265">Hai Duong</option>
+                                                    <option value="266">Hai Phong</option>
+                                                    <option value="308">Hau Giang</option>
+                                                    <option value="267">Ho Chi Minh City</option>
+                                                    <option value="268">Hoa Binh</option>
+                                                    <option value="269">Hung Yen</option>
+                                                    <option value="270">Khanh Hoa</option>
+                                                    <option value="271">Kien Giang</option>
+                                                    <option value="272">Kon Tum</option>
+                                                    <option value="273">Lai Chau</option>
+                                                    <option value="274">Lam Dong</option>
+                                                    <option value="275">Lang Son</option>
+                                                    <option value="276">Lao Cai</option>
+                                                    <option value="277">Long An</option>
+                                                    <option value="307">Mekong Delta</option>
+                                                    <option value="278">Nam Dinh</option>
+                                                    <option value="279">Nghe An</option>
+                                                    <option value="280">Ninh Binh</option>
+                                                    <option value="281">Ninh Thuan</option>
+                                                    <option value="282">Phu Tho</option>
+                                                    <option value="283">Phu Yen</option>
+                                                    <option value="284">Quang Binh</option>
+                                                    <option value="285">Quang Nam</option>
+                                                    <option value="286">Quang Ngai</option>
+                                                    <option value="287">Quang Ninh</option>
+                                                    <option value="288">Quang Tri</option>
+                                                    <option value="289">Soc Trang</option>
+                                                    <option value="290">Son La</option>
+                                                    <option value="291">Tay Ninh</option>
+                                                    <option value="292">Thai Binh</option>
+                                                    <option value="293">Thai Nguyen</option>
+                                                    <option value="294">Thanh Hoa</option>
+                                                    <option value="295">Thua Thien-Hue</option>
+                                                    <option value="296">Tien Giang</option>
+                                                    <option value="297">Tra Vinh</option>
+                                                    <option value="298">Tuyen Quang</option>
+                                                    <option value="145">Vietnam</option>
+                                                    <option value="299">Vinh Long</option>
+                                                    <option value="300">Vinh Phuc</option>
+                                                    <option value="301">Yen Bai</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-xs-12 c-hide" id="state_other_box">
+                                                <input class="form-control " id="state_other" name="state_other" type="text" value="" maxlength="20" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="form-group">
+                                <div class="col-sm-12">
+                                    <input type="submit" class="btn btn-primary btn-mobile-block" value="Save" id="sb1">
+                                    <input type="button" class="btn btn-default btn-mobile-block" value="Cancel" onclick="location.href='index.html';">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    </div>
+    <!--end-->
+
+    <!-- Confirm Delete Modal -->
+    <div id="DeleteModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Warning!</h4>
+
+                </div>
+                <div class="modal-body">
+                    <p>Before you can delete your account, you must first withdraw all your active job applications</p>
+                </div>
+                <div class="modal-footer">
+                    <form action="delete_account.html">
+                        <button type="submit" class="btn btn-primary">Confirm</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+        <!-- Confirm Unlink Fb Modal -->
+    <div id="UnlinkFbModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Warning!</h4>
+
+                </div>
+                <div class="modal-body">
+                    <p>Are you sure want to unlink your Jobstreet.com Account with Facebook?</p>
+                </div>
+                <div class="modal-footer">
+                    <form action="">
+                        <button id="comfirm_unlink" type="submit" data-dismiss="modal" class="btn btn-primary">Confirm</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    </div>
+  
+
+    <footer>
+        <div class="container">
+            <ul class="list-inline">
+                <li><a href="http://www.jobstreet.com.my/sitemap.htm" id="footer-sitemap">Site Map</a>
+                </li>
+                <li><a href="http://www.jobstreet.com.my/aboutus/default.htm">About Us</a>
+                </li>
+                <li><a href="http://job-search.jobstreet.com/CompanyProfile/company-profile.php?dm=http%3a%2f%2fsiva-my.jsstatic.com&amp;p=%2f_ads%2f_static%2fxml%2fMY%2f&amp;token=28b361b7dc8f5a797749c8397de04e59d5e14a2968d0b48e496e&amp;rnd=91859390#.UrjtWvQW1qV" id="footer_work_with_us">Work With Us</a>
+                </li>
+                <li><a href="http://www.jobstreet.com.my/terms-of-use.htm" id="footer_term_use">Terms of Use</a> </li>
+                <li><a href="http://www.jobstreet.com.my/privacy-policy.htm" id="footer_privacy_policy">Privacy Policy</a>
+                </li>
+                <li><a href="http://www.jobstreet.com.my/safe-job-search-guide.htm" id="footer_safe_guide">Safe Job Search Guide</a>
+                </li>
+                <li><a href="http://myjobstreet-dev.jobstreet.com.my/home/help.php?site=my" id="footer_help">Help</a>
+                </li>
+                <li><a href="http://myjobstreet-dev.jobstreet.com.my/home/feedback.php?site=my&amp;sub=feedback" id="footer_feedback" target="_blank">Send Feedback</a>
+                </li>
+            </ul>
+            <p class="footer-copyright">Copyright &copy; <span id="year"></span> JobStreet.com</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://dna.jsstatic.com/js/bootstrap.js"></script>
+
+    <!-- Plugin -->
+    <script src="http://dna.jsstatic.com/select2/select2.js"></script>
+    <script src="http://dna.jsstatic.com/js/myjs.js"></script>
+    <script src="my-account.js"></script>
+
+
+</body>
+
+</html>

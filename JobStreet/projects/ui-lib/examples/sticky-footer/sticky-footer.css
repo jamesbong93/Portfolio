@@ -1,0 +1,23 @@
+html,body{
+	height:100%;
+}
+#wrap{
+	min-height:100%;
+	height:auto !important;
+	height:100%;
+	margin:0 auto -60px;
+	padding:20px 0 60px;
+}
+footer{
+	height:60px;
+	background-color:#333;
+}
+footer.container{
+	width:auto;
+	max-width:680px;
+	padding:0 15px;
+}
+.credit{
+	margin:20px 0;
+	color:#eee;
+}

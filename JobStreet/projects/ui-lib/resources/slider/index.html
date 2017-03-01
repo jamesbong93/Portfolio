@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Slider Test</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<!--<link href="http://img.jsstatic.com/project-pi/1.0.6/css/pi.css" rel="stylesheet">-->
+<!--<link href="../../css/pi.css" rel="stylesheet">-->
+<link href="bootstrap.min.css" rel="stylesheet">
+<link href="or-slider.css" rel="stylesheet">
+<style>
+#ex1Slider .slider-selection {
+	background: #555;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+	<h1>Bootstrap Slider</h1>
+	<div class="panel panel-clean">
+		<div class="panel-body">
+			<form method="get">
+			<input id="ex1" name="slider" data-slider-id="ex1Slider" type="text" data-slider-min="0" data-slider-max="5" data-slider-step="1" data-slider-value="1" data-slider-tooltip="hide">
+			<input type="submit" role="button" class="btn btn-primary" value="OK">
+			<p><input id="ex2" data-slider-id="ex2Slider" type="text" data-slider-min="-10" data-slider-max="20" data-slider-step="1" data-slider-value="0" data-slider-orientation="vertical"></p>
+			</form>
+		</div>
+	</div>
+</div>
+
+<script src="modernizr.js"></script>
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+<script src="bootstrap-slider.js"></script>
+
+<script>
+$(function(){
+	$("#ex1").slider({
+		formater:function(value){
+			return value;
+		}
+	});
+
+	$("#ex2").slider({
+		reversed:true
+	});
+});
+</script>
+
+</body>
+</html>

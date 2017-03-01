@@ -1,0 +1,915 @@
+.icon {
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	fill: currentColor;
+}
+.icon-wallet {
+	/*fill: #000000;*/
+}
+.icon-cert {
+	/*fill: #000000;*/
+	width: 44px;
+}
+.icon-award {
+	/*fill: #000000;*/
+}
+.icon-armchair {
+	/*fill: #000000;*/
+}
+.icon-target {
+	/*fill: #000000;*/
+}
+.icon-trees {
+	/*fill: #000000;*/
+}
+.icon-tool {
+	/*fill: #000000;*/
+	width: 34px;
+}
+.icon-mathcompass {
+	/*fill: #000000;*/
+	width: 40px;
+}
+.icon-home {
+	/*fill: #000000;*/
+	width: 34px;
+}
+.icon-office {
+	/*fill: #000000;*/
+	width: 34px;
+}
+.icon-newspaper {
+	/*fill: #000000;*/
+	width: 34px;
+}
+.icon-pencil {
+	/*fill: #000000;*/
+}
+.icon-paint-format {
+	/*fill: #000000;*/
+}
+.icon-music {
+	/*fill: #000000;*/
+	width: 34px;
+}
+.icon-library {
+	/*fill: #000000;*/
+	width: 34px;
+}
+.icon-profile {
+	/*fill: #000000;*/
+	width: 34px;
+}
+.icon-stack {
+	/*fill: #000000;*/
+}
+.icon-ticket {
+	/*fill: #000000;*/
+}
+.icon-cart {
+	/*fill: #000000;*/
+}
+.icon-credit {
+	/*fill: #000000;*/
+}
+.icon-calculate {
+	/*fill: #000000;*/
+}
+.icon-compass {
+	/*fill: #000000;*/
+}
+.icon-map {
+	/*fill: #000000;*/
+}
+.icon-map2 {
+	/*fill: #000000;*/
+}
+.icon-alarm {
+	/*fill: #000000;*/
+}
+.icon-print {
+	/*fill: #000000;*/
+}
+.icon-tv {
+	/*fill: #000000;*/
+}
+.icon-drawer {
+	/*fill: #000000;*/
+}
+.icon-drawer2 {
+	/*fill: #000000;*/
+}
+.icon-download {
+	/*fill: #000000;*/
+}
+.icon-upload {
+	/*fill: #000000;*/
+}
+.icon-flip {
+	/*fill: #000000;*/
+}
+.icon-flip2 {
+	/*fill: #000000;*/
+}
+.icon-undo {
+	/*fill: #000000;*/
+}
+.icon-redo {
+	/*fill: #000000;*/
+}
+.icon-forward {
+	/*fill: #000000;*/
+}
+.icon-reply {
+	/*fill: #000000;*/
+}
+.icon-spinner {
+	/*fill: #000000;*/
+}
+.icon-search {
+	/*fill: #000000;*/
+}
+.icon-zoomin {
+	/*fill: #000000;*/
+}
+.icon-zoomout {
+	/*fill: #000000;*/
+}
+.icon-expand {
+	/*fill: #000000;*/
+}
+.icon-contract {
+	/*fill: #000000;*/
+}
+.icon-expand2 {
+	/*fill: #000000;*/
+}
+.icon-contract2 {
+	/*fill: #000000;*/
+}
+.icon-key {
+	/*fill: #000000;*/
+}
+.icon-equalizer {
+	/*fill: #000000;*/
+}
+.icon-wand {
+	/*fill: #000000;*/
+}
+.icon-aid {
+	/*fill: #000000;*/
+}
+.icon-fire {
+	/*fill: #000000;*/
+}
+.icon-powercord {
+	/*fill: #000000;*/
+}
+.icon-signup {
+	/*fill: #000000;*/
+}
+.icon-menu {
+	/*fill: #000000;*/
+}
+.icon-link {
+	/*fill: #000000;*/
+}
+.icon-attachment {
+	/*fill: #000000;*/
+}
+.icon-bookmark {
+	/*fill: #000000;*/
+}
+.icon-contrast {
+	/*fill: #000000;*/
+}
+.icon-heart {
+	/*fill: #000000;*/
+}
+.icon-heart2 {
+	/*fill: #000000;*/
+}
+.icon-heart-broken {
+	/*fill: #000000;*/
+}
+.icon-happy {
+	/*fill: #000000;*/
+}
+.icon-happy2 {
+	/*fill: #000000;*/
+}
+.icon-smiley {
+	/*fill: #000000;*/
+}
+.icon-smiley2 {
+	/*fill: #000000;*/
+}
+.icon-sad {
+	/*fill: #000000;*/
+}
+.icon-sad2 {
+	/*fill: #000000;*/
+}
+.icon-angry {
+	/*fill: #000000;*/
+}
+.icon-angry2 {
+	/*fill: #000000;*/
+}
+.icon-shocked {
+	/*fill: #000000;*/
+}
+.icon-shocked2 {
+	/*fill: #000000;*/
+}
+.icon-confused {
+	/*fill: #000000;*/
+}
+.icon-confused2 {
+	/*fill: #000000;*/
+}
+.icon-neutral {
+	/*fill: #000000;*/
+}
+.icon-neutral2 {
+	/*fill: #000000;*/
+}
+.icon-wondering {
+	/*fill: #000000;*/
+}
+.icon-wondering2 {
+	/*fill: #000000;*/
+}
+.icon-close {
+	/*fill: #000000;*/
+}
+.icon-checkmark {
+	/*fill: #000000;*/
+}
+.icon-checkmark2 {
+	/*fill: #000000;*/
+}
+.icon-spell-check {
+	/*fill: #000000;*/
+}
+.icon-minus {
+	/*fill: #000000;*/
+}
+.icon-plus {
+	/*fill: #000000;*/
+}
+.icon-enter {
+	/*fill: #000000;*/
+}
+.icon-exit {
+	/*fill: #000000;*/
+}
+.icon-volume-medium {
+	/*fill: #000000;*/
+}
+.icon-volume-mute {
+	/*fill: #000000;*/
+}
+.icon-arrow-up-left {
+	/*fill: #000000;*/
+}
+.icon-arrow-up {
+	/*fill: #000000;*/
+}
+.icon-arrow-up-right {
+	/*fill: #000000;*/
+}
+.icon-arrow-right {
+	/*fill: #000000;*/
+}
+.icon-arrow-down-right {
+	/*fill: #000000;*/
+}
+.icon-arrow-down {
+	/*fill: #000000;*/
+}
+.icon-arrow-down-left {
+	/*fill: #000000;*/
+}
+.icon-arrow-left {
+	/*fill: #000000;*/
+}
+.icon-arrow-up-left2 {
+	/*fill: #000000;*/
+}
+.icon-arrow-up2 {
+	/*fill: #000000;*/
+}
+.icon-arrow-up-right2 {
+	/*fill: #000000;*/
+}
+.icon-arrow-right2 {
+	/*fill: #000000;*/
+}
+.icon-arrow-down-right2 {
+	/*fill: #000000;*/
+}
+.icon-arrow-down2 {
+	/*fill: #000000;*/
+}
+.icon-arrow-down-left2 {
+	/*fill: #000000;*/
+}
+.icon-arrow-left2 {
+	/*fill: #000000;*/
+}
+.icon-arrow-up-left3 {
+	/*fill: #000000;*/
+}
+.icon-arrow-up3 {
+	/*fill: #000000;*/
+}
+.icon-arrow-up-right3 {
+	/*fill: #000000;*/
+}
+.icon-arrow-right3 {
+	/*fill: #000000;*/
+}
+.icon-arrow-down-right3 {
+	/*fill: #000000;*/
+}
+.icon-arrow-down3 {
+	/*fill: #000000;*/
+}
+.icon-arrow-down-left3 {
+	/*fill: #000000;*/
+}
+.icon-arrow-left3 {
+	/*fill: #000000;*/
+}
+.icon-scissors {
+	/*fill: #000000;*/
+}
+.icon-filter {
+	/*fill: #000000;*/
+}
+.icon-bus {
+	/*fill: #000000;*/
+}
+.icon-train {
+	/*fill: #000000;*/
+}
+.icon-car {
+	/*fill: #000000;*/
+}
+.icon-walking {
+	/*fill: #000000;*/
+}
+.icon-mobile {
+	/*fill: #000000;*/
+}
+.icon-directions {
+	/*fill: #000000;*/
+}
+.icon-mail {
+	/*fill: #000000;*/
+}
+.icon-paperplane {
+	/*fill: #000000;*/
+}
+.icon-paperclip {
+	/*fill: #000000;*/
+}
+.icon-user {
+	/*fill: #000000;*/
+}
+.icon-users {
+	/*fill: #000000;*/
+}
+.icon-user-add {
+	/*fill: #000000;*/
+}
+.icon-vcard {
+	/*fill: #000000;*/
+}
+.icon-export {
+	/*fill: #000000;*/
+}
+.icon-location {
+	/*fill: #000000;*/
+}
+.icon-share {
+	/*fill: #000000;*/
+}
+.icon-flashlight {
+	/*fill: #000000;*/
+}
+.icon-camera {
+	/*fill: #000000;*/
+}
+.icon-megaphone {
+	/*fill: #000000;*/
+}
+.icon-moon {
+	/*fill: #000000;*/
+}
+.icon-palette {
+	/*fill: #000000;*/
+}
+.icon-leaf {
+	/*fill: #000000;*/
+}
+.icon-graduation {
+	/*fill: #000000;*/
+}
+.icon-airplane {
+	/*fill: #000000;*/
+}
+.icon-lifebuoy {
+	/*fill: #000000;*/
+}
+.icon-calendar {
+	/*fill: #000000;*/
+}
+.icon-thunder {
+	/*fill: #000000;*/
+}
+.icon-droplet {
+	/*fill: #000000;*/
+}
+.icon-briefcase {
+	/*fill: #000000;*/
+}
+.icon-air {
+	/*fill: #000000;*/
+}
+.icon-gauge {
+	/*fill: #000000;*/
+}
+.icon-language {
+	/*fill: #000000;*/
+}
+.icon-rocket {
+	/*fill: #000000;*/
+}
+.icon-brush {
+	/*fill: #000000;*/
+}
+.icon-cone {
+	/*fill: #000000;*/
+}
+.icon-database {
+	/*fill: #000000;*/
+}
+.icon-clipboard {
+	/*fill: #000000;*/
+}
+.icon-signal {
+	/*fill: #000000;*/
+}
+.icon-logout {
+	/*fill: #000000;*/
+}
+.icon-login {
+	/*fill: #000000;*/
+}
+.icon-minus2 {
+	/*fill: #000000;*/
+}
+.icon-plus2 {
+	/*fill: #000000;*/
+}
+.icon-cross {
+	/*fill: #000000;*/
+}
+.icon-minus3 {
+	/*fill: #000000;*/
+}
+.icon-plus3 {
+	/*fill: #000000;*/
+}
+.icon-cross2 {
+	/*fill: #000000;*/
+}
+.icon-erase {
+	/*fill: #000000;*/
+}
+.icon-info {
+	/*fill: #000000;*/
+}
+.icon-question {
+	/*fill: #000000;*/
+}
+.icon-help {
+	/*fill: #000000;*/
+}
+.icon-warning {
+	/*fill: #000000;*/
+}
+.icon-cycle {
+	/*fill: #000000;*/
+}
+.icon-cw {
+	/*fill: #000000;*/
+}
+.icon-ccw {
+	/*fill: #000000;*/
+}
+.icon-arrow {
+	/*fill: #000000;*/
+}
+.icon-arrow2 {
+	/*fill: #000000;*/
+}
+.icon-retweet {
+	/*fill: #000000;*/
+}
+.icon-loop {
+	/*fill: #000000;*/
+}
+.icon-history {
+	/*fill: #000000;*/
+}
+.icon-back {
+	/*fill: #000000;*/
+}
+.icon-switch {
+	/*fill: #000000;*/
+}
+.icon-disk {
+	/*fill: #000000;*/
+}
+.icon-cloud {
+	/*fill: #000000;*/
+}
+.icon-menu2 {
+	/*fill: #000000;*/
+}
+.icon-glass {
+	/*fill: #000000;*/
+}
+.icon-envelope-o {
+	/*fill: #000000;*/
+}
+.icon-star {
+	/*fill: #000000;*/
+}
+.icon-star-o {
+	/*fill: #000000;*/
+}
+.icon-gear {
+	/*fill: #000000;*/
+}
+.icon-trash-o {
+	/*fill: #000000;*/
+}
+.icon-file-o {
+	/*fill: #000000;*/
+}
+.icon-clock-o {
+	/*fill: #000000;*/
+}
+.icon-road {
+	/*fill: #000000;*/
+}
+.icon-list-alt {
+	/*fill: #000000;*/
+}
+.icon-lock {
+	/*fill: #000000;*/
+}
+.icon-flag {
+	/*fill: #000000;*/
+}
+.icon-headphones {
+	/*fill: #000000;*/
+}
+.icon-tag {
+	/*fill: #000000;*/
+}
+.icon-tags {
+	/*fill: #000000;*/
+}
+.icon-book {
+	/*fill: #000000;*/
+}
+.icon-video-camera {
+	/*fill: #000000;*/
+}
+.icon-picture-o {
+	/*fill: #000000;*/
+}
+.icon-tint {
+	/*fill: #000000;*/
+}
+.icon-arrows {
+	/*fill: #000000;*/
+}
+.icon-times-circle-o {
+	/*fill: #000000;*/
+}
+.icon-check-circle-o {
+	/*fill: #000000;*/
+}
+.icon-ban {
+	/*fill: #000000;*/
+}
+.icon-asterisk {
+	/*fill: #000000;*/
+}
+.icon-gift {
+	/*fill: #000000;*/
+}
+.icon-eye {
+	/*fill: #000000;*/
+}
+.icon-eye-slash {
+	/*fill: #000000;*/
+}
+.icon-random {
+	/*fill: #000000;*/
+}
+.icon-comment {
+	/*fill: #000000;*/
+}
+.icon-folder {
+	/*fill: #000000;*/
+}
+.icon-folder-open {
+	/*fill: #000000;*/
+}
+.icon-arrows-v {
+	/*fill: #000000;*/
+}
+.icon-arrows-h {
+	/*fill: #000000;*/
+}
+.icon-comments {
+	/*fill: #000000;*/
+}
+.icon-thumbs-o-up {
+	/*fill: #000000;*/
+}
+.icon-thumbs-o-down {
+	/*fill: #000000;*/
+}
+.icon-thumb-tack {
+	/*fill: #000000;*/
+}
+.icon-external-link {
+	/*fill: #000000;*/
+}
+.icon-trophy {
+	/*fill: #000000;*/
+}
+.icon-phone {
+	/*fill: #000000;*/
+}
+.icon-phone-square {
+	/*fill: #000000;*/
+}
+.icon-unlock {
+	/*fill: #000000;*/
+}
+.icon-bell {
+	/*fill: #000000;*/
+}
+.icon-certificate {
+	/*fill: #000000;*/
+}
+.icon-hand-o-right {
+	/*fill: #000000;*/
+}
+.icon-hand-o-left {
+	/*fill: #000000;*/
+}
+.icon-hand-o-up {
+	/*fill: #000000;*/
+}
+.icon-hand-o-down {
+	/*fill: #000000;*/
+}
+.icon-arrow-circle-left {
+	/*fill: #000000;*/
+}
+.icon-arrow-circle-right {
+	/*fill: #000000;*/
+}
+.icon-arrow-circle-up {
+	/*fill: #000000;*/
+}
+.icon-arrow-circle-down {
+	/*fill: #000000;*/
+}
+.icon-globe {
+	/*fill: #000000;*/
+}
+.icon-arrows-alt {
+	/*fill: #000000;*/
+}
+.icon-flask {
+	/*fill: #000000;*/
+}
+.icon-copy {
+	/*fill: #000000;*/
+}
+.icon-truck {
+	/*fill: #000000;*/
+}
+.icon-caret-down {
+	/*fill: #000000;*/
+}
+.icon-caret-up {
+	/*fill: #000000;*/
+}
+.icon-caret-left {
+	/*fill: #000000;*/
+}
+.icon-caret-right {
+	/*fill: #000000;*/
+}
+.icon-unsorted {
+	/*fill: #000000;*/
+}
+.icon-rotate-left {
+	/*fill: #000000;*/
+}
+.icon-comment-o {
+	/*fill: #000000;*/
+}
+.icon-comments-o {
+	/*fill: #000000;*/
+}
+.icon-flash {
+	/*fill: #000000;*/
+}
+.icon-sitemap {
+	/*fill: #000000;*/
+}
+.icon-umbrella {
+	/*fill: #000000;*/
+}
+.icon-paste {
+	/*fill: #000000;*/
+}
+.icon-lightbulb-o {
+	/*fill: #000000;*/
+}
+.icon-cloud-download {
+	/*fill: #000000;*/
+}
+.icon-cloud-upload {
+	/*fill: #000000;*/
+}
+.icon-suitcase {
+	/*fill: #000000;*/
+}
+.icon-bell-o {
+	/*fill: #000000;*/
+}
+.icon-coffee {
+	/*fill: #000000;*/
+}
+.icon-cutlery {
+	/*fill: #000000;*/
+}
+.icon-file-text-o {
+	/*fill: #000000;*/
+}
+.icon-ambulance {
+	/*fill: #000000;*/
+}
+.icon-fighter-jet {
+	/*fill: #000000;*/
+}
+.icon-beer {
+	/*fill: #000000;*/
+}
+.icon-angle-double-left {
+	/*fill: #000000;*/
+}
+.icon-angle-double-right {
+	/*fill: #000000;*/
+}
+.icon-angle-double-up {
+	/*fill: #000000;*/
+}
+.icon-angle-double-down {
+	/*fill: #000000;*/
+}
+.icon-angle-left {
+	/*fill: #000000;*/
+}
+.icon-angle-right {
+	/*fill: #000000;*/
+}
+.icon-angle-up {
+	/*fill: #000000;*/
+}
+.icon-angle-down {
+	/*fill: #000000;*/
+}
+.icon-desktop {
+	/*fill: #000000;*/
+}
+.icon-laptop {
+	/*fill: #000000;*/
+}
+.icon-tablet {
+	/*fill: #000000;*/
+}
+.icon-quote-left {
+	/*fill: #000000;*/
+}
+.icon-quote-right {
+	/*fill: #000000;*/
+}
+.icon-folder-o {
+	/*fill: #000000;*/
+}
+.icon-folder-open-o {
+	/*fill: #000000;*/
+}
+.icon-keyboard-o {
+	/*fill: #000000;*/
+}
+.icon-location-arrow {
+	/*fill: #000000;*/
+}
+.icon-code-fork {
+	/*fill: #000000;*/
+}
+.icon-unlink {
+	/*fill: #000000;*/
+}
+.icon-microphone {
+	/*fill: #000000;*/
+}
+.icon-microphone-slash {
+	/*fill: #000000;*/
+}
+.icon-shield {
+	/*fill: #000000;*/
+}
+.icon-chevron-circle-left {
+	/*fill: #000000;*/
+}
+.icon-chevron-circle-right {
+	/*fill: #000000;*/
+}
+.icon-chevron-circle-up {
+	/*fill: #000000;*/
+}
+.icon-chevron-circle-down {
+	/*fill: #000000;*/
+}
+.icon-anchor {
+	/*fill: #000000;*/
+}
+.icon-ellipsis-v {
+	/*fill: #000000;*/
+}
+.icon-level-up {
+	/*fill: #000000;*/
+}
+.icon-level-down {
+	/*fill: #000000;*/
+}
+.icon-dollar {
+	/*fill: #000000;*/
+}
+.icon-file {
+	/*fill: #000000;*/
+}
+.icon-file-text {
+	/*fill: #000000;*/
+}
+.icon-sort-alpha-asc {
+	/*fill: #000000;*/
+}
+.icon-sort-alpha-desc {
+	/*fill: #000000;*/
+}
+.icon-sort-amount-asc {
+	/*fill: #000000;*/
+}
+.icon-sort-amount-desc {
+	/*fill: #000000;*/
+}
+.icon-sort-numeric-asc {
+	/*fill: #000000;*/
+}
+.icon-sort-numeric-desc {
+	/*fill: #000000;*/
+}
+.icon-female {
+	/*fill: #000000;*/
+}
+.icon-male {
+	/*fill: #000000;*/
+}
+.icon-sun-o {
+	/*fill: #000000;*/
+}
+.icon-archive {
+	/*fill: #000000;*/
+}
+.icon-wheelchair {
+	/*fill: #000000;*/
+}

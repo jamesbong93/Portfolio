@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<title>Offcanvas Menu</title>
+<link rel="stylesheet" href="https://s3-ap-southeast-1.amazonaws.com/jobstreet-home/project-pi/1.0.5/css/pi.css">
+<link href="offcanvas-menu.css" rel="stylesheet">
+<link href="../../css/style.css" rel="stylesheet">
+</head>
+<body>
+<div id="wrap">
+
+	<div class="navbar navbar-fixed-top navbar-default">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navbar-offcanvas" data-canvas="body">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				</button>				
+				<a class="navbar-brand" href="javascript:;"></a>
+			</div>
+
+			
+			<div class="navbar-offcanvas offcanvas navmenu-fixed-left">
+				<a class="navmenu-brand" href="javascript:;">Project Pi</a>
+				<ul class="nav navbar-nav">
+					<li><a href="#">Slide in</a></li>
+					<li><a href="#">Push</a></li>
+					<li><a href="#">Reveal</a></li>
+					<li class="active"><a href="#">Off canvas navbar</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Action</a></li>
+							<li><a href="#">Another action</a></li>
+							<li><a href="#">Something else here</a></li>
+							<li class="divider"></li>
+							<li class="dropdown-header">Nav header</li>
+							<li><a href="#">Separated link</a></li>
+							<li><a href="#">One more separated link</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	<div class="container">
+		<h1 class="page-header roboto">Offcanvas Navbar</h1>
+		<div class="panel panel-clean card">
+			<div class="panel-body">
+				<h1>This is rock!</h1>
+				<p>This example demonstrates using the offcanvas plugin with the navbar.</p>
+			</div>
+		</div>
+	</div>
+	
+</div>
+
+<div id="footer">
+	<div class="container">
+		<div class="col-xs-10">
+			<div class="footer-text">&copy 2014 Project Pi 1.0.5 by JobStreet.com </div>
+		</div>
+		<div class="col-xs-2">
+			<div class="footer-text text-center">
+				<i data-placement="top" title="Scroll Up" class="fa fa-chevron-up" id="gotop"></i>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script src="offcanvas-menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Siva Template - Retrieved Resume</title>
+	<link rel="stylesheet" href="http://dna.jsstatic.com/siva/siva-1.2.17.css">
+	<link rel="stylesheet" href="http://dna.jsstatic.com/pi/icon-font/2.1/icon-font.css">
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="../../ico/favicon.png">
+	<link rel="apple-touch-icon" href="../../ico/touch-icon-iphone.png">
+	<link rel="apple-touch-icon" sizes="76x76" href=../../"ico/touch-icon-ipad.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="../../ico/touch-icon-iphone-retina.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="../../ico/touch-icon-ipad-retina.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="../../ico/touch-icon-iphone6p-ios8.png">
+	<!-- End of Favicon -->
+	</head>
+<body>
+
+<!--// NAVBAR //-->
+<div class="navbar navbar-default navbar-static">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#">
+				<span class="jslogo"></span>
+			</a>
+        </div>
+        <div class="collapse navbar-collapse">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="#">Job Ads</a></li>
+				<li><a href="#">Talent Search</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li class="dropdown bell hidden-xs">
+		            <a class="bell" href="" data-toggle="dropdown">
+		            	<i class="icon-bell alert"></i>
+		            </a>
+		            <div class="dropdown-menu notifications">
+		               <div class="title">Notifications <a href="javascript:;" id="clearNotification" class="small pull-right">Clear All</a></div>
+		               <ul class="notification-content">
+		                  <li>
+		                    <h5>Scheduled server maintenance &#183; 1hr ago</h5>
+		                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis metus lacus, fringilla sed tristique ac, aliquet quis nibh. In interdum, leo ac dapibus faucibus, libero mi interdum eros, quis dignissim massa purus at neque. Morbi ut mi ut nisl egestas hendrerit et porttitor lectus.</p>
+		                  </li>
+		               </ul>
+		               <div class="notification-empty" style="display:none">
+		                	<span><i class="icon-bell-o x2"></i><br>Nothing new right now</span>
+		               </div>
+		            </div>
+		        </li>
+				<li class="dropdown">
+					<a href="javascript:;" data-toggle="dropdown">
+						<span>Right Handed</span> <span class="caret"></span>
+						<span class="text-muted">JobStreet.com</span>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Your Profile</a></li>
+						<li><a href="#">All Users</a></li>
+						<li><a href="#">Company Profile</a></li>
+						<li class="divider"></li>
+						<li><a href="#">Credits</a></li>
+						<li><a href="#">Logout</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!--// NAVBAR END //-->
+
+<!-- Invitation Status Modal -->
+<div class="modal fade" id="inviteStatusModal" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true" title="Close">×</button>
+        <h2 class="modal-title">Invitation Status</h2>
+      </div>
+      <div class="modal-body">
+      	<div class="invitation-status">
+	      	<div class="row">
+		      		<div class="col-sm-1 hidden-xs">
+		      			<div class="text-center icon-circle-info pull-right"><span class="icon-phone"></span></div>
+		      		</div>
+		      		<div class="col-sm-6 col-xs-7">
+		      			<div class="info">
+		      				<span class="info-main">Phone call</span>
+							<span class="info-sub">
+								<span>10 Mar 2016 5:00 PM</span>
+								<span>Position: <a href="#" class="text-info">Product Manger</a></span>
+							</span>
+						</div>
+					</div>
+		      		<div class="col-sm-2 col-xs-5">
+		      			<div class="info text-right">
+		      				<span class="info-main">Sent by</span>
+							<span class="info-sub">
+								<span>Alfred Yeap</span>
+								<span>13 Feb 2016</span>
+							</span>
+						</div>
+		      		</div>
+		      		<div class="col-sm-3 col-xs-12">
+		      			<div class="status status-highlight text-center">
+							<div class="info">
+								<span class="info-main"><span class="icon-checkmark"></span>Accepted</span>
+								<span class="info-sub">03 Mar 2016</span>
+							</div>
+						</div>
+		      		</div>
+		      	</div>
+		      	<div class="row">
+		      		<div class="col-sm-1 hidden-xs">
+		      			<div class="text-center icon-circle-default pull-right"><span class="icon-user-group"></span></div>
+		      		</div>
+		      		<div class="col-sm-6 col-xs-7">
+		      			<div class="info">
+		      				<span class="info-main">Meet up</span>
+							<span class="info-sub">
+								<span>15 Feb 2016 12:00 PM</span>
+								<span>Position: <a href="#" class="text-info">Product Manger</a></span>
+							</span>
+						</div>
+					</div>
+		      		<div class="col-sm-2 col-xs-5">
+		      			<div class="info text-right">
+		      				<span class="info-main">Sent by</span>
+							<span class="info-sub">
+								<span>Alfred Yeap</span>
+								<span>10 Feb 2016</span>
+							</span>
+						</div>
+		      		</div>
+		      		<div class="col-sm-3 col-xs-12">
+		      			<div class="status status-nadir text-center">
+							<div class="info">
+								<span class="info-main">Declined</span>
+								<span class="info-sub">12 Feb 2016</span>
+							</div>
+						</div>
+		      		</div>
+		      		<div class="col-sm-11 col-sm-offset-1 col-xs-12">
+		      			<div class="well well-sm"><i>Time not suitable. Lunch hour sould be great. Thanks.</i></div>
+		      		</div>
+		      	</div>
+		      	<div class="row">
+		      		<div class="col-sm-1 hidden-xs">
+		      			<div class="text-center icon-circle-default pull-right"><span class="icon-phone"></span></div>
+		      		</div>
+		      		<div class="col-sm-6 col-xs-7">
+		      			<div class="info">
+		      				<span class="info-main">Phone call</span>
+							<span class="info-sub">
+								<span>10 Feb 2016 5:00 PM</span>
+								<span>Position: <a href="#" class="text-info">Product Manger</a></span>
+							</span>
+						</div>
+					</div>
+		      		<div class="col-sm-2 col-xs-5">
+		      			<div class="info text-right">
+		      				<span class="info-main">Sent by</span>
+							<span class="info-sub">
+								<span>Alfred Yeap</span>
+								<span>02 Feb 2016</span>
+							</span>
+						</div>
+		      		</div>
+		      		<div class="col-sm-3 col-xs-12">
+		      			<div class="status status-nadir text-center ">
+							<div class="info">
+								<span class="info-main">No Response</span>
+							</div>
+						</div>
+		      		</div>
+		      	</div>
+		      	<div class="row">
+		      		<div class="col-sm-1 hidden-xs">
+		      			<div class="text-center icon-circle-default pull-right"><span class="icon-phone"></span></div>
+		      		</div>
+		      		<div class="col-sm-6 col-xs-7">
+		      			<div class="info">
+		      				<span class="info-main">Phone call</span>
+							<span class="info-sub">
+								<span>09 Feb 2016 3:00 PM</span>
+								<span>Position: <a href="#" class="text-info">Product Manger</a></span>
+							</span>
+						</div>
+					</div>
+		      		<div class="col-sm-2 col-xs-5">
+		      			<div class="info text-right">
+		      				<span class="info-main">Sent by</span>
+							<span class="info-sub">
+								<span>Alfred Yeap</span>
+								<span>01 Jan 2016</span>
+							</span>
+						</div>
+		      		</div>
+		      		<div class="col-sm-3 col-xs-12">
+		      			<div class="status status-nadir text-center ">
+							<div class="info">
+								<span class="info-main">Declined</span>
+								<span class="info-sub">01 Feb 2016</span>
+							</div>
+						</div>
+		      		</div>
+		      	</div>
+	        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal" aria-hidden="true">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End of Invite Activity Modal-->
+
+<div class="container">
+	<!--// TOP BAR //-->
+	<div class="panel topbar">
+		<div class="panel-body">
+			<div class="topbar-heading">
+				<div class="topbar-title">
+					<a href="resume-for-retrieved-talent-search.html" class="back-page"><span class="icon-chevron-left"></span></a>
+					<h1>Retrieved Resumes</h1> <a href="#" class="btn btn-link" role="button"><span class="icon-search"></span></a>
+				</div>
+				<div class="topbar-search">
+					<form class="form-group">
+						<span class="icon-search"></span>
+						<span class="icon-close"></span>
+						<input type="text" class="form-control" placeholder="Search for job ads...">
+					</form>
+				</div>
+			</div>
+			<div title="Filter Candidates" class="btn btn-icon facet pull-right visible-sm visible-md">
+				<span class="icon-filter pull-left"></span>
+			</div>
+			
+		</div>
+	</div>
+	<!--// TOP BAR END //-->
+	
+	<div id="loadContent">
+		
+		<!--Loading screen-->
+    	<div class="loader-wrap">
+            <div class="loading-container">
+            <div class="loading"></div>
+            <div id="loading-text">Loading Candidates</div>
+            </div>
+        </div>
+        <!--Loading screen end-->
+	
+		<div class="panel hidden-xs hidden-sm hidden-md col-lg-3 panel-facet">
+            <div class="panel-body col-sm-3 col-md-3 col-lg-12 text-center facet-empty">
+            	<div class="clearfix x2"></div>
+                <span class="icon-user-group"></span>
+				<div class="title-empty">Find your next hire</div><br>
+				<div class="text-empty">Search by position title, skills or keywords</div>
+				<div class="clearfix x2"></div>
+				<div class="text-empty">Screen candidates easier and faster</div>
+				<div class="clearfix x2"></div>
+				<div class="text-empty">Retrieve full resume and contact candidates immediately</div>
+            </div>
+        </div>
+          
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-9 panel-results">
+			<!--Action Btn-->
+            <div class="panel-action">
+				<div class="clearfix">
+					<div class="form-inline retriever pull-right">
+					   <label><span class="hidden-xs">Filter by</span>
+						   <select class="form-control">
+								<option>This month</option>
+								<option>Jun 2015</option>
+								<option>May 2015</option>
+								<option>Apr 2015</option>
+								<option>Mar 2015</option>
+								<option>Feb 2015</option>
+								<option>Jan 2015</option>
+						   </select>
+					   </label>
+ 
+					</div>
+				</div>
+            </div>
+            <!--Action Btn End--> 
+			
+			<div class="cards x2">
+
+				<div class="col-xs-12 col-sm-6 card">
+					<div class="panel">
+						<div class="panel-body">
+							<div class="card-checkbox">
+								<input type="checkbox" class="multi-select">
+							</div>
+							<div class="card-body">
+								<div class="clearfix">
+									<div class="card-primary">
+										<h2 class="card-title">Joseph Edwards</h2>
+										<span class="info"><span class="text">Front-end Developer</span><span class="fig">(2 yr)</span></span>
+										<span class="info no-fig"><span class="text">Singapore Airlines</span></span>
+									</div>
+									<div class="card-secondary">
+										<span class="info no-fig"><span class="text">UX Designer</span></span>
+										<span class="info no-fig"><span class="text">Malaysia Airlines</span></span>
+									</div>
+									<div class="card-tertiary">
+										<span class="info no-fig"><span class="icon-dollar-sign"></span><span class="text">MYR 5,200</span></span>
+										<span class="info no-fig">
+											<span class="icon-education"></span>
+											<span class="text">Degree</span>
+										</span>
+									</div>
+								</div>
+							</div>
+							<!--// Action Menu //-->
+							<ul class="nav nav-pills nav-action-menu">
+								<li><a href="#" class="disabled-link">Invite</a></li>
+								<li>
+									<div class="nav-menu-label" data-toggle="modal" data-target="#inviteStatusModal">
+										<a class="label label-highlight">Invite Sent - Pending</a>
+										<a class="label label-highlight">...</a>
+									</div>	
+								</li>
+							</ul>
+							<!--// Action Menu End //-->
+							<div class="priority-tag" title="Priority Candidate" data-placement="top" data-toggle="tooltip"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xs-12 col-sm-6 card">
+					<div class="panel">
+						<div class="panel-body">
+							<div class="card-checkbox">
+								<input type="checkbox" class="multi-select">
+							</div>
+							<div class="card-body">
+								<div class="clearfix">
+									<div class="card-primary">
+										<h2 class="card-title">Alfred Schwarzenegger</h2>
+										<span class="info"><span class="text">Software Developer</span><span class="fig">(1 yr)</span></span>
+										<span class="info no-fig"><span class="text">Nexus Airlines</span></span>
+									</div>
+									<div class="card-secondary">
+										<span class="info no-fig"><span class="text">Jr. Developer</span></span>
+										<span class="info no-fig"><span class="text">ThinkPad company</span></span>
+									</div>
+									<div class="card-tertiary">
+										<span class="info no-fig"><span class="icon-dollar-sign"></span><span class="text">MYR 2,600</span></span>
+										<span class="info no-fig">
+											<span class="icon-education"></span>
+											<span class="text">Degree</span>
+											<span class="fig highlight" title="Graduating" data-placement="top" data-toggle="tooltip" data-container="body">(Jan 2015)</span>
+										</span>
+									</div>
+								</div>
+							</div>
+							<!--// Action Menu //-->
+							<ul class="nav nav-pills nav-action-menu">
+								<li><a href="#">Invite</a></li>
+								<li>
+									<div class="nav-menu-label" data-toggle="modal" data-target="#inviteStatusModal">
+										<a class="label label-nadir">Invite Sent - <span class="icon-checkmark"></span>Accepted</a>
+										<a class="label label-nadir">...</a>
+									</div>
+								</li>
+							</ul>
+							</ul>
+							<!--// Action Menu End //-->
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xs-12 col-sm-6 card">
+					<div class="panel">
+						<div class="panel-body">
+							<div class="card-checkbox">
+								<input type="checkbox" class="multi-select">
+							</div>
+							<div class="card-body">
+								<div class="clearfix">
+									<div class="card-primary">
+										<h2 class="card-title">Russell Austin</h2>
+										<span class="info"><span class="text">Administrative Services Manager</span><span class="fig">(2 yr)</span></span>
+										<span class="info no-fig"><span class="text">Dell</span></span>
+									</div>
+									<div class="card-secondary">
+										<span class="info no-fig"><span class="text">System Admin</span></span>
+										<span class="info no-fig"><span class="text">PanaSony</span></span>
+									</div>
+									<div class="card-tertiary">
+										<span class="info no-fig"><span class="icon-dollar-sign"></span><span class="text">MYR 3,800</span></span>
+										<span class="info no-fig">
+											<span class="icon-education"></span>
+											<span class="text">Degree</span>
+										</span>
+									</div>
+								</div>
+							</div>
+							<!--// Action Menu //-->
+							<ul class="nav nav-pills nav-action-menu">
+								<li><a href="#">Invite</a></li>
+								<li>
+									<div class="nav-menu-label" data-toggle="modal" data-target="#inviteStatusModal">
+										<a class="label label-nadir">Invite Sent - Not Interested</a>
+										<a class="label label-nadir">...</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xs-12 col-sm-6 card">
+					<div class="panel">
+						<img src="//dna.jsstatic.com/img/loading-card.gif" alt="Loading..." class="loading-card">
+					</div>
+				</div>
+
+			</div>
+			
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</div>
+
+<!--// FOOTER //-->
+<footer id="footer">
+   <div class="container">
+      <div class="col-md-9 col-xs-12">
+         <ul class="list-inline">
+            <li><a href="#" data-toggle="modal" data-target="#contactUsModal">Contact Us</a></li>
+            |
+            <li>03 2176 0333 (Kuala Lumpur)</li>
+            <li>04 644 5912 (Penang)</li>
+            <li>07 861 1045 (Johor Bahru)</li>
+            <li>082 255 688 (Kuching)</li>
+         </ul>
+      </div>
+      <div class="col-md-3 col-xs-12">
+         <div class="text-left">
+            Copyright © Jobstreet |
+            <a id="linkTermOfUse" href="http://www.jobstreet.com.my/employers/terms_use.htm" target="_blank">Terms of Use</a>
+         </div>
+         <div class="clearfix"></div>
+      </div>
+   </div>
+</footer>
+<!--// FOOTER END //-->
+
+<!--// JAVASCRIPT //-->
+<script src="http://dna.jsstatic.com/js/jquery.js"></script>
+<script src="http://dna.jsstatic.com/js/bootstrap.js"></script>
+<script src="http://dna.jsstatic.com/js/siva.js"></script>
+<!--// JAVASCRIPT END //-->
+</body>
+</html>

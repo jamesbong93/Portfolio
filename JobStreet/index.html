@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>James Bong</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/agency.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    
+   <base target="_blank">
+    <style>
+    
+        header .intro-text{
+            
+            padding-top: 150px;
+            
+        }
+        
+       header .intro-text .intro-lead-in{
+            
+           font-style: normal;
+            
+        }
+        .project-body img{
+            
+            margin-top: 55px;
+            margin-bottom: 55px;
+        }
+        .project-body h3{
+            
+            margin-top: 55px;
+           
+        }
+        h5{
+            
+            text-transform:none;
+        }
+        .odd_page{
+            
+            background-color: #D9EDF7;
+        }
+        .even_page{
+            
+            background-color: #D9F7DD;
+        }
+        .navbar-fixed-top{
+            position: absolute;
+        }
+        .intro-text{
+            color: blue;
+        }
+        
+    </style>
+
+</head>
+
+<body id="page-top" ng-app="MyApp" >
+
+
+
+    <!-- Header -->
+    <header >
+        <div class="container">
+            <div class="intro-text">
+
+                <div ><img src = "img/jobstreet-my.png"></div>
+                <div class="intro-lead-in"><br><big>Bong Wen Han</big><br><br>
+                Multimedia University<br>Indsutry Training Programme<br><small>14/3/16 - 16/6/16</small></div>
+               
+            </div>
+        </div>
+    </header>
+
+    
+        <!-- Page Content -->
+    <div id="projects" class="container" ng-controller="tasks_ctr">
+
+        <!-- Page Heading -->
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="page-header">Tasks
+                </h2>
+            </div>
+        </div>
+        <!-- /.row -->
+    
+         <!-- Project -->
+        <div ng-repeat="task in tasks" ng-class-odd="'odd_page'" ng-class-even="'even_page'"> 
+            <div class="row project-body" >
+                <div class="col-md-6 text-center">
+                    <a href="projects/{{task.link}}/">
+                        <img width='90%' width='400px' src="projects/{{task.img}}.JPG" alt="">
+                    </a>
+                </div>
+                <div class="col-md-5" >
+                    <h3>{{task.title}}</h3>
+                    <h5>{{task.objective}}</h5>
+                    <p>{{task.detail}}</p>
+                    <a class="btn btn-primary" href="projects/{{task.link}}/">View here<span class="glyphicon glyphicon-chevron-right"></span></a>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; James Bong 2016</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
+
+    </div>
+    <!-- /.container -->
+    
+    <!--Angular JS-->
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+       
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/agency.js"></script>
+        <script>
+    
+      var mymodal = angular.module('MyApp', []);
+
+            mymodal.controller('tasks_ctr', function($scope) {
+                
+                 $scope.tasks = [{ 
+    
+                     "title": "Internal HR HTML Email",
+                     "objective": "Send email to all the employees in KL to participate in BoardGame",
+                     "img": "hr_email",
+                     "link": "hr-email",
+                     "detail": "Created HTML email based on the design given from product desginer. This email is able to support most of the email clients such as outlook and gmail."
+                    
+                 }, { 
+    
+                     "title": "two columns card design",
+                     "objective": "Design a new 2 columns card for talent search candidates",
+                     "img": "2colscard",
+                     "link": "card-design",
+                     "detail": "Currenltly talent search candidates is using design of 3 columns card per row, then a new 2 columns card is required to fit in additional information such as skills, picture, last active time of applicant."
+                    
+                 }, { 
+    
+                     "title": "Research on auto suggestion tools",
+                     "objective": "Resarch on existing auto suggestion tools and create a preview page to compare their differences ",
+                     "img": "auto-suggest",
+                     "link": "auto-suggestion",
+                     "detail": "Conduct a research on existing auto suggestion tools, download all the sources required and create dump data demo for each tool in single preview page."
+                    
+                 }, { 
+    
+                     "title": "Welcome page in Siva",
+                     "objective": "Create html modal-carousel as welcome message that show to employer ",
+                     "img": "sivawelcome",
+                     "link": "welcomeSiva",
+                     "detail": "Create a responive welcome message modal box that show some messages or annoucemnts to employer. The modal created is reusable once there is new message need to be shown to employer."
+                    
+                 }, { 
+    
+                     "title": "My Account Setting page",
+                     "objective": "Redesign the current my accoount setting page in MYJS",
+                     "img": "account",
+                     "link": "MyAccount",
+                     "detail": "Proposed a new design of my account setting page with new company follow feature. The page now is mobile responsive and consistent with other pages in MYJS"
+                    
+                 }, { 
+    
+                     "title": "Job Ad Card Expansion",
+                     "objective": "Update the job ad footer links to be a expandable content and add in additional keyword links",
+                     "img": "expansion_card",
+                     "link": "serp_jobad",
+                     "detail": "Create an expansion for job ad and new keyword link look as a tag. For expansion, boostrap collapse has been used to achieve this effect."
+                    
+                 }, { 
+    
+                     "title": "Personalise company review EDM for Company Profile",
+                     "objective": "TO increase the participation rate of the users to contribute towards company profiles review",
+                     "img": "per_email",
+                     "link": "personalize-email",
+                     "detail": "Create an personalize EDM to attract or get candidatas involved in submitting comapny review to their formal or current comapny"
+                    
+                 }, { 
+    
+                     "title": "Enhancement of template references in UI Library",
+                     "objective": "To make the templates of SIva and MYJS more easier to be viewed and downloaded.",
+                     "img": "templates",
+                     "link": "ui-lib/siva/templates.php",
+                     "detail": "Create hover effect when the mouse move over the target template, then view and download button will be shown inside the template."
+                    
+                 }, { 
+    
+                     "title": "Facebook Friend Referral Email",
+                     "objective": "To introduce Facebook friend referral new feature to existing user through email.",
+                     "img": "fb",
+                     "link": "fb-email",
+                     "detail": "Create an EDM to introduce Facebook friend referral feature in MYJS. This feature allows candidates who linked with their Facebook account able to see where their friends are working and ask for job opportunity."
+                    
+                 }, { 
+    
+                     "title": "Priority Application",
+                     "objective": "To introduce JobStreet Application of candidates",
+                     "img": "priority",
+                     "link": "priority-applicant",
+                     "detail": "Create an responsive webpage to introduce JobStreet priority application which includes benefits it brings to candidates and testinomial of current priority applicants. "
+                    
+                 }];
+                
+          });
+                               
+                               
+   
+    
+    </script>
+</body>
+
+</html>

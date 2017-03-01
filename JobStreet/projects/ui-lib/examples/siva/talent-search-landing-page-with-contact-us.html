@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Siva Template - Talent Search Landing Page with Contact Us modal</title>
+	<link rel="stylesheet" href="http://dna.jsstatic.com/siva/siva-1.2.17.css">
+	<link rel="stylesheet" href="http://dna.jsstatic.com/pi/icon-font/2.1/icon-font.css">
+	<link rel="stylesheet" href="http://dna.jsstatic.com/select2/select2.css">
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="../../ico/favicon.png">
+	<link rel="apple-touch-icon" href="../../ico/touch-icon-iphone.png">
+	<link rel="apple-touch-icon" sizes="76x76" href=../../"ico/touch-icon-ipad.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="../../ico/touch-icon-iphone-retina.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="../../ico/touch-icon-ipad-retina.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="../../ico/touch-icon-iphone6p-ios8.png">
+	<!-- End of Favicon -->
+</head>
+<body>
+
+<!--// NAVBAR //-->
+<div class="navbar navbar-default navbar-static">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#">
+				<span class="jslogo"></span>
+			</a>
+        </div>
+        <div class="collapse navbar-collapse">
+			<ul class="nav navbar-nav">
+				<li><a href="#">Job Ads</a></li>
+				<li class="active"><a href="#">Talent Search</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li class="dropdown bell hidden-xs">
+		            <a class="bell" href="" data-toggle="dropdown">
+		            	<i class="icon-bell alert"></i>
+		            </a>
+		            <div class="dropdown-menu notifications">
+		               <div class="title">Notifications <a href="javascript:;" id="clearNotification" class="small pull-right">Clear All</a></div>
+		               <ul class="notification-content">
+		                  <li>
+		                    <h5>Scheduled server maintenance &#183; 1hr ago</h5>
+		                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis metus lacus, fringilla sed tristique ac, aliquet quis nibh. In interdum, leo ac dapibus faucibus, libero mi interdum eros, quis dignissim massa purus at neque. Morbi ut mi ut nisl egestas hendrerit et porttitor lectus.</p>
+		                  </li>
+		               </ul>
+		               <div class="notification-empty" style="display:none">
+		                	<span><i class="icon-bell-o x2"></i><br>Nothing new right now</span>
+		               </div>
+		            </div>
+		        </li>
+				<li class="dropdown">
+					<a href="javascript:;" data-toggle="dropdown">
+						<span>Right Handed</span> <span class="caret"></span>
+						<span class="text-muted">JobStreet.com</span>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Your Profile</a></li>
+						<li><a href="#">All Users</a></li>
+						<li><a href="#">Company Profile</a></li>
+						<li class="divider"></li>
+						<li><a href="#">Credits</a></li>
+						<li><a href="#">Logout</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!--// NAVBAR END //-->
+
+<div class="container">
+	<!--// TOP BAR //-->
+	<div class="panel topbar">
+		<div class="panel-body">
+			<div class="topbar-heading">
+				<div class="topbar-title">
+					<h1 class="hidden-xs">Talent Search</h1> 
+				</div>
+			</div>
+            <div class="search-wrap">
+              <div class="col-sm-5 col-sm-offset-1 suggest-panel">
+                <input type="text" placeholder="Type position title, skills or keywords and select from dropdown..." class="select2-search" tabindex="-1" style="position: absolute; left: 2px; box-shadow: none; height: 35px; background: none 0% 0% / auto repeat scroll padding-box border-box rgb(255, 255, 255);width: 100%">
+              </div>
+              <div class="pull-left">
+              	<button id="search" type="submit" class="btn btn-primary">Search</button>
+              </div>
+            </div>
+			<ul class="nav nav-pills nav-folders nav-2 pull-right">
+				<li class="active visible-xs"><a href="result-expand-2.html">Search Results</a></li>
+				<li><a href="retrieve-resume-2.html">Retrieved Resumes</a></li>
+			</ul>
+		</div>
+	</div>
+	<!--// TOP BAR END //-->
+	
+    <!--// CONTENT EMPTY //-->
+    <div class="media empty">
+    	<div class="media-body media-middle text-center">
+        	<div class="media-object x2">
+            <i class="icon-search"></i>
+            <h1>Start your search now</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--// FOOTER //-->
+<footer id="footer">
+   <div class="container">
+      <div class="col-md-9 col-xs-12">
+         <ul class="list-inline">
+            <li><a href="#" data-toggle="modal" data-target="#contactUsModal">Contact Us</a></li>
+            |
+            <li>03 2176 0333 (Kuala Lumpur)</li>
+            <li>04 644 5912 (Penang)</li>
+            <li>07 861 1045 (Johor Bahru)</li>
+            <li>082 255 688 (Kuching)</li>
+         </ul>
+      </div>
+      <div class="col-md-3 col-xs-12">
+         <div class="text-left">
+            Copyright © Jobstreet |
+            <a id="linkTermOfUse" href="http://www.jobstreet.com.my/employers/terms_use.htm" target="_blank">Terms of Use</a>
+         </div>
+         <div class="clearfix"></div>
+      </div>
+   </div>
+</footer>
+<!--// FOOTER END //-->
+
+<!--Contact Us Modal-->
+<div class="modal fade" id="contactUsModal" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-vertical-alignment">
+  <div class="modal-dialog vertical-align-center">
+    <div class="modal-content" id="contactUs">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true" title="Close">&times;</button>
+        <h2 class="modal-title">Contact Us</h2>
+      </div>
+      <div class="modal-body">	
+	      <form class="form-horizontal">
+		  	<div class="form-group has-error">
+		  	    <label class="col-sm-3 control-label"><span class="break-not-xs">Reason for </span><span class="break-not-xs">getting in touch<span class="text-danger">*</span></span></label>
+			    <div class="col-sm-8">
+				    <select class="form-control">
+				      <option value="1">Select reason</option>
+				      <option value="2">Suggestion</option>
+				      <option value="3">Praise</option>
+				      <option value="4">Package Enquiry</option>
+				      <option value="5">Complaint</option>
+				      <option value="6">Help</option>
+				      <option value="7">Other</option>
+				    </select>
+				    <span class="help-block">Please select the Reason for getting in touch</span>
+			    </div>
+			</div>
+			<div class="form-group has-error">
+			  <label class="col-sm-3 control-label">Message<span class="text-danger">*</span></label>
+			  <div class="col-sm-8">
+			    <textarea class="form-control" placeholder="Type your message here" rows="4"></textarea>
+			    <span class="help-block">Message field is required</span>
+			    <label><input type="checkbox"> I want to relay this to JobStreet CEO</label>
+			  </div>
+			</div>
+		</form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Send</button>
+      </div>
+    </div>
+    <div class="modal-content" id="contactUsRating" style="display: none;">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true" title="Close">&times;</button>
+        <h2 class="modal-title">Rate our site</h2>
+      </div>
+      <div class="modal-body">	
+			<p><span>How would you rate the SiVA Recruitment Centre overall?</span></p>
+	    	<ul class="list-inline star-rating">
+		    	<li><span class="icon-star"></span></li>
+		    	<li><span class="icon-star"></span></li>
+		    	<li><span class="icon-star"></span></li>
+		    	<li><span class="icon-star"></span></li>
+	    	</ul>
+      </div>
+    </div>
+    <div class="modal-content" id="contactUsThank" style="display: none;">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true" title="Close">&times;</button>
+        <h2 class="modal-title">Thank you</h2>
+      </div>
+      <div class="modal-body">	
+		<p>
+			<span>Your feedback helps us constantly improve our service to give you the best experience.</span><br>
+			<span>A JobStreet representative will be in touch regarding your message.</span><br>
+		</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" aria-hidden="true">Close</button>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+<!--End of Contact Us Modal-->
+
+<!--// JAVASCRIPT //-->
+<script src="http://dna.jsstatic.com/js/jquery.js"></script>
+<script src="http://dna.jsstatic.com/js/bootstrap.js"></script>
+<script src="http://dna.jsstatic.com/js/siva.js"></script>
+<script src="http://dna.jsstatic.com/select2/select2.js"></script>
+<script>
+	$(window).load(function(){
+        $('#contactUsModal').modal('show');
+    });
+</script>
+<!--// JAVASCRIPT END //-->
+</body>
+</html>

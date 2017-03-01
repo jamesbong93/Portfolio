@@ -1,0 +1,11 @@
+Mobile Menu Slide
+=================
+
+http://www.jqueryscript.net/demo/Responsive-Multi-level-Off-Screen-Navigation-Plugin-For-jQuery-cbFlyout/
+
+Product Tour
+============
+
+http://clu3.github.io/bootstro.js/
+Bootstrap datetimepicker (AngularJS)===============
+https://github.com/dalelotts/angular-bootstrap-datetimepicker

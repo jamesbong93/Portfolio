@@ -1,0 +1,49 @@
+.img-responsive{
+	display:block;
+	height:auto;
+	max-width:100%;
+}
+.img-thumbnail,.thumbnail{
+	display:block;
+	height:auto;
+	max-width:100%;
+	padding:4px;
+	line-height:1.428571429;
+	background-color:#fff;
+	border:1px solid #ddd;
+	-webkit-transition:all 0.2s ease-in-out;
+	transition:all 0.2s ease-in-out;
+}
+.thumbnail{margin-bottom:10px;}
+@media(min-width:768px){
+	.thumbnail{margin-bottom:10px;}
+}
+@media(min-width:1200px){
+	.thumbnail{margin-bottom:0px;}
+}
+.thumbnail > img{
+	display:block;
+	height:auto;
+	max-width:100%;
+	margin:0px auto;
+}
+a.thumbnail:hover,a.thumbnail:focus{border-color:#66afe9;}
+.thumbnail .caption{
+	padding:8px;
+	color:#666;
+}
+/************************************************** Logo ***************************************************/
+.jslogo{
+	display:block;
+	width:200px;
+	height:36px;
+	background-size:100%;
+	background-repeat:no-repeat;	
+	background-position:center center;
+	background-image:url("http://dna.jsstatic.com/img/jobstreet.png");
+}
+.jslogo.my{background-image:url("http://dna.jsstatic.com/img/jobstreet-my.png");}
+.jslogo.sg{background-image:url("http://dna.jsstatic.com/img/jobstreet-sg.png");}
+.jslogo.id{background-image:url("http://dna.jsstatic.com/img/jobstreet-id.png");}
+.jslogo.ph{background-image:url("http://dna.jsstatic.com/img/jobstreet-ph.png");}
+.jslogo.vn{background-image:url("http://dna.jsstatic.com/img/jobstreet-vn.png");}

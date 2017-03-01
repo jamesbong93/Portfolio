@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Siva Template - Order Details</title>
+	<link rel="stylesheet" href="http://dna.jsstatic.com/siva/siva-1.2.17.css">
+	<link rel="stylesheet" href="http://dna.jsstatic.com/pi/icon-font/2.1/icon-font.css">
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="../../ico/favicon.png">
+	<link rel="apple-touch-icon" href="../../ico/touch-icon-iphone.png">
+	<link rel="apple-touch-icon" sizes="76x76" href=../../"ico/touch-icon-ipad.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="../../ico/touch-icon-iphone-retina.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="../../ico/touch-icon-ipad-retina.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="../../ico/touch-icon-iphone6p-ios8.png">
+	<!-- End of Favicon -->
+</head>
+<body>
+
+<!--// NAVBAR //-->
+<div class="navbar navbar-default navbar-static">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#">
+				<span class="jslogo"></span>
+			</a>
+        </div>
+        <div class="collapse navbar-collapse">
+			<ul class="nav navbar-nav">
+				<li><a href="#">Job Ads</a></li>
+				<li><a href="#">Talent Search</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li class="dropdown bell hidden-xs">
+		            <a class="bell" href="" data-toggle="dropdown">
+		            	<i class="icon-bell alert"></i>
+		            </a>
+		            <div class="dropdown-menu notifications">
+		               <div class="title">Notifications <a href="javascript:;" id="clearNotification" class="small pull-right">Clear All</a></div>
+		               <ul class="notification-content">
+		                  <li>
+		                    <h5>Scheduled server maintenance &#183; 1hr ago</h5>
+		                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis metus lacus, fringilla sed tristique ac, aliquet quis nibh. In interdum, leo ac dapibus faucibus, libero mi interdum eros, quis dignissim massa purus at neque. Morbi ut mi ut nisl egestas hendrerit et porttitor lectus.</p>
+		                  </li>
+		               </ul>
+		               <div class="notification-empty" style="display:none">
+		                	<span><i class="icon-bell-o x2"></i><br>Nothing new right now</span>
+		               </div>
+		            </div>
+		        </li>
+				<li class="dropdown">
+					<a href="javascript:;" data-toggle="dropdown">
+						<span>Right Handed</span> <span class="caret"></span>
+						<span class="text-muted">JobStreet.com</span>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Your Profile</a></li>
+						<li><a href="#">All Users</a></li>
+						<li><a href="#">Company Profile</a></li>
+						<li class="divider"></li>
+						<li><a href="#">Credits</a></li>
+						<li><a href="#">Logout</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!--// NAVBAR END //-->
+
+<div class="container">
+	<!--// TOP BAR //-->
+	<div class="panel topbar">
+		<div class="panel-body empty-menu">
+			<div class="topbar-heading">
+				<div class="topbar-title">
+				  <a href="" class="back-page"><span class="icon-chevron-left"></span></a>
+				  <h1>Order Details</h1>
+				  <a class="btn btn-link" role="button"><span class="icon-search"></span></a>
+				</div>
+				<div class="topbar-search">
+					<form class="form-group">
+						<span class="icon-search"></span>
+						<span class="icon-close"></span>
+						<input type="text" class="form-control" placeholder="Search retrieved resumes...">
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--// TOP BAR END //-->
+
+	<!--// CONTENT //-->
+	<div class="panel panel-basic">
+		<div class="panel-body">
+			<!--Information-->
+			<div class="row">
+	            <div class="col-xs-12">
+	                <h3 class="page-header">
+	                	MY2013
+	                </h3>
+	                <hr>
+	                <div class="row">
+	                    <div class="col-xs-6">
+	                        <address>
+		                        Order No: <strong>MY2013</strong><br>
+		                        Order Date: <strong>1 May 2014</strong><br>
+		                        Product: <strong>Job Posting</strong>
+	                        </address>
+	                    </div>
+	                    <div class="col-xs-6 text-right">
+	                        <address>
+		                        Invoice No.: <strong><a href="#">MYPG/1411/150</a></strong><br>
+		                        Payment Method: <strong>Prepaid</strong>
+	                        </address>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	        <!--END Information-->
+	        <div role="tabpanel">
+
+	          <!-- Nav tabs -->
+	          <ul class="nav nav-tabs" role="tablist">
+	            <li role="presentation" class="active"><a data-target="#orderItem" aria-controls="orderItem" role="tab" data-toggle="tab">Order Items</a></li>
+	            <li role="presentation"><a data-target="#utilization" aria-controls="utilization" role="tab" data-toggle="tab">Credit Utilization</a></li>
+	          </ul>
+	        
+	          <!-- Tab panes -->
+	          <div class="tab-content tab-clear">
+	            <div role="tabpanel" class="tab-pane active" id="orderItem">
+	                <div class="row">
+	          		    <div class="col-md-12">
+	                        <div class="table-responsive">
+	                            <table class="table table-condensed">
+	                                <thead>
+	                                    <tr class="thick-line">
+	                                    	<th width="10" class="hidden-xs">No.</th>
+	                                        <th width="300">Item</th>
+	                                        <th class="text-right" width="200">Credit</th>
+	                                        <th class="text-right" width="200">Utilized</th>
+	                                        <th class="text-right" width="200">Balance</th>
+	                                        <th class="text-right hidden-xs" width="200">Expiry Date</th>
+	                                    </tr>
+	                                </thead>
+	                                <tbody>
+	                                    <tr>
+	                                    	<td class="hidden-xs">1</td>
+	                                        <td>Job Posting</td>
+	                                        <td class="text-right">10</td>
+	                                        <td class="text-right">5</td>
+	                                        <td class="text-right">5</td>
+	                                        <td class="text-right hidden-xs">08 Oct 2014</td>
+	                                    </tr>
+	                                    <tr>
+	                                    	<td class="hidden-xs">2</td>
+	                                        <td>Jobstreet Resume Bank Request</td>
+	                                        <td class="text-right">1000</td>
+	                                        <td class="text-right">720</td>
+	                                        <td class="text-right">280</td>
+	                                        <td class="text-right hidden-xs">20 Jul 2014</td>
+	                                    </tr>
+	                                    <tr>
+	                                    	<td class="hidden-xs">3</td>
+	                                        <td>Standout Listing (SOL)</td>
+	                                        <td class="text-right">5</td>
+	                                        <td class="text-right">0</td>
+	                                        <td class="text-right">5</td>
+	                                        <td class="text-right hidden-xs">15 Oct 2014</td>
+	                                    </tr>
+	                                </tbody>
+	                            </table>
+	                        </div>
+			            </div>
+			        </div>
+	        	</div>
+	            <div role="tabpanel" class="tab-pane fade" id="utilization">
+	        		<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+	                  <div class="panel panel-default">
+	                    <div class="panel-heading" role="tab" id="headingOne" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="">
+	                      <h4 class="panel-title">
+	                        <a>
+	                          Job Posting with SOL<span class="icon-caret-up pull-right"></span>
+	                        </a>
+	                      </h4>
+	                    </div>
+	                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne" aria-expanded="true">
+	                      <div class="panel-body">
+								<div class="table-responsive">
+                                    <table class="table table-condensed">
+                                        <thead>
+                                            <tr class="thick-line">
+                                            	<th width="10" class="hidden-xs">No.</th>
+                                                <td><strong>Position Title + (Site)</strong></td>
+                                                <td class="text-right" width="100"><strong>Utilized</strong></td>
+                                                <td class="text-right" width="150"><strong>Date Posted</strong></td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                            	<td class="hidden-xs">1</td>
+                                                <td>Secretary <span class="posted-site">Malaysia</span></td>
+                                                <td class="text-right">1</td>
+                                                <td class="text-right">05 May 2014</td>
+                                            </tr>
+                                            <tr>
+                                            	<td class="hidden-xs">2</td>
+                                                <td>Event Organize <span class="posted-site">Malaysia</span></td>
+                                                <td class="text-right">1</td>
+                                                <td class="text-right">19 Aug 2014</td>
+                                            </tr>
+                                            <tr>
+                                            	<td class="hidden-xs">3</td>
+                                                <td>Software Engineer <span class="posted-site">Malaysia</span></td>
+                                                <td class="text-right">1</td>
+                                                <td class="text-right">23 Aug 2014</td>
+                                            </tr>
+                                            <tr>
+                                            	<td class="hidden-xs">4</td>
+                                                <td>Finance Account <span class="posted-site">Malaysia</span></td>
+                                                <td class="text-right">1</td>
+                                                <td class="text-right">23 Aug 2014</td>
+                                            </tr>
+                                            <tr>
+                                            	<td class="hidden-xs">5</td>
+                                                <td>HR Executive <span class="posted-site">Malaysia, Singapore, Philippines, Indonesia, Thailand, Vietnam</span></td>
+                                                <td class="text-right">3</td>
+                                                <td class="text-right">21 Sep 2014</td>
+                                            </tr>  
+                                        </tbody>
+                                    </table>
+                                </div>
+		                     </div>
+		                   </div>
+	                  </div>
+	                  
+	                  <div class="panel panel-default">
+	                    <div class="panel-heading collapsed" role="tab" id="headingTwo" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+	                      <h4 class="panel-title">
+	                        <a>
+	                          Jobstreet Resume Bank Request <span class="icon-caret-up pull-right"></span>
+	                        </a>
+	                      </h4>
+	                    </div>
+	                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+	                      <div class="panel-body">
+								<div class="table-responsive">
+                                    <table class="table table-condensed">
+                                        <thead>
+                                            <tr class="thick-line">
+                                            	<th width="10" class="hidden-xs">No.</th>
+                                                <th>Name</th>
+                                                <th class="text-right" width="150">Retrieved By</th>
+                                                <th class="text-right" width="150">Date Retrieved</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                        
+                                            <tr>
+                                            	<td class="hidden-xs">1</td>
+                                                <td>Jing Yen Lim</td>
+                                                <td class="text-right">Ellyna</td>
+                                                <td class="text-right">05 May 2014</td>
+                                            </tr>
+                                            <tr>
+                                            	<td class="hidden-xs">2</td>
+                                                <td>Joanne</td>
+                                                <td class="text-right">Ellyna</td>
+                                                <td class="text-right">05 May 2014</td>
+                                            </tr>
+                                            <tr>
+                                            	<td class="hidden-xs">3</td>
+                                                <td>Chi Ling</td>
+                                                <td class="text-right">Anderson</td>
+                                                <td class="text-right">23 Sep 2014</td>
+                                            </tr>
+                                            <tr>
+                                            	<td class="hidden-xs">4</td>
+                                                <td>Edwin Ho</td>
+                                                <td class="text-right">Ellyna</td>
+                                                <td class="text-right">05 Oct 2014</td>
+                                            </tr>
+                                            <tr>
+                                            	<td class="hidden-xs">5</td>
+                                                <td>Mohamad Wafi</td>
+                                                <td class="text-right">Ellyna</td>
+                                                <td class="text-right">05 Oct 2014</td>
+                                            </tr>
+                                            <tr>
+                                            	<td class="hidden-xs">6</td>
+                                                <td>Muralitharan</td>
+                                                <td class="text-right">Anderson</td>
+                                                <td class="text-right">05 Oct 2014</td>
+                                            </tr>
+                                            <tr>
+                                            	<td class="hidden-xs">7</td>
+                                                <td>Kai Hwang</td>
+                                                <td class="text-right">Anderson</td>
+                                                <td class="text-right">23 Sep 2014</td>
+                                            </tr>
+                                            <tr>
+                                            	<td class="hidden-xs">8</td>
+                                                <td>Shing Yee</td>
+                                                <td class="text-right">Ellyna</td>
+                                                <td class="text-right">05 Oct 2014</td>
+                                            </tr>
+                                            <tr>
+                                            	<td class="hidden-xs">9</td>
+                                                <td>Soon Ming</td>
+                                                <td class="text-right">Ellyna</td>
+                                                <td class="text-right">05 Oct 2014</td>
+                                            </tr>
+                                            <tr>
+                                            	<td class="hidden-xs">10</td>
+                                                <td>Muhammad Amirul Farhan</td>
+                                                <td class="text-right">Anderson</td>
+                                                <td class="text-right">05 Oct 2014</td>
+                                            </tr>
+                                            
+                                        </tbody>
+                                    </table>
+                                </div>
+	                      </div>
+	                    </div>
+	                  </div>
+	                </div>
+	        	</div>
+	          </div>
+	        </div>
+	      	<div class="btn btn-default">
+	      		<span class="icon-chevron-left"></span>Back
+	      	</div>
+		</div>
+	</div>
+    <!--/// END CONTENT ///-->
+</div>
+
+<!--// FOOTER //-->
+<footer id="footer">
+   <div class="container">
+      <div class="col-md-9 col-xs-12">
+         <ul class="list-inline">
+            <li><a href="#" data-toggle="modal" data-target="#contactUsModal">Contact Us</a></li>
+            |
+            <li>03 2176 0333 (Kuala Lumpur)</li>
+            <li>04 644 5912 (Penang)</li>
+            <li>07 861 1045 (Johor Bahru)</li>
+            <li>082 255 688 (Kuching)</li>
+         </ul>
+      </div>
+      <div class="col-md-3 col-xs-12">
+         <div class="text-left">
+            Copyright © Jobstreet |
+            <a id="linkTermOfUse" href="http://www.jobstreet.com.my/employers/terms_use.htm" target="_blank">Terms of Use</a>
+         </div>
+         <div class="clearfix"></div>
+      </div>
+   </div>
+</footer>
+<!--// FOOTER END //-->
+
+<!--// JAVASCRIPT //-->
+<script src="http://dna.jsstatic.com/js/jquery.js"></script>
+<script src="http://dna.jsstatic.com/js/bootstrap.js"></script>
+<script src="http://dna.jsstatic.com/js/siva.js"></script>
+<!--// JAVASCRIPT END //-->
+</body>
+</html>

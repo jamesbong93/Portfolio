@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>JobStreet.com - Edit Resume</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Cache-Control" content="Public">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <link rel="stylesheet" href="http://dna.jsstatic.com/myjs/myjs-1.2.12.css">
+    <link rel="stylesheet" href="http://dna.jsstatic.com/select2/select2.css">
+    <link rel="stylesheet" href="https://dna.jsstatic.com/pi/icon-font/2.1/icon-font.css">
+    <link rel="stylesheet" href="my-account.css">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../../ico/favicon.png">
+    <link rel="apple-touch-icon" href="../../ico/touch-icon-iphone.png">
+    <link rel="apple-touch-icon" sizes="76x76" href=../../ "ico/touch-icon-ipad.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../../ico/touch-icon-iphone-retina.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../../ico/touch-icon-ipad-retina.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../ico/touch-icon-iphone6p-ios8.png">
+    <!-- End of Favicon -->
+
+
+</head>
+
+<body class="body-mobile-align">
+
+    <!--=====================================================Header========================================================================-->
+    <div class="mobile-navbar-fixed-top">
+        <div class="navbar navbar-inverse navbar-static">
+            <div class="container">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" data-canvas="body" type="button" onclick="$('#mobile_search_bar').removeClass('active');">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <span class="jslogo jslogo-mobile visible-xs"></span>
+                    <!--Mobile View Search Bar toggle button-->
+                    <div class="search-toggle">
+                        <a href="#"><span class="icon-search visible-xs"></span></a>
+                    </div>
+                    <div class="navbar-search toggle">
+                        <div class="container visible-xs">
+                            <div class="col-xs-12">
+                                <form id="frmSearch_mobile" name="frmSearch-mobile" action="http://job-search-dev.jobstreet.com.my/malaysia/job-opening.php" method="get">
+                                    <div class="input-group">
+                                        <input class="form-control" id="search_box_keyword_mobile" name="key" type="text" placeholder="Search Jobs By Title, Skills or Keywords...">
+                                        <span class="input-group-btn">
+										<a class="btn btn-default" id="header_searchbox_btn_mobile" type="button">Search</a>
+										</span>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="navbar-collapse navbar-collapse-align collapse" aria-expanded="false" style="height: 1px;">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="http://www.jobstreet.com.my" title="Leading Job Site in Malaysia - Find Jobs in Malaysia">Home</a>
+                        </li>
+                        <li><a id="header-job-link" href="http://job-search-dev.jobstreet.com.my/malaysia/job-opening.php" title="Search Jobs @ Job Search JobStreet.com Malaysia">Search Jobs</a>
+                        </li>
+                        <li><a href="http://www.jobstreet.com.my/en/companies" title="company profiles">Company Profiles</a>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:;" aria-expanded="false">MyJobStreet&nbsp;<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-header hidden-xs">My Resume</li>
+                                <li class="hidden-xs"><a href="http://myjobstreet-dev.jobstreet.com.my/resume/preview-resume.php?x=a2p6dkp4hosoojv84nsr44ecp4">Preview Resume</a>
+                                </li>
+                                <li class="hidden-xs"><a href="http://myjobstreet-dev.jobstreet.com.my/resume/edit-work-experience.php?x=a2p6dkp4hosoojv84nsr44ecp4">Edit Resume</a>
+                                </li>
+                                <li class="divider hidden-xs"></li>
+                                <li class="dropdown-header">My Applications</li>
+                                <li><a href="http://myjobstreet-dev.jobstreet.com.my/application/application-status.php?view=0&amp;x=a2p6dkp4hosoojv84nsr44ecp4">Online Applications</a>
+                                </li>
+                                <li><a href="http://myjobstreet-dev.jobstreet.com.my/application/interview-request.php?view=latest&amp;x=a2p6dkp4hosoojv84nsr44ecp4">Interview Requests</a>
+                                </li>
+                                <li class="hidden-xs"><a id="header_emp_request_link" href="http://myjobstreet-dev.jobstreet.com.my/application/employer-request.php?x=a2p6dkp4hosoojv84nsr44ecp4">Resume Requests</a>
+                                </li>
+                                <li class="divider hidden-xs"></li>
+                                <li class="dropdown-header hidden-xs">Career Enhancers</li>
+                                <li class="hidden-xs"><a href="http://myjobstreet-dev.jobstreet.com.my/career-enhancer/pa-summary.php?x=a2p6dkp4hosoojv84nsr44ecp4">Priority Application</a>
+                                </li>
+                                <li class="hidden-xs"><a href="http://myjobstreet-dev.jobstreet.com.my/career-enhancer/salary-report.php?x=a2p6dkp4hosoojv84nsr44ecp4">Salary Report</a>
+                                </li>
+                                <li class="hidden-xs"><a href="javascript: popup_win8('http://myjobstreet-dev.jobstreet.com.my/career-enhancer/assessment.php?x=a2p6dkp4hosoojv84nsr44ecp4', 1000,700,'JELA');">English Assessment</a>
+                                </li>
+                                <li class="hidden-xs">
+                                    <a class="hidden-xs" href="javascript: popup_win8('http://www.jobstreet.com.my/career-resources/', 1000,700,'JELA');">
+									Career Resources</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown hidden-xs">
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#" aria-expanded="false">Learning&nbsp;<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="http://www.jobstreet.com.my/learning/">View Course</a>
+                                </li>
+                                <li><a href="http://myjobstreet-dev.jobstreet.com.my/learning/learning-profile.php?x=g8q1cqbllnaoieol1h0ulno8h2">Edit Learning Profile</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown hidden-xs">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:;" aria-expanded="false">More&nbsp;<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="http://job-search-dev.jobstreet.com.my/malaysia/browse/oversea.html">Overseas Jobs</a>
+                                </li>
+                                <li><a href="http://www.jobstreet.com.my/campus/">Fresh Grad Jobs</a>
+                                </li>
+                                <li><a href="http://job-search-dev.jobstreet.com.my/malaysia/job-classified.php">Classified Jobs</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown" style="display: list-item;">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:;" aria-expanded="false">
+                                <span class="-hide">
+							<span class="display-name">Lucas Lee</span>&nbsp;
+                                <span><b class="caret"></b></span>
+                                </span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="http://myjobstreet-dev.jobstreet.com.my/home/logout.php?x=g8q1cqbllnaoieol1h0ulno8h2">Logout</a>
+                                </li>
+                                <li class="hidden-xs"><a href="http://myjobstreet-dev.jobstreet.com.my/home/help.php?x=g8q1cqbllnaoieol1h0ulno8h2&amp;site=my">Help</a>
+                                </li>
+                                <li class="hidden-xs"><a class="language-separator" href="http://myjobstreet-dev.jobstreet.com.my/registration/update-account.php?x=g8q1cqbllnaoieol1h0ulno8h2">My Account</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li style="display: none;">
+                            <a href="https://myjobstreet-dev.jobstreet.com.my/home/login.php?site=my&amp;language_code=3">Log In</a>
+                        </li>
+                        <li class="hidden-xs" style="display: none;"> <span>|</span> </li>
+                        <li style="display: none;">
+                            <a href="https://myjobstreet-dev.jobstreet.com.my/registration/simple-signup.php?site=my&amp;language_code=3">Sign Up</a>
+                        </li>
+                        <ul></ul>
+                    </ul>
+                </div>
+                <!--/.nav-collapse -->
+            </div>
+            <div class="navbar-lower-deck hidden-xs">
+                <div class="container">
+                    <div class="col-lg-3 col-md-3 col-sm-4 hidden-xs">
+                        <a class="jslogo my" id="header-logo-link" href="http://www.jobstreet.com.my" title="Leading Job Site in Malaysia - Find Jobs, Advertise Jobs in Malaysia"></a>
+                    </div>
+                    <div class="col-lg-5 col-md-5 col-sm-6">
+                        <div class="search-area">
+                            <form id="frmSearch" name="frmSearch" action="http://job-search-dev.jobstreet.com.my/malaysia/job-opening.php" method="get">
+                                <div class="input-group">
+                                    <input class="form-control" name="key" type="text" placeholder="Search Jobs By Title, Skills or Keywords...">
+                                    <span class="input-group-btn"><a class="btn btn-default" type="button" ><span class="icon-search"></span>
+                                    </a>
+                                    </span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 hidden-sm hidden-xs">
+                        <a class="btn btn-link" href="http://job-search-dev.jobstreet.com.my/malaysia/advance-job-search.php?area=1&amp;option=1&amp;job-source=1%2C64&amp;classified=1&amp;job-posted=0&amp;sort=1&amp;order=0" title="Advanced Job Search @ JobStreet.com ">Advanced</a>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs text-right">
+                        <a class="btn btn-link employer-link" id="header-employer-link" href="http://www.jobstreet.com.my/employers/" title="Post a Job Ad: +603-­2176 0333">Employers</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--===============================================End of header=============================================================================================-->
+
+    <div class="container">
+         <div class="col-xs-12 col-sm-12 col-md-3 hidden-print">
+            <div class="panel panel-basic panel-sidenav">
+                <div class="panel-body panel-body-nav">
+
+                    <div class="visible-md visible-lg">
+
+                        <div class="col-md-12 side-menu" style="padding:15px 15px;">
+
+                            <div class="row">
+                                <h4 style="font-weight:bold;">
+                                    My Account
+                                </h4>
+                            </div>
+
+
+                        </div>
+                        <div class="col-xs-12 side-menu">
+                            <ul class="list-unstyled my-account-sidebar-list">
+                                <li>
+                                    <a id="nav_experience" href="index.html" ><span class="icon-user" id="icon-user"></span><span id="nav-lbl-experience">Contact Info</span></a>
+                                </li>
+                                <li>
+                                    <a id="nav_education" href="company_follows.html" class="active"><span class="icon-building" id="icon-building"></span><span id="nav-lbl-education">Company Follows</span></a>
+                                </li>
+                                <li>
+                                    <a id="nav_skills" href="subscription.html"><span class="icon-check-board" id="icon-check-board"></span><span id="nav-lbl-skill">Subscription</span></a>
+                                </li>
+                                <li>
+                                    <a id="nav_languages" href="change_password.html"><span class="icon-locked" id="icon-locked"></span><span >Change Password</span></a>
+                                </li>
+
+                            </ul>
+
+                                <div class="Fb-unlink text-center" >
+                                    
+                                    <img src="images/fb_connect.png" >
+                                    <p>See where your friends are working!</p>
+                                </div>
+                        </div>
+
+                    </div>
+
+                    <div class="visible-xs visible-sm">
+
+                        <div class="row resume-tabs my-account-sidebar">
+
+                            <div class="col-xs-12">
+                                <div class="text-left" id="nav_edit_tab">
+                                    <h4 role="button" id="nav_edit">My Account <span class="caret" id="arrow_down_open"></span></h4>
+                                </div>
+                            </div>
+                        </div>
+                        
+                            <div class="col-xs-12 side-menu c-hide" id="nav_edit_mobile" style="display: none;">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a id="nav_experience" href="index.html" ><span class="icon-user" id="icon-user"></span><span id="nav-lbl-experience">Contact Info</span></a>
+                                    </li>
+                                    <li>
+                                        <a id="nav_education" href="company_follows.html" class="active"><span class="icon-building" id="icon-building"></span><span id="nav-lbl-education">Company Follows</span></a>
+                                    </li>
+                                    <li>
+                                        <a id="nav_skills" href="subscription.html"><span class="icon-check-board" id="icon-check-board"></span><span id="nav-lbl-skill">Subscription</span></a>
+                                    </li>
+                                    <li>
+                                        <a id="nav_languages" href="change_password.html"><span class="icon-locked" id="icon-locked"></span><span id="nav-lbl-language">Change Password</span></a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+         <div class="col-xs-12 col-sm-12 col-md-9">
+            <div class="panel panel-default resume-panel " id="panel" style="min-height: 427px;">
+                <div class="panel-body">
+                    <div class="row my-title">
+                        <div class="col-xs-12">
+                            <div class="row ">
+                               
+                                    <div class="col-sm-12">
+                                        <div class="row">
+                                            <span class="icon-building hidden-xs hidden-sm"></span>
+                                            <span class="icon-building x2 hidden-md hidden-lg"></span>   
+                                            <span class="resume-section-title" id="lbl_about_me">Company Follows</span>
+
+                                        </div>
+                                    </div>
+                               
+                               
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class=" company-body">
+
+                        <div class="col-sm-8">
+                            You are following 15 companies
+
+                        </div>
+                        <div class="dropdown company_sort pull-right hidden-xs">
+                            <span class="icon-filter"></span>
+                            <span class="sort_type" role="button" data-toggle="dropdown">
+                            <span class="text">
+                                Recently Followed
+                            </span>
+                              <span class="dropdown">
+                             <span class="caret"></span>
+                            </span>
+                            </span>
+                          
+                           
+
+                            <ul class="dropdown-menu">
+                                <li><a role="button" class="sort_type_1">
+                                    <span class="text">
+                                        Recently Followed
+                                    </span>
+                                    </a>
+                                </li>
+                                <li><a role="button" class="sort_type_2">
+                                    <span class="text">
+                                        Alphabetical
+                                    </span>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                        <div class="col-sm-12">
+                            <div class="col-sm-4 company">
+                                <div class="media">
+                                    <a class="media-left" href="http://www.jobstreet.com.my/en/companies/450967-quintiq"> 
+                                        <img class="media-object company-img" src="images/quintiq.png" alt="Company pic">
+                                    </a>
+                                    <div class="media-body">
+                                          <a href="http://www.jobstreet.com.my/en/companies/450967-quintiq"> <h4 class="media-heading company-title">Quintiq</h4></a>
+                                        <span class="company-type">Computer Software</span>
+                                        <div class="follow-status label label-default ">
+                                            <span class="follow-icon icon-checkmark"></span><span class="follow-text">Following</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4 company">
+                                <div class="media">
+                                    <a class="media-left" href="#">
+                                        <img class="media-object company-img" src="images/linkedin.png" alt="Company pic">
+                                    </a>
+                                    <div class="media-body">
+                                        <h4 class="media-heading company-title">LinkedIn</h4>
+                                        <span class="company-type">Social Network</span>
+                                        <div class="follow-status label label-default ">
+                                            <span class="follow-icon icon-checkmark"></span><span class="follow-text">Following</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4 company">
+                                <div class="media">
+                                    <a class="media-left" href="#">
+                                        <img class="media-object company-img" src="images/ServiceRockey.png" alt="Company pic">
+                                    </a>
+                                    <div class="media-body">
+                                        <h4 class="media-heading company-title">Service Rocket</h4>
+                                        <span class="company-type">Computer Software</span>
+                                        <div class="follow-status label label-default ">
+                                            <span class="follow-icon icon-checkmark"></span><span class="follow-text">Following</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4 company">
+                                <div class="media">
+                                    <a class="media-left" href="#">
+                                        <img class="media-object company-img" src="images/Twitter.png" alt="Company pic">
+                                    </a>
+                                    <div class="media-body">
+                                        <h4 class="media-heading company-title">Twitter</h4>
+                                        <span class="company-type">Social Network</span>
+                                        <div class="follow-status label label-default ">
+                                            <span class="follow-icon icon-checkmark"></span><span class="follow-text">Following</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4 company">
+                                <div class="media">
+                                    <a class="media-left" href="#">
+                                        <img class="media-object company-img" src="images/quintiq.png" alt="Company pic">
+                                    </a>
+                                    <div class="media-body">
+                                        <h4 class="media-heading company-title">Quintiq</h4>
+                                        <span class="company-type">Computer Software</span>
+                                        <div class="follow-status label label-default ">
+                                            <span class="follow-icon icon-checkmark"></span><span class="follow-text">Following</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4 company">
+                                <div class="media">
+                                    <a class="media-left" href="#">
+                                        <img class="media-object company-img" src="images/linkedin.png" alt="Company pic">
+                                    </a>
+                                    <div class="media-body">
+                                        <h4 class="media-heading company-title">LinkedIn</h4>
+                                        <span class="company-type">Social Network</span>
+                                        <div class="follow-status label label-default ">
+                                            <span class="follow-icon icon-checkmark"></span><span class="follow-text">Following</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4 company">
+                                <div class="media">
+                                    <a class="media-left" href="#">
+                                        <img class="media-object company-img" src="images/ServiceRockey.png" alt="Company pic">
+                                    </a>
+                                    <div class="media-body">
+                                        <h4 class="media-heading company-title">Service Rocket</h4>
+                                        <span class="company-type">Computer Software</span>
+                                        <div class="follow-status label label-default ">
+                                            <span class="follow-icon icon-checkmark"></span><span class="follow-text">Following</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4 company">
+                                <div class="media">
+                                    <a class="media-left" href="#">
+                                        <img class="media-object company-img" src="images/Twitter.png" alt="Company pic">
+                                    </a>
+                                    <div class="media-body">
+                                        <h4 class="media-heading company-title">Twitter</h4>
+                                        <span class="company-type">Social Network</span>
+                                        <div class="follow-status label label-default ">
+                                            <span class="follow-icon icon-checkmark"></span><span class="follow-text">Following</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4 company">
+                                <div class="media">
+                                    <a class="media-left" href="#">
+                                        <img class="media-object company-img" src="images/quintiq.png" alt="Company pic">
+                                    </a>
+                                    <div class="media-body">
+                                        <h4 class="media-heading company-title">Quintiq</h4>
+                                        <span class="company-type">Computer Software</span>
+                                        <div class="follow-status label label-default ">
+                                            <span class="follow-icon icon-checkmark"></span><span class="follow-text">Following</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4 company">
+                                <div class="media">
+                                    <a class="media-left" href="#">
+                                        <img class="media-object company-img" src="images/linkedin.png" alt="Company pic">
+                                    </a>
+                                    <div class="media-body">
+                                        <h4 class="media-heading company-title">LinkedIn</h4>
+                                        <span class="company-type">Social Network</span>
+                                        <div class="follow-status label label-default ">
+                                            <span class="follow-icon icon-checkmark"></span><span class="follow-text">Following</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4 company">
+                                <div class="media">
+                                    <a class="media-left" href="#">
+                                        <img class="media-object company-img" src="images/ServiceRockey.png" alt="Company pic">
+                                    </a>
+                                    <div class="media-body">
+                                        <h4 class="media-heading company-title">Service Rocket</h4>
+                                        <span class="company-type">Computer Software</span>
+                                        <div class="follow-status label label-default ">
+                                            <span class="follow-icon icon-checkmark"></span><span class="follow-text">Following</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4 company">
+                                <div class="media">
+                                    <a class="media-left" href="#">
+                                        <img class="media-object company-img" src="images/Twitter.png" alt="Company pic">
+                                    </a>
+                                    <div class="media-body">
+                                        <h4 class="media-heading company-title">Twitter</h4>
+                                        <span class="company-type">Social Network</span>
+                                        <div class="follow-status label label-default ">
+                                            <span class="follow-icon icon-checkmark"></span><span class="follow-text">Following</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                        <div class="col-sm-12 col-xs-12">
+                            <div class="col-sm-offset-4 col-xs-offset-2">
+                                <ul class="pagination col-sm-8 col-xs-10">
+                                    <li class="disabled"><a href="#"><span class="icon-angle-left"></span></a>
+                                    </li>
+                                    <li class="active"><a href="#">1</a>
+                                    </li>
+                                    <li><a href="#">2</a>
+                                    </li>
+                                    <li><a href="#">3</a>
+                                    </li>
+                                    <li><a href="#"><span class="icon-angle-right"></span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+       <!-- Confirm Unlink Fb Modal -->
+    <div id="UnlinkFbModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Warning!</h4>
+
+                </div>
+                <div class="modal-body">
+                    <p>Are you sure want to unlink your Jobstreet.com Account with Facebook?</p>
+                </div>
+                <div class="modal-footer">
+                    <form action="">
+                        <button id="comfirm_unlink" type="submit" data-dismiss="modal" class="btn btn-primary">Confirm</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    </div>
+    <!--end-->
+
+    </div>
+    <a href="javascript:;" class="btn btn-top"><span class="icon-angle-up"></span></a>
+
+    <footer>
+        <div class="container">
+            <ul class="list-inline">
+                <li><a href="http://www.jobstreet.com.my/sitemap.htm" id="footer-sitemap">Site Map</a>
+                </li>
+                <li><a href="http://www.jobstreet.com.my/aboutus/default.htm">About Us</a>
+                </li>
+                <li><a href="http://job-search.jobstreet.com/CompanyProfile/company-profile.php?dm=http%3a%2f%2fsiva-my.jsstatic.com&amp;p=%2f_ads%2f_static%2fxml%2fMY%2f&amp;token=28b361b7dc8f5a797749c8397de04e59d5e14a2968d0b48e496e&amp;rnd=91859390#.UrjtWvQW1qV" id="footer_work_with_us">Work With Us</a>
+                </li>
+                <li><a href="http://www.jobstreet.com.my/terms-of-use.htm" id="footer_term_use">Terms of Use</a> </li>
+                <li><a href="http://www.jobstreet.com.my/privacy-policy.htm" id="footer_privacy_policy">Privacy Policy</a>
+                </li>
+                <li><a href="http://www.jobstreet.com.my/safe-job-search-guide.htm" id="footer_safe_guide">Safe Job Search Guide</a>
+                </li>
+                <li><a href="http://myjobstreet-dev.jobstreet.com.my/home/help.php?site=my" id="footer_help">Help</a>
+                </li>
+                <li><a href="http://myjobstreet-dev.jobstreet.com.my/home/feedback.php?site=my&amp;sub=feedback" id="footer_feedback" target="_blank">Send Feedback</a>
+                </li>
+            </ul>
+            <p class="footer-copyright">Copyright &copy; <span id="year"></span> JobStreet.com</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://dna.jsstatic.com/js/bootstrap.js"></script>
+
+    <!-- Plugin -->
+    <script src="http://dna.jsstatic.com/select2/select2.js"></script>
+    <script src="http://dna.jsstatic.com/js/myjs.js"></script>
+    <script src="my-account.js"></script>
+
+
+</body>
+
+</html>

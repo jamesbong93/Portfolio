@@ -1,0 +1,283 @@
+
+body{
+margin:0px;
+
+
+}
+h1#topic-header{
+	
+	
+	
+	
+}
+
+.back{
+	
+	background-image: url("conference.jpg");
+  background-repeat: no-repeat;
+    background-position: center;
+	background-size: 100% 100%;
+}
+.wrapper {
+margin-left:auto;
+margin-right:auto;
+width:100%;
+height:auto;
+text-align:center;
+font-family:sans-serif;
+background-color:white;
+}
+
+.tabletd{
+
+font-family: sans-serif;
+font-size:20px;
+padding:10px 5px;
+border-style:solid;
+border-width:0px;
+color:Black;
+background-color:White;
+ }
+
+.tg  {border-collapse:separate;border-spacing:0  1em;}
+
+
+.row{
+    width: 100%;
+    display: flex;
+}
+
+
+
+
+h2{
+color:Black;
+}
+
+em{
+text-decoration:underline;
+}
+
+
+table {
+-webkit-margin-start: auto;
+-webkit-margin-end: auto;
+width: 800px;
+  border: 1px solid black;
+ 
+}
+
+
+table th{
+text-align: center;
+
+}
+
+table td{
+text-align:left;
+}
+
+div#hmenu { 
+   margin: 0;
+   padding: 20px;
+   background: black; 
+   width: 100%; 
+   text-align: left;
+ 
+} 
+
+
+
+div#hmenu ul { 
+   list-style: none; 
+   margin: 0; 
+   padding: 0; 
+   position : relative;
+   color: white;
+} 
+
+div#hmenu ul li { 
+   margin: 0; 
+   padding: 0; 
+   display: inline-block; 
+   color: white;
+} 
+
+
+div#hmenu ul a:link{ 
+   margin: 0; 
+   padding: .3em .4em .3em .4em; 
+   text-decoration: none; 
+   font-weight: bold; 
+   font-size: large; 
+   color:white;
+} 
+
+div#hmenu ul a:hover{ 
+   margin: 0; 
+   padding: .3em .4em .3em .4em; 
+   text-decoration: none; 
+   font-weight: bold; 
+   font-size: large; 
+   color: white; 
+   background-color: #3399FF; 
+}
+
+/*New add stuff */
+div#hmenu ul li a,visited{
+	display:block;
+	padding:15px;
+	text-decoration:none;
+	color: white;
+}
+div#hmenu ul li:hover ul{
+	display:block;
+}
+
+div#hmenu ul ul {
+	display:none;
+	position: absolute;
+	background-color:#3399FF;
+	text-align:left;
+	color: white;
+}
+
+div#hmenu ul ul li {
+	display:block;
+	color: white;
+}
+
+ 
+
+	
+	
+/* FeedBack Form ---------------------------------- */	
+	
+
+#form_div {
+	background-color:white;
+    padding:30px 30px 30px 30px;
+	width: 600px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:1%;
+	text-align: left;
+}
+
+.feedback_input {
+	font-size: 15px;
+	margin-bottom: 10px;
+	width:100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+    border: 3px solid rgba(0,0,0,0);
+}
+
+
+#comment {
+    width: 100%;
+    height: 150px;
+}
+
+#button-blue{
+	float:left;
+	width: 100%;
+	border: white solid 4px;
+	cursor:pointer;
+	background-color:black;
+	color:white;
+	font-size:25px;
+	padding-top:20px;
+	padding-bottom:20px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+
+#button-blue:hover{
+	background-color: rgba(0,0,0,0);
+	color: #393939;
+}
+	
+.button:hover {
+	color: white;
+}
+	
+.ease {
+	width: 0px;
+	height: 74px;
+	background-color: white;
+	-webkit-transition: .3s ease;
+	-moz-transition: .3s ease;
+	-o-transition: .3s ease;
+	-ms-transition: .3s ease;
+	transition: .3s ease;
+}
+
+.button:hover .ease{
+  width:100%;
+  background-color:white;
+}
+
+/*footer*/
+#footer {
+	background: black;
+	margin: 0;
+	padding: 0;
+}
+#footer > div {
+	margin: 0 auto;
+	padding: auto;
+	overflow: hidden;
+	text-align: center;
+	width: 960px;
+	color: white;
+}
+#footer div p h2{
+	color: white;
+	display: inline-block;
+	float: center;
+	font-size: 14px;
+	letter-spacing: 0.05em;
+	margin: 0;
+	padding: 27px 0 0;
+	text-align: center;
+}
+
+#footer h2{
+color: white;
+}
+
+/* image design */
+div.img {
+					margin: 5px;
+					padding: 5px;
+					border: 1px solid #0000ff;
+					height: auto;
+					width: auto;
+					float: left;
+					text-align: center;
+				}	
+
+				div.img img {
+					display: inline;
+					margin: 5px;
+					border: 1px solid #ffffff;
+				}
+
+				div.img a:hover img {
+					border: 1px solid #0000ff;
+				}
+
+				div.desc {
+				  text-align: center;
+				  font-weight: normal;
+				  width: 120px;
+				  margin: 5px;
+				}
+/*end of image design*/
+

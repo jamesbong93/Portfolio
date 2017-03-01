@@ -1,0 +1,113 @@
+@charset "UTF-8";
+@font-face{
+	font-family:"jobstreet";
+	src:url("jobstreet-webfont.eot?=1");
+	src:url("jobstreet-webfont.eot?#iefix") format("embedded-opentype"),
+	url("jobstreet-webfont.woff?=1") format("woff"),
+	url("jobstreet-webfont.ttf?=1") format("truetype"),
+	url("jobstreet-webfont.svg#jobstreet?=1") format("svg");
+	font-weight:normal;
+	font-style:normal;
+}
+.fj{
+	display:inline-block;
+	font-family:jobstreet;
+	font-style:normal;
+	font-weight:normal;
+	line-height:1;
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale;
+}
+.fj-lg{
+	font-size:1.3333333333333333em;
+	line-height:.75em;
+	vertical-align:-15%;
+}
+.fj-2x{font-size:2em;}
+.fj-3x{font-size:3em;}
+.fj-4x{font-size:4em;}
+.fj-5x{font-size:5em;}
+/*[data-icon]:before{
+	font-family:"jobstreet"!important;
+	content:attr(data-icon);
+	font-style:normal!important;
+	font-weight:normal!important;
+	font-variant:normal!important;
+	text-transform:none!important;
+	speak:none;
+	line-height:0;
+	font-size:1.2em;
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale;
+}
+[class^="fj-"]:before,[class*=" fj-"]:before{
+	font-family:"jobstreet"!important;
+	font-style:normal!important;
+	font-weight:normal!important;
+	font-variant:normal!important;
+	text-transform:none!important;
+	speak:none;
+	display:inline-block;
+	line-height:1;
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale;
+}*/
+.fj-aim:before{content:"a"}
+.fj-attach:before{content:"b"}
+.fj-bell:before{content:"c"}
+.fj-briefcase:before{content:"d"}
+.fj-camera:before{content:"e"}
+.fj-cart:before{content:"f"}
+.fj-certificate:before{content:"g"}
+.fj-chat:before{content:"h"}
+.fj-home:before{content:"i"}
+.fj-gear:before{content:"j"}
+.fj-file:before{content:"k"}
+.fj-eye-open:before{content:"l"}
+.fj-envelope:before{content:"m"}
+.fj-education:before{content:"n"}
+.fj-edit:before{content:"o"}
+.fj-download:before{content:"p"}
+.fj-dollar-sign:before{content:"q"}
+.fj-delete:before{content:"r"}
+.fj-compass:before{content:"s"}
+.fj-close:before{content:"t"}
+.fj-clock:before{content:"u"}
+.fj-left-arrow:before{content:"v"}
+.fj-plus:before{content:"w"}
+.fj-plus-sign:before{content:"x"}
+.fj-plus-sign-filled:before{content:"y"}
+.fj-marker:before{content:"z"}
+.fj-marker-circle:before{content:"A"}
+.fj-marker-dot:before{content:"B"}
+.fj-medical:before{content:"C"}
+.fj-right-arrow:before{content:"D"}
+.fj-resume:before{content:"E"}
+.fj-print:before{content:"F"}
+.fj-search:before{content:"G"}
+.fj-minus:before{content:"H"}
+.fj-minus-sign:before{content:"I"}
+.fj-minus-sign-filled:before{content:"J"}
+.fj-mobile:before{content:"K"}
+.fj-new-file:before{content:"L"}
+.fj-ok:before{content:"M"}
+.fj-phone:before{content:"N"}
+.fj-wallet:before{content:"O"}
+.fj-user:before{content:"P"}
+.fj-thumb-up:before{content:"Q"}
+.fj-thumb-down:before{content:"R"}
+.fj-star:before{content:"S"}
+.fj-upload:before{content:"T"}
+.fj-additional:before{content:"U"}
+.fj-lock:before{content:"V"}
+.fj-arm-chair:before{content:"W"}
+.fj-bus:before{content:"X"}
+.fj-scroll-3d:before{content:"Y"}
+.fj-scroll:before{content:"Z"}
+.fj-pencil:before{content:"0"}
+.fj-linkedin:before{content:"1"}
+.fj-facebook:before{content:"2"}
+.fj-uploaded-file:before{content:"3"}
+.fj-info-sign:before{content:"4"}
+.fj-down-arrow:before{content:"5"}
+.fj-up-arrow:before{content:"6"}

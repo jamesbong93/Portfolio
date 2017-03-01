@@ -1,0 +1,76 @@
+.dropdown{
+	position:relative;
+	top:0px;
+}
+.dropdown-toggle:focus{outline:0;}
+.dropdown-menu{
+	position:absolute;
+	top:100%;
+	left:0;
+	z-index:1000;
+	display:none;
+	float:left;
+	min-width:160px;
+	padding:5px 0;
+	margin:0;
+	font-size:14px;
+	list-style:none;
+	background-color:#fff;
+	border-width:1px 1px 1px 1px;
+	border-style:solid;
+	border-color:rgba(0,0,0,0.05);
+	-webkit-box-shadow:0px 0px 1px rgba(0,0,0,0.05);
+	box-shadow:0px 0px 1px rgba(0,0,0,0.05);
+}
+.dropdown-menu.pull-right{
+	right:0;
+	left:auto;
+}
+.dropdown-menu .divider{
+	height:1px;
+	margin:10px 0;
+	overflow:hidden;
+	background-color:rgba(0,0,0,0.05);
+}
+.dropdown-menu > li > a{
+	display:block;
+	padding:8px 22px;
+	clear:both;
+	font-weight:normal;
+	line-height:1.428571429;
+	color:#999;
+	white-space:nowrap;
+}
+.dropdown-menu > li > a:hover,.dropdown-menu > li > a:focus{
+	color:#1c3f94;
+	text-decoration:none;
+}
+.dropdown-menu > .active > a,.dropdown-menu > .active > a:hover,.dropdown-menu > .active > a:focus{
+	color:#1c3f94;
+	text-decoration:none;
+	font-weight:200;
+	outline:0;
+}
+.dropdown-menu > .disabled > a,.dropdown-menu > .disabled > a:hover,.dropdown-menu > .disabled > a:focus{color:#999;}
+.dropdown-menu > .disabled > a:hover,.dropdown-menu > .disabled > a:focus{
+	text-decoration:none;
+	cursor:not-allowed;
+	background-color:transparent;
+	background-image:none;
+	filter:progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+.open > .dropdown-menu{display:block;}
+.open > a{outline:0;}
+.dropdown-header{
+	display:block;
+	padding:0px 20px;
+	font-size:14px;
+	line-height:1.428571429;
+	color:#666;
+	font-weight:bold;
+}
+.dropup .dropdown-menu,.navbar-fixed-bottom .dropdown .dropdown-menu{
+	top:auto;
+	bottom:100%;
+	margin-bottom:0px;
+}

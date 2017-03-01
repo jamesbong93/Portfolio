@@ -1,0 +1,1515 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>JobStreet.com - Edit Resume</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Cache-Control" content="Public">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <link rel="stylesheet" href="http://dna.jsstatic.com/myjs/myjs-1.2.12.css">
+    <link rel="stylesheet" href="http://dna.jsstatic.com/select2/select2.css">
+    <link rel="stylesheet" href="https://dna.jsstatic.com/pi/icon-font/2.1/icon-font.css">
+    <link rel="stylesheet" href="my-account.css">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../../ico/favicon.png">
+    <link rel="apple-touch-icon" href="../../ico/touch-icon-iphone.png">
+    <link rel="apple-touch-icon" sizes="76x76" href=../../ "ico/touch-icon-ipad.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../../ico/touch-icon-iphone-retina.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../../ico/touch-icon-ipad-retina.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../../ico/touch-icon-iphone6p-ios8.png">
+    <!-- End of Favicon -->
+
+
+</head>
+
+<body class="body-mobile-align">
+
+    <!--=====================================================Header========================================================================-->
+    <div class="mobile-navbar-fixed-top">
+        <div class="navbar navbar-inverse navbar-static">
+            <div class="container">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" data-canvas="body" type="button" onclick="$('#mobile_search_bar').removeClass('active');">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <span class="jslogo jslogo-mobile visible-xs"></span>
+                    <!--Mobile View Search Bar toggle button-->
+                    <div class="search-toggle">
+                        <a href="#"><span class="icon-search visible-xs"></span></a>
+                    </div>
+                    <div class="navbar-search toggle">
+                        <div class="container visible-xs">
+                            <div class="col-xs-12">
+                                <form id="frmSearch_mobile" name="frmSearch-mobile" action="http://job-search-dev.jobstreet.com.my/malaysia/job-opening.php" method="get">
+                                    <div class="input-group">
+                                        <input class="form-control" id="search_box_keyword_mobile" name="key" type="text" placeholder="Search Jobs By Title, Skills or Keywords...">
+                                        <span class="input-group-btn">
+										<a class="btn btn-default" id="header_searchbox_btn_mobile" type="button">Search</a>
+										</span>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="navbar-collapse navbar-collapse-align collapse" aria-expanded="false" style="height: 1px;">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="http://www.jobstreet.com.my" title="Leading Job Site in Malaysia - Find Jobs in Malaysia">Home</a>
+                        </li>
+                        <li><a id="header-job-link" href="http://job-search-dev.jobstreet.com.my/malaysia/job-opening.php" title="Search Jobs @ Job Search JobStreet.com Malaysia">Search Jobs</a>
+                        </li>
+                        <li><a href="http://www.jobstreet.com.my/en/companies" title="company profiles">Company Profiles</a>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:;" aria-expanded="false">MyJobStreet&nbsp;<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-header hidden-xs">My Resume</li>
+                                <li class="hidden-xs"><a href="http://myjobstreet-dev.jobstreet.com.my/resume/preview-resume.php?x=a2p6dkp4hosoojv84nsr44ecp4">Preview Resume</a>
+                                </li>
+                                <li class="hidden-xs"><a href="http://myjobstreet-dev.jobstreet.com.my/resume/edit-work-experience.php?x=a2p6dkp4hosoojv84nsr44ecp4">Edit Resume</a>
+                                </li>
+                                <li class="divider hidden-xs"></li>
+                                <li class="dropdown-header">My Applications</li>
+                                <li><a href="http://myjobstreet-dev.jobstreet.com.my/application/application-status.php?view=0&amp;x=a2p6dkp4hosoojv84nsr44ecp4">Online Applications</a>
+                                </li>
+                                <li><a href="http://myjobstreet-dev.jobstreet.com.my/application/interview-request.php?view=latest&amp;x=a2p6dkp4hosoojv84nsr44ecp4">Interview Requests</a>
+                                </li>
+                                <li class="hidden-xs"><a id="header_emp_request_link" href="http://myjobstreet-dev.jobstreet.com.my/application/employer-request.php?x=a2p6dkp4hosoojv84nsr44ecp4">Resume Requests</a>
+                                </li>
+                                <li class="divider hidden-xs"></li>
+                                <li class="dropdown-header hidden-xs">Career Enhancers</li>
+                                <li class="hidden-xs"><a href="http://myjobstreet-dev.jobstreet.com.my/career-enhancer/pa-summary.php?x=a2p6dkp4hosoojv84nsr44ecp4">Priority Application</a>
+                                </li>
+                                <li class="hidden-xs"><a href="http://myjobstreet-dev.jobstreet.com.my/career-enhancer/salary-report.php?x=a2p6dkp4hosoojv84nsr44ecp4">Salary Report</a>
+                                </li>
+                                <li class="hidden-xs"><a href="javascript: popup_win8('http://myjobstreet-dev.jobstreet.com.my/career-enhancer/assessment.php?x=a2p6dkp4hosoojv84nsr44ecp4', 1000,700,'JELA');">English Assessment</a>
+                                </li>
+                                <li class="hidden-xs">
+                                    <a class="hidden-xs" href="javascript: popup_win8('http://www.jobstreet.com.my/career-resources/', 1000,700,'JELA');">
+									Career Resources</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown hidden-xs">
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#" aria-expanded="false">Learning&nbsp;<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="http://www.jobstreet.com.my/learning/">View Course</a>
+                                </li>
+                                <li><a href="http://myjobstreet-dev.jobstreet.com.my/learning/learning-profile.php?x=g8q1cqbllnaoieol1h0ulno8h2">Edit Learning Profile</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown hidden-xs">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:;" aria-expanded="false">More&nbsp;<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="http://job-search-dev.jobstreet.com.my/malaysia/browse/oversea.html">Overseas Jobs</a>
+                                </li>
+                                <li><a href="http://www.jobstreet.com.my/campus/">Fresh Grad Jobs</a>
+                                </li>
+                                <li><a href="http://job-search-dev.jobstreet.com.my/malaysia/job-classified.php">Classified Jobs</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown" style="display: list-item;">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:;" aria-expanded="false">
+                                <span class="-hide">
+							<span class="display-name">Lucas Lee</span>&nbsp;
+                                <span><b class="caret"></b></span>
+                                </span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="http://myjobstreet-dev.jobstreet.com.my/home/logout.php?x=g8q1cqbllnaoieol1h0ulno8h2">Logout</a>
+                                </li>
+                                <li class="hidden-xs"><a href="http://myjobstreet-dev.jobstreet.com.my/home/help.php?x=g8q1cqbllnaoieol1h0ulno8h2&amp;site=my">Help</a>
+                                </li>
+                                <li class="hidden-xs"><a class="language-separator" href="http://myjobstreet-dev.jobstreet.com.my/registration/update-account.php?x=g8q1cqbllnaoieol1h0ulno8h2">My Account</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li style="display: none;">
+                            <a href="https://myjobstreet-dev.jobstreet.com.my/home/login.php?site=my&amp;language_code=3">Log In</a>
+                        </li>
+                        <li class="hidden-xs" style="display: none;"> <span>|</span> </li>
+                        <li style="display: none;">
+                            <a href="https://myjobstreet-dev.jobstreet.com.my/registration/simple-signup.php?site=my&amp;language_code=3">Sign Up</a>
+                        </li>
+                        <ul></ul>
+                    </ul>
+                </div>
+                <!--/.nav-collapse -->
+            </div>
+            <div class="navbar-lower-deck hidden-xs">
+                <div class="container">
+                    <div class="col-lg-3 col-md-3 col-sm-4 hidden-xs">
+                        <a class="jslogo my" id="header-logo-link" href="http://www.jobstreet.com.my" title="Leading Job Site in Malaysia - Find Jobs, Advertise Jobs in Malaysia"></a>
+                    </div>
+                    <div class="col-lg-5 col-md-5 col-sm-6">
+                        <div class="search-area">
+                            <form id="frmSearch" name="frmSearch" action="http://job-search-dev.jobstreet.com.my/malaysia/job-opening.php" method="get">
+                                <div class="input-group">
+                                    <input class="form-control" name="key" type="text" placeholder="Search Jobs By Title, Skills or Keywords...">
+                                    <span class="input-group-btn"><a class="btn btn-default" type="button" ><span class="icon-search"></span>
+                                    </a>
+                                    </span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 hidden-sm hidden-xs">
+                        <a class="btn btn-link" href="http://job-search-dev.jobstreet.com.my/malaysia/advance-job-search.php?area=1&amp;option=1&amp;job-source=1%2C64&amp;classified=1&amp;job-posted=0&amp;sort=1&amp;order=0" title="Advanced Job Search @ JobStreet.com ">Advanced</a>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-2 hidden-xs text-right">
+                        <a class="btn btn-link employer-link" id="header-employer-link" href="http://www.jobstreet.com.my/employers/" title="Post a Job Ad: +603-­2176 0333">Employers</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--===============================================End of header=============================================================================================-->
+
+    <div class="container">
+        <div class="col-xs-12 col-sm-12 col-md-3 hidden-print">
+            <div class="panel panel-basic panel-sidenav">
+                <div class="panel-body panel-body-nav">
+
+                    <div class="visible-md visible-lg">
+
+                        <div class="col-md-12 side-menu" style="padding:15px 15px;">
+
+                            <div class="row">
+                                <h4 style="font-weight:bold;">
+                                    My Account
+                                </h4>
+                            </div>
+
+
+                        </div>
+                        <div class="col-xs-12 side-menu">
+                            <ul class="list-unstyled my-account-sidebar-list">
+                                <li>
+                                    <a id="nav_experience" href="index.html"><span class="icon-user" id="icon-user"></span><span id="nav-lbl-experience">Contact Info</span></a>
+                                </li>
+                                <li>
+                                    <a id="nav_education" href="company_follows.html"><span class="icon-building" id="icon-building"></span><span id="nav-lbl-education">Company Follows</span></a>
+                                </li>
+                                <li>
+                                    <a id="nav_skills" href="subscription.html" class="active"><span class="icon-check-board" id="icon-check-board"></span><span id="nav-lbl-skill">Subscription</span></a>
+                                </li>
+                                <li>
+                                    <a id="nav_languages" href="change_password.html"><span class="icon-locked" id="icon-locked"></span><span >Change Password</span></a>
+                                </li>
+
+                            </ul>
+
+                                <div class="Fb-unlink text-center" >
+                                   
+                                    <img src="images/fb_connect.png" >
+                                    <p>See where your friends are working!</p>
+                                </div>
+                        </div>
+
+                    </div>
+
+                    <div class="visible-xs visible-sm">
+
+                        <div class="row resume-tabs my-account-sidebar">
+
+                            <div class="col-xs-12">
+                                <div class="text-left" id="nav_edit_tab">
+                                    <h4 role="button" id="nav_edit">My Account <span class="caret" id="arrow_down_open"></span></h4>
+                                </div>
+                            </div>
+                        </div>
+                        
+                            <div class="col-xs-12 side-menu c-hide" id="nav_edit_mobile" style="display: none;">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <a id="nav_experience" href="index.html"><span class="icon-user" id="icon-user"></span><span id="nav-lbl-experience">Contact Info</span></a>
+                                    </li>
+                                    <li>
+                                        <a id="nav_education" href="company_follows.html"><span class="icon-building" id="icon-building"></span><span id="nav-lbl-education">Company Follows</span></a>
+                                    </li>
+                                    <li>
+                                        <a id="nav_skills" href="subscription.html" class="active"><span class="icon-check-board" id="icon-check-board"></span><span id="nav-lbl-skill">Subscription</span></a>
+                                    </li>
+                                    <li>
+                                        <a id="nav_languages" href="change_password.html"><span class="icon-locked" id="icon-locked"></span><span id="nav-lbl-language">Change Password</span></a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                       
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-9">
+            <div class="panel panel-default resume-panel " id="panel" style="min-height: 427px;">
+                <div class="panel-body">
+                    <div class="row my-title">
+                        <div class="col-xs-12">
+                            <div class="row ">
+                               
+                                    <div class="col-sm-12">
+                                        <div class="row">
+                                            <span class="icon-check-board hidden-xs hidden-sm"></span>
+                                            <span class="icon-check-board x2 hidden-md hidden-lg"></span>  
+                                            <span class="resume-section-title" id="lbl_about_me">My Learning Alerts</span>
+                                            <label class=" switch-light switch-android pull-right">
+                                                <input id="learning-alert" type="checkbox" checked >
+                                                <span>
+                                                         <span>No</span>
+                                                <span>Yes</span>
+                                                </span>
+                                                <a></a>
+                                            </label>
+
+                                        </div>
+                                    </div>
+                                
+                               
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="panel panel-basic">
+
+
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-xs-12 col-md-10 ">
+
+                                    <form class="form-horizontal" id="learning-form">
+
+                                        <div class="form-group">
+                                            <h4 class="title">Program Categories you are interested in</h4>
+
+                                            <select id="js-program-categories" multiple="multiple" data-placeholder="Please select one or more..." >
+                                                
+                                                <option>Accounting/Finance</option>
+                                                <option>Language/Literature/Journalism</option>
+                                                <option>Architecture/Urban Studies/Building and Construction</option>
+                                                <option>Leadership/People Skills</option>
+                                                <option>Leaderwwshqip/People Skills</option>
+                                                <option>w/People Skills</option>
+                                                <option>we/People Skills</option>
+                                                <option>Leadeerrship/People Skills</option>
+                                                <option>w/People Skills</option>
+                                                <option>Leadersrrrhip/People Skills</option>
+                                             
+                                                
+
+                                            </select>
+
+
+                                        </div>
+                                        <br>
+
+                                        <div class="form-group">
+
+
+                                            <h4 class="title">Academic or Non-academic programmes</h4>
+
+                                            <div class="btn-pref btn-group btn-group-justified btn-group-lg col-xs-12" role="group" aria-label="...">
+                                                <div class="btn-group" role="group">
+                                                    <button type="button" class="btn btn-info academic-choice-btn left" href="#tab1" data-toggle="tab">
+                                                        <span class="academic-choice-text">
+                                                                Both</span>
+                                                    </button>
+                                                </div>
+                                                <div class="btn-group " role="group">
+                                                    <button type="button" class="btn btn-default academic-choice-btn" href="#tab2" data-toggle="tab">
+                                                        <span class="academic-choice-text">Academic Only<br>
+                                                            <span class="hidden-xs" style="">e.g. diploma, degree, master,
+                                                            doctorate</span>
+                                                        </span>
+                                                    </button>
+
+                                                </div>
+                                                <div class="btn-group " role="group">
+                                                    <button type="button" id="following" class="btn btn-default academic-choice-btn right" href="#tab3" data-toggle="tab">
+                                                        <span class="academic-choice-text "> Non-academic Only
+                                                            <br><span class="hidden-xs">e.g. seminar, workshop, training, conference</span>
+                                                        </span>
+                                                    </button>
+                                                </div>
+                                            </div>
+
+
+
+
+
+                                        </div>
+                                        <br>
+
+                                        <div class="form-group">
+                                            <h4 class="title">Preferred Training Locations</h4>
+                                            <label>First Choice:</label>
+                                            <select role="button" class="js-preferred-location">
+                                                <option value="">- Select First Preferred Location -</option>
+                                                <option value="ctry_50000">***** Select Malaysia State *****</option>
+                                                <option value="50000" selected="selected">All Programmes in Malaysia</option>
+                                                <option value="50100">Johor</option>
+                                                <option value="50200">Kedah</option>
+                                                <option value="50300">Kuala Lumpur</option>
+                                                <option value="50400">Kelantan</option>
+                                                <option value="50500">Melaka</option>
+                                                <option value="50600">Negeri Sembilan</option>
+                                                <option value="50700">Penang</option>
+                                                <option value="50800">Pahang</option>
+                                                <option value="50900">Perak</option>
+                                                <option value="51000">Perlis</option>
+                                                <option value="51600">Putrajaya</option>
+                                                <option value="51100">Sabah</option>
+                                                <option value="51200">Selangor</option>
+                                                <option value="51300">Sarawak</option>
+                                                <option value="51400">Terengganu</option>
+                                                <option value="51500">Labuan</option>
+                                                <option value="ctry_70000">***** Select Singapore State *****</option>
+                                                <option value="70000">All Programmes in Singapore</option>
+                                                <option value="ctry_60000">***** Select Philippines State *****</option>
+                                                <option value="60000">All Programmes in Philippines</option>
+                                                <option value="60100">Armm</option>
+                                                <option value="60200">Bicol Region</option>
+                                                <option value="60300">C.A.R</option>
+                                                <option value="60400">Cagayan Valley</option>
+                                                <option value="61400">Calabarzon &amp; Mimaropa</option>
+                                                <option value="60500">Central Luzon</option>
+                                                <option value="60700">Caraga</option>
+                                                <option value="60800">Central Visayas</option>
+                                                <option value="61300">Davao</option>
+                                                <option value="60900">Eastern Visayas</option>
+                                                <option value="61000">Ilocos Region</option>
+                                                <option value="61100">National Capital Reg</option>
+                                                <option value="61200">Northern Mindanao</option>
+                                                <option value="60600">Soccsksargen</option>
+                                                <option value="61600">Western Visayas</option>
+                                                <option value="61500">Zamboanga</option>
+                                                <option value="ctry_30000">***** Select Indonesia State *****</option>
+                                                <option value="30000">All Programmes in Indonesia</option>
+                                                <option value="30100">Aceh</option>
+                                                <option value="30200">Bali</option>
+                                                <option value="32800">Bangka Belitung</option>
+                                                <option value="32900">Banten</option>
+                                                <option value="30300">Bengkulu</option>
+                                                <option value="33000">Gorontalo</option>
+                                                <option value="30500">Jakarta Raya</option>
+                                                <option value="30600">Jambi</option>
+                                                <option value="30700">Jawa Barat</option>
+                                                <option value="30800">Jawa Tengah</option>
+                                                <option value="30900">Jawa Timur</option>
+                                                <option value="31000">Kalimantan Barat</option>
+                                                <option value="31100">Kalimantan Selatan</option>
+                                                <option value="31200">Kalimantan Tengah</option>
+                                                <option value="31300">Kalimantan Timur</option>
+                                                <option value="33500">Kalimantan Utara</option>
+                                                <option value="33200">Kepulauan Riau</option>
+                                                <option value="31400">Lampung</option>
+                                                <option value="31500">Maluku</option>
+                                                <option value="33100">Maluku Utara</option>
+                                                <option value="31600">Nusa Tenggara Barat</option>
+                                                <option value="31700">Nusa Tenggara Timur</option>
+                                                <option value="30400">Papua</option>
+                                                <option value="33300">Papua Barat</option>
+                                                <option value="31800">Riau</option>
+                                                <option value="33400">Sulawesi Barat</option>
+                                                <option value="31900">Sulawesi Selatan</option>
+                                                <option value="32000">Sulawesi Tengah</option>
+                                                <option value="32100">Sulawesi Tenggara</option>
+                                                <option value="32200">Sulawesi Utara</option>
+                                                <option value="32300">Sumatera Barat</option>
+                                                <option value="32400">Sumatera Selatan</option>
+                                                <option value="32500">Sumatera Utara</option>
+                                                <option value="32700">Yogyakarta</option>
+                                                <option value="ctry_80000">***** Select Thailand State *****</option>
+                                                <option value="80000">All Programmes in Thailand</option>
+                                                <option value="80800">All Programmes in Bangkok</option>
+                                                <option value="80801">Bangkok - Bang Bon</option>
+                                                <option value="80802">Bangkok - Bang Kapi</option>
+                                                <option value="80803">Bangkok - Bang Khae</option>
+                                                <option value="80804">Bangkok - Bang Khen</option>
+                                                <option value="80805">Bangkok - Bang Kho Laem</option>
+                                                <option value="80806">Bangkok - Bang Khun Thian</option>
+                                                <option value="80807">Bangkok - Bang Na</option>
+                                                <option value="80808">Bangkok - Bang Phlad</option>
+                                                <option value="80809">Bangkok - Bang Rak</option>
+                                                <option value="80810">Bangkok - Bang Sue</option>
+                                                <option value="80811">Bangkok - Bangkok Noi</option>
+                                                <option value="80812">Bangkok - Bangkok Yai</option>
+                                                <option value="80813">Bangkok - Bung Kum</option>
+                                                <option value="80814">Bangkok - Chatuchak</option>
+                                                <option value="80815">Bangkok - Chom Thong</option>
+                                                <option value="80816">Bangkok - Din Daeng</option>
+                                                <option value="80817">Bangkok - Don Muang</option>
+                                                <option value="80818">Bangkok - Dusit</option>
+                                                <option value="80819">Bangkok - Huai Khwang</option>
+                                                <option value="80820">Bangkok - Kan Na Yao</option>
+                                                <option value="80821">Bangkok - Khlong Sam Wa</option>
+                                                <option value="80822">Bangkok - Khlong San</option>
+                                                <option value="80823">Bangkok - Khlong Toei</option>
+                                                <option value="80824">Bangkok - Lad Krabang</option>
+                                                <option value="80825">Bangkok - Lad Phrao</option>
+                                                <option value="80826">Bangkok - Lak Si</option>
+                                                <option value="80827">Bangkok - Min Buri</option>
+                                                <option value="80828">Bangkok - Nong Chok</option>
+                                                <option value="80829">Bangkok - Nong Khaem</option>
+                                                <option value="80830">Bangkok - Pathum Wan</option>
+                                                <option value="80831">Bangkok - Phasi Charoen</option>
+                                                <option value="80832">Bangkok - Phaya Thai</option>
+                                                <option value="80833">Bangkok - Phra Kanong</option>
+                                                <option value="80834">Bangkok - Phra Nakhon</option>
+                                                <option value="80835">Bangkok - Pom Prap Sattru Phai</option>
+                                                <option value="80836">Bangkok - Pravet</option>
+                                                <option value="80837">Bangkok - Rat Burana</option>
+                                                <option value="80838">Bangkok - Ratchatewi</option>
+                                                <option value="80839">Bangkok - Sai Mai</option>
+                                                <option value="80840">Bangkok - Samphantawong</option>
+                                                <option value="80841">Bangkok - Saphan Sung</option>
+                                                <option value="80842">Bangkok - Sathon</option>
+                                                <option value="80843">Bangkok - Suan Luang</option>
+                                                <option value="80844">Bangkok - Taling Chan</option>
+                                                <option value="80845">Bangkok - Thawi Watthana</option>
+                                                <option value="80846">Bangkok - Thon Buri</option>
+                                                <option value="80847">Bangkok - Thung Khru</option>
+                                                <option value="80848">Bangkok - Vadhana</option>
+                                                <option value="80849">Bangkok - Wang Thonglang</option>
+                                                <option value="80850">Bangkok - Yan Nawa</option>
+                                                <option value="84000">All Programmes in Nonthaburi</option>
+                                                <option value="84001">Nonthaburi - Bang Bua Thong</option>
+                                                <option value="84002">Nonthaburi - Bang Kruai</option>
+                                                <option value="84003">Nonthaburi - Bang Yai</option>
+                                                <option value="84004">Nonthaburi - Mueang Nonthaburi</option>
+                                                <option value="84005">Nonthaburi - Pak Kret</option>
+                                                <option value="84006">Nonthaburi - Sai Noi</option>
+                                                <option value="86100">All Programmes in Samut Prakan</option>
+                                                <option value="86101">Samut Prakan - Bang Bo</option>
+                                                <option value="86102">Samut Prakan - Bang Phli</option>
+                                                <option value="86103">Samut Prakan - Bang Sao Thong</option>
+                                                <option value="86104">Samut Prakan - Mueang Samut Prakan</option>
+                                                <option value="86105">Samut Prakan - Phra Pradaeng</option>
+                                                <option value="86106">Samut Prakan - Phra Samut Chedi</option>
+                                                <option value="84100">All jobs in Pathum Thani</option>
+                                                <option value="84101">Pathum Thani - Khlong Luang</option>
+                                                <option value="84102">Pathum Thani - Lam Luk Ka</option>
+                                                <option value="84103">Pathum Thani - Lat Lum Kaeo</option>
+                                                <option value="84104">Pathum Thani - Mueang Pathum Thani</option>
+                                                <option value="84105">Pathum Thani - Nong Suea</option>
+                                                <option value="84106">Pathum Thani - Sam Khok</option>
+                                                <option value="84107">Pathum Thani - Thanyaburi</option>
+                                                <option value="80700">Ang Thong</option>
+                                                <option value="80900">Buri Ram</option>
+                                                <option value="81000">Cha Choeng Sao</option>
+                                                <option value="81100">Chai Nat</option>
+                                                <option value="81200">Chaiyaphum</option>
+                                                <option value="81300">Chanthaburi</option>
+                                                <option value="81400">Chiang Mai</option>
+                                                <option value="81500">Chiang Rai</option>
+                                                <option value="81600">Chon Buri</option>
+                                                <option value="81700">Chumphon</option>
+                                                <option value="81800">Kalasin</option>
+                                                <option value="81900">Kamphaeng Phet</option>
+                                                <option value="82000">Kanchanaburi</option>
+                                                <option value="82100">Khon Kaen</option>
+                                                <option value="82200">Krabi</option>
+                                                <option value="82300">Lampang</option>
+                                                <option value="82400">Lamphun</option>
+                                                <option value="82500">Loei</option>
+                                                <option value="82600">Lop Buri</option>
+                                                <option value="82700">Mae Hong Son</option>
+                                                <option value="82800">Maha Sarakham</option>
+                                                <option value="82900">Mukdahan</option>
+                                                <option value="83000">Nakhon Nayok</option>
+                                                <option value="83200">Nakhon Phanom</option>
+                                                <option value="83300">Nakhon Ratchasima</option>
+                                                <option value="83100">Nakhon Pathom</option>
+                                                <option value="83400">Nakhon Sawan</option>
+                                                <option value="83500">Nakhon Si Thammarat</option>
+                                                <option value="83600">Nan</option>
+                                                <option value="83700">Narathiwat</option>
+                                                <option value="83800">Nongbua Lumphoo</option>
+                                                <option value="83900">Nong Khai</option>
+                                                <option value="84200">Pattani</option>
+                                                <option value="84300">Phang Nga</option>
+                                                <option value="84400">Phatthalung</option>
+                                                <option value="84500">Phayao</option>
+                                                <option value="84600">Phetchabun</option>
+                                                <option value="84700">Phetchaburi</option>
+                                                <option value="84800">Phichit</option>
+                                                <option value="84900">Phitsanulok</option>
+                                                <option value="85000">Phra Nakhon Si Ayuttaya</option>
+                                                <option value="85100">Phrae</option>
+                                                <option value="85200">Phuket</option>
+                                                <option value="85300">Prachin Buri</option>
+                                                <option value="85400">Prachuap Khiri Khan</option>
+                                                <option value="85500">Ranong</option>
+                                                <option value="85600">Ratchaburi</option>
+                                                <option value="85700">Rayong</option>
+                                                <option value="85800">Roi Et</option>
+                                                <option value="85900">Sa Kaew</option>
+                                                <option value="86000">Sakon Nakhon</option>
+                                                <option value="86200">Samut Sakhon</option>
+                                                <option value="86300">Samut Songkhram</option>
+                                                <option value="86400">Saraburi</option>
+                                                <option value="86500">Satun</option>
+                                                <option value="86600">Si Sa Ket</option>
+                                                <option value="86700">Sing Buri</option>
+                                                <option value="86800">Song Khla</option>
+                                                <option value="86900">Sukhothai</option>
+                                                <option value="87000">Suphan Buri</option>
+                                                <option value="87100">Surat Thani</option>
+                                                <option value="87200">Surin</option>
+                                                <option value="87300">Tak</option>
+                                                <option value="87400">Trang</option>
+                                                <option value="87500">Trat</option>
+                                                <option value="87600">Ubon Ratchathani</option>
+                                                <option value="87700">Udon Thani</option>
+                                                <option value="80600">Umnad Chareun</option>
+                                                <option value="87800">Uthai Thani</option>
+                                                <option value="87900">Uttaradit</option>
+                                                <option value="88000">Yala</option>
+                                                <option value="88100">Yasothon</option>
+                                                <option value="ctry_110000">***** Select Vietnam State *****</option>
+                                                <option value="110000">All Programmes in Vietnam</option>
+                                                <option value="110101">An Giang</option>
+                                                <option value="110102">Ba Ria-Vung Tau</option>
+                                                <option value="110103">Bac Can</option>
+                                                <option value="110104">Bac Giang</option>
+                                                <option value="110105">Bac Lieu</option>
+                                                <option value="110106">Bac Ninh</option>
+                                                <option value="110107">Ben Tre</option>
+                                                <option value="110108">Binh Dinh</option>
+                                                <option value="110109">Binh Duong</option>
+                                                <option value="110110">Binh Phuoc</option>
+                                                <option value="110111">Binh Thuan</option>
+                                                <option value="110112">Ca Mau</option>
+                                                <option value="110113">Can Tho</option>
+                                                <option value="110114">Cao Bang</option>
+                                                <option value="110115">Da Nang</option>
+                                                <option value="110116">Dac Lac</option>
+                                                <option value="110163">Dien Bien</option>
+                                                <option value="110168">Dak Nong</option>
+                                                <option value="110117">Dong Nai</option>
+                                                <option value="110118">Dong Thap</option>
+                                                <option value="110119">Gia Lai</option>
+                                                <option value="110120">Ha Giang</option>
+                                                <option value="110121">Ha Nam</option>
+                                                <option value="110122">Ha Noi</option>
+                                                <option value="110123">Ha Tay</option>
+                                                <option value="110124">Ha Tinh</option>
+                                                <option value="110125">Hai Duong</option>
+                                                <option value="110126">Hai Phong</option>
+                                                <option value="110167">Hau Giang</option>
+                                                <option value="110127">Ho Chi Minh City</option>
+                                                <option value="110128">Hoa Binh</option>
+                                                <option value="110129">Hung Yen</option>
+                                                <option value="110130">Khanh Hoa</option>
+                                                <option value="110131">Kien Giang</option>
+                                                <option value="110132">Kon Tum</option>
+                                                <option value="110133">Lai Chau</option>
+                                                <option value="110134">Lam Dong</option>
+                                                <option value="110135">Lang Son</option>
+                                                <option value="110136">Lao Cai</option>
+                                                <option value="110137">Long An</option>
+                                                <option value="110138">Nam Dinh</option>
+                                                <option value="110139">Nghe An</option>
+                                                <option value="110140">Ninh Binh</option>
+                                                <option value="110141">Ninh Thuan</option>
+                                                <option value="110142">Phu Tho</option>
+                                                <option value="110143">Phu Yen</option>
+                                                <option value="110144">Quang Binh</option>
+                                                <option value="110145">Quang Nam</option>
+                                                <option value="110146">Quang Ngai</option>
+                                                <option value="110147">Quang Ninh</option>
+                                                <option value="110148">Quang Tri</option>
+                                                <option value="110149">Soc Trang</option>
+                                                <option value="110150">Son La</option>
+                                                <option value="110151">Tay Ninh</option>
+                                                <option value="110152">Thai Binh</option>
+                                                <option value="110153">Thai Nguyen</option>
+                                                <option value="110154">Thanh Hoa</option>
+                                                <option value="110155">Thua Thien-Hue</option>
+                                                <option value="110156">Tien Giang</option>
+                                                <option value="110157">Tra Vinh</option>
+                                                <option value="110158">Tuyen Quang</option>
+                                                <option value="110159">Vinh Long</option>
+                                                <option value="110160">Vinh Phuc</option>
+                                                <option value="110161">Yen Bai</option>
+                                                <option value="ctry_40000">***** Select India State *****</option>
+                                                <option value="40000">All Programmes in India</option>
+                                                <option value="40100">Andaman &amp; Nicobar</option>
+                                                <option value="40200">All Programmes in Andhra Pradesh</option>
+                                                <option value="40205">Andhra Pradesh - Anantapur</option>
+                                                <option value="40206">Andhra Pradesh - Guntakal</option>
+                                                <option value="40207">Andhra Pradesh - Guntur</option>
+                                                <option value="40210">Andhra Pradesh - Hyderabad / Secunderabad</option>
+                                                <option value="40211">Andhra Pradesh - Kakinada</option>
+                                                <option value="40212">Andhra Pradesh - Kurnool</option>
+                                                <option value="40213">Andhra Pradesh - Nellore</option>
+                                                <option value="40214">Andhra Pradesh - Nizamabad</option>
+                                                <option value="40215">Andhra Pradesh - Rajahmundry</option>
+                                                <option value="40216">Andhra Pradesh - Tirupati</option>
+                                                <option value="40220">Andhra Pradesh - Visakhapatnam</option>
+                                                <option value="40230">Andhra Pradesh - Vijayawada</option>
+                                                <option value="40231">Andhra Pradesh - Warangal</option>
+                                                <option value="40300">All Programmes in Assam</option>
+                                                <option value="40310">Assam - Gauhati</option>
+                                                <option value="40320">Assam - Silchar</option>
+                                                <option value="40400">All Programmes in Arunachal Pradesh</option>
+                                                <option value="40410">Arunachal Pradesh - Itanagar</option>
+                                                <option value="40500">All Programmes in Bihar</option>
+                                                <option value="40505">Bihar - Bahgalpur</option>
+                                                <option value="40510">Bihar - Patna</option>
+                                                <option value="40600">Chandigarh</option>
+                                                <option value="40700">Daman &amp; Diu</option>
+                                                <option value="40800">Delhi</option>
+                                                <option value="40900">Dadra &amp; Nagar Haveli</option>
+                                                <option value="41000">All Programmes in Goa</option>
+                                                <option value="41010">Goa - Panjim / Panaji</option>
+                                                <option value="41020">Goa - Vasco Da Gama</option>
+                                                <option value="41099">Goa - Other</option>
+                                                <option value="41100">All Programmes in Gujarat</option>
+                                                <option value="41110">Gujarat - Ahmedabad</option>
+                                                <option value="41111">Gujarat - Anand</option>
+                                                <option value="41112">Gujarat - Ankleshwar</option>
+                                                <option value="41113">Gujarat - Bharuch</option>
+                                                <option value="41114">Gujarat - Bhavnagar</option>
+                                                <option value="41115">Gujarat - Bhuj</option>
+                                                <option value="41116">Gujarat - Gandhinagar</option>
+                                                <option value="41117">Gujarat - Gir</option>
+                                                <option value="41118">Gujarat - Jamnagar</option>
+                                                <option value="41119">Gujarat - Kandla</option>
+                                                <option value="41121">Gujarat - Porbandar</option>
+                                                <option value="41122">Gujarat - Rajkot</option>
+                                                <option value="41123">Gujarat - Surat</option>
+                                                <option value="41120">Gujarat - Vadodara</option>
+                                                <option value="41124">Gujarat - Valsad</option>
+                                                <option value="41125">Gujarat - Vapi</option>
+                                                <option value="41200">All Programmes in Haryana</option>
+                                                <option value="41201">Haryana - Ambala</option>
+                                                <option value="41202">Haryana - Faridabad</option>
+                                                <option value="41203">Haryana - Gurgaon</option>
+                                                <option value="41204">Haryana - Hisar</option>
+                                                <option value="41205">Haryana - Karnal</option>
+                                                <option value="41206">Haryana - Kurukshetra</option>
+                                                <option value="41210">Haryana - Panipat</option>
+                                                <option value="41211">Haryana - Rohtak</option>
+                                                <option value="41300">All Programmes in Himachal Pradesh</option>
+                                                <option value="41301">Himachal Pradesh - Dalhousie</option>
+                                                <option value="41302">Himachal Pradesh - Dharmasala</option>
+                                                <option value="41303">Himachal Pradesh - Kulu / Manali</option>
+                                                <option value="41304">Himachal Pradesh - Shimla</option>
+                                                <option value="41400">All Programmes in Jammu &amp; Kashmir</option>
+                                                <option value="41401">Jammu &amp; Kashmir - Jammu</option>
+                                                <option value="41402">Jammu &amp; Kashmir - Srinagar</option>
+                                                <option value="41500">All Programmes in Karnataka</option>
+                                                <option value="41510">Karnataka - Bangalore</option>
+                                                <option value="41511">Karnataka - Belgaum</option>
+                                                <option value="41512">Karnataka - Bellary</option>
+                                                <option value="41513">Karnataka - Bidar</option>
+                                                <option value="41514">Karnataka - Dharwad</option>
+                                                <option value="41515">Karnataka - Gulbarga</option>
+                                                <option value="41516">Karnataka - Hubli</option>
+                                                <option value="41517">Karnataka - Kolar</option>
+                                                <option value="41520">Karnataka - Mysore</option>
+                                                <option value="41530">Karnataka - Mangalore</option>
+                                                <option value="41600">All Programmes in Kerala</option>
+                                                <option value="41601">Kerala - Calicut</option>
+                                                <option value="41610">Kerala - Cochin</option>
+                                                <option value="41611">Kerala - Ernakulam</option>
+                                                <option value="41612">Kerala - Kannur</option>
+                                                <option value="41613">Kerala - Kochi</option>
+                                                <option value="41614">Kerala - Kollam</option>
+                                                <option value="41615">Kerala - Kottayam</option>
+                                                <option value="41616">Kerala - Kozhikode</option>
+                                                <option value="41617">Kerala - Palakkad</option>
+                                                <option value="41618">Kerala - Palghat</option>
+                                                <option value="41619">Kerala - Thrissur</option>
+                                                <option value="41620">Kerala - Trivandrum</option>
+                                                <option value="41700">Lakshadweep</option>
+                                                <option value="41800">All Programmes in Maharashtra</option>
+                                                <option value="41801">Maharashtra - Ahmednagar</option>
+                                                <option value="41810">Maharashtra - Aurangabad</option>
+                                                <option value="41811">Maharashtra - Jalgaon</option>
+                                                <option value="41812">Maharashtra - Kolhapur</option>
+                                                <option value="41820">Maharashtra - Mumbai</option>
+                                                <option value="41821">Maharashtra - Mumbai Suburbs</option>
+                                                <option value="41830">Maharashtra - Nagpur</option>
+                                                <option value="41840">Maharashtra - Nashik</option>
+                                                <option value="41841">Maharashtra - Navi Mumbai</option>
+                                                <option value="41850">Maharashtra - Pune</option>
+                                                <option value="41860">Maharashtra - Solapur</option>
+                                                <option value="41870">Maharashtra - Thane</option>
+                                                <option value="41900">All Programmes in Meghalaya</option>
+                                                <option value="41910">Meghalaya - Shillong</option>
+                                                <option value="42000">All Programmes in Mizoram</option>
+                                                <option value="42010">Mizoram - Aizawal</option>
+                                                <option value="42100">All Programmes in Manipur</option>
+                                                <option value="42110">Manipur - Imphal</option>
+                                                <option value="42200">All Programmes in Madhya Pradesh</option>
+                                                <option value="42210">Madhya Pradesh - Bhopal</option>
+                                                <option value="42215">Madhya Pradesh - Gwalior</option>
+                                                <option value="42220">Madhya Pradesh - Indore</option>
+                                                <option value="42230">Madhya Pradesh - Jabalpur</option>
+                                                <option value="42240">Madhya Pradesh - Ujjain</option>
+                                                <option value="42300">All Programmes in Nagaland</option>
+                                                <option value="42310">Nagaland - Dimapur</option>
+                                                <option value="42400">All Programmes in Orissa</option>
+                                                <option value="42410">Orissa - Bhubaneshwar</option>
+                                                <option value="42420">Orissa - Cuttack</option>
+                                                <option value="42430">Orissa - Puri</option>
+                                                <option value="42440">Orissa - Paradeep</option>
+                                                <option value="42450">Orissa - Rourkela</option>
+                                                <option value="42500">Pondicherry</option>
+                                                <option value="42600">All Programmes in Punjab</option>
+                                                <option value="42601">Punjab - Amritsar</option>
+                                                <option value="42602">Punjab - Bathinda</option>
+                                                <option value="42610">Punjab - Jalandhar</option>
+                                                <option value="42620">Punjab - Ludhiana</option>
+                                                <option value="42630">Punjab - Mohali</option>
+                                                <option value="42640">Punjab - Patiala</option>
+                                                <option value="42650">Punjab - Pathankot</option>
+                                                <option value="42700">All Programmes in Rajasthan</option>
+                                                <option value="42701">Rajasthan - Ajmer</option>
+                                                <option value="42710">Rajasthan - Jaipur</option>
+                                                <option value="42715">Rajasthan - Jaisalmer</option>
+                                                <option value="42716">Rajasthan - Jodhpur</option>
+                                                <option value="42720">Rajasthan - Kota</option>
+                                                <option value="42730">Rajasthan - Udaipur</option>
+                                                <option value="42800">Sikkim</option>
+                                                <option value="42810">Sikkim - Gangtok</option>
+                                                <option value="42900">All Programmes in Tamil Nadu</option>
+                                                <option value="42910">Tamil Nadu - Chennai</option>
+                                                <option value="42920">Tamil Nadu - Coimbatore</option>
+                                                <option value="42921">Tamil Nadu - Cuddalore</option>
+                                                <option value="42925">Tamil Nadu - Erode</option>
+                                                <option value="42930">Tamil Nadu - Madurai</option>
+                                                <option value="42931">Tamil Nadu - Nagercoil</option>
+                                                <option value="42936">Tamil Nadu - Ooty</option>
+                                                <option value="42938">Tamil Nadu - Thanjavur</option>
+                                                <option value="42940">Tamil Nadu - Tiruchirapalli</option>
+                                                <option value="42941">Tamil Nadu - Tirunalveli</option>
+                                                <option value="42943">Tamil Nadu - Tuticorin</option>
+                                                <option value="42950">Tamil Nadu - Salem</option>
+                                                <option value="42960">Tamil Nadu - Hosur</option>
+                                                <option value="42961">Tamil Nadu - Vellore</option>
+                                                <option value="43000">All Programmes in Tripura</option>
+                                                <option value="43001">Tripura - Agartala</option>
+                                                <option value="43100">All Programmes in Uttar Pradesh</option>
+                                                <option value="43101">Uttar Pradesh - Agra</option>
+                                                <option value="43102">Uttar Pradesh - Aligarh</option>
+                                                <option value="43103">Uttar Pradesh - Allahabad</option>
+                                                <option value="43104">Uttar Pradesh - Bareilly</option>
+                                                <option value="43105">Uttar Pradesh - Etah</option>
+                                                <option value="43106">Uttar Pradesh - Faizabad</option>
+                                                <option value="43107">Uttar Pradesh - Ghaziabad</option>
+                                                <option value="43108">Uttar Pradesh - Gorakhpur</option>
+                                                <option value="43110">Uttar Pradesh - Lucknow</option>
+                                                <option value="43120">Uttar Pradesh - Kanpur</option>
+                                                <option value="43121">Uttar Pradesh - Mathura</option>
+                                                <option value="43122">Uttar Pradesh - Meerut</option>
+                                                <option value="43123">Uttar Pradesh - Moradabad</option>
+                                                <option value="43124">Uttar Pradesh - Noida</option>
+                                                <option value="43130">Uttar Pradesh - Varanasi</option>
+                                                <option value="43200">All Programmes in West Bengal</option>
+                                                <option value="43201">West Bengal - Asansol</option>
+                                                <option value="43202">West Bengal - Barddhaman</option>
+                                                <option value="43203">West Bengal - Durgapur</option>
+                                                <option value="43204">West Bengal - Haldia</option>
+                                                <option value="43205">West Bengal - Jalpaiguri</option>
+                                                <option value="43210">West Bengal - Kolkata</option>
+                                                <option value="43220">West Bengal - Kharagpur</option>
+                                                <option value="43230">West Bengal - Siliguri</option>
+                                                <option value="43400">All Programmes in Chhattisgarh</option>
+                                                <option value="43401">Chhattisgarh - Bilaspur</option>
+                                                <option value="43402">Chhattisgarh - Bhillai</option>
+                                                <option value="43403">Chhattisgarh - Raipur</option>
+                                                <option value="43500">All Programmes in Jharkhand</option>
+                                                <option value="43501">Jharkhand - Bokaro</option>
+                                                <option value="43510">Jharkhand - Jamshedpur</option>
+                                                <option value="43502">Jharkhand - Dhanbad</option>
+                                                <option value="43520">Jharkhand - Ranchi</option>
+                                                <option value="43600">All Programmes in Uttaranchal</option>
+                                                <option value="43620">Uttaranchal - Dehradun</option>
+                                                <option value="43630">Uttaranchal - Hardwar</option>
+                                                <option value="43640">Uttaranchal - Roorkee</option>
+                                                <option value="ctry_100000">***** Select China State *****</option>
+                                                <option value="100000">All Programmes in China</option>
+                                                <option value="ctry_20000">***** Select Hong Kong State *****</option>
+                                                <option value="20000">All Programmes in Hong Kong</option>
+                                                <option value="ctry_150000">***** Select Japan State *****</option>
+                                                <option value="150000">All Programmes in Japan</option>
+                                                <option value="ctry_10000">***** Select Australia State *****</option>
+                                                <option value="10000">All Programmes in Australia</option>
+                                                <option value="10100">A.C.T</option>
+                                                <option value="10200">Northern Territory</option>
+                                                <option value="10300">New South Wales</option>
+                                                <option value="10400">Queensland</option>
+                                                <option value="10500">South Australia</option>
+                                                <option value="10600">Tasmania</option>
+                                                <option value="10700">Victoria</option>
+                                                <option value="10800">Western Australia</option>
+                                                <option value="ctry_90100">*****************************</option>
+                                                <option value="90100">Other training locations</option>
+                                            </select>
+
+
+                                            </select>
+
+                                            <br>
+                                            <br>
+                                            <label>Second Choice:</label>
+                                            <select role="button" class="js-preferred-location">
+                                                <option value="">- Select First Preferred Location -</option>
+                                                <option value="ctry_50000">***** Select Malaysia State *****</option>
+                                                <option value="50000" selected="selected">All Programmes in Malaysia</option>
+                                                <option value="50100">Johor</option>
+                                                <option value="50200">Kedah</option>
+                                                <option value="50300">Kuala Lumpur</option>
+                                                <option value="50400">Kelantan</option>
+                                                <option value="50500">Melaka</option>
+                                                <option value="50600">Negeri Sembilan</option>
+                                                <option value="50700">Penang</option>
+                                                <option value="50800">Pahang</option>
+                                                <option value="50900">Perak</option>
+                                                <option value="51000">Perlis</option>
+                                                <option value="51600">Putrajaya</option>
+                                                <option value="51100">Sabah</option>
+                                                <option value="51200">Selangor</option>
+                                                <option value="51300">Sarawak</option>
+                                                <option value="51400">Terengganu</option>
+                                                <option value="51500">Labuan</option>
+                                                <option value="ctry_70000">***** Select Singapore State *****</option>
+                                                <option value="70000">All Programmes in Singapore</option>
+                                                <option value="ctry_60000">***** Select Philippines State *****</option>
+                                                <option value="60000">All Programmes in Philippines</option>
+                                                <option value="60100">Armm</option>
+                                                <option value="60200">Bicol Region</option>
+                                                <option value="60300">C.A.R</option>
+                                                <option value="60400">Cagayan Valley</option>
+                                                <option value="61400">Calabarzon &amp; Mimaropa</option>
+                                                <option value="60500">Central Luzon</option>
+                                                <option value="60700">Caraga</option>
+                                                <option value="60800">Central Visayas</option>
+                                                <option value="61300">Davao</option>
+                                                <option value="60900">Eastern Visayas</option>
+                                                <option value="61000">Ilocos Region</option>
+                                                <option value="61100">National Capital Reg</option>
+                                                <option value="61200">Northern Mindanao</option>
+                                                <option value="60600">Soccsksargen</option>
+                                                <option value="61600">Western Visayas</option>
+                                                <option value="61500">Zamboanga</option>
+                                                <option value="ctry_30000">***** Select Indonesia State *****</option>
+                                                <option value="30000">All Programmes in Indonesia</option>
+                                                <option value="30100">Aceh</option>
+                                                <option value="30200">Bali</option>
+                                                <option value="32800">Bangka Belitung</option>
+                                                <option value="32900">Banten</option>
+                                                <option value="30300">Bengkulu</option>
+                                                <option value="33000">Gorontalo</option>
+                                                <option value="30500">Jakarta Raya</option>
+                                                <option value="30600">Jambi</option>
+                                                <option value="30700">Jawa Barat</option>
+                                                <option value="30800">Jawa Tengah</option>
+                                                <option value="30900">Jawa Timur</option>
+                                                <option value="31000">Kalimantan Barat</option>
+                                                <option value="31100">Kalimantan Selatan</option>
+                                                <option value="31200">Kalimantan Tengah</option>
+                                                <option value="31300">Kalimantan Timur</option>
+                                                <option value="33500">Kalimantan Utara</option>
+                                                <option value="33200">Kepulauan Riau</option>
+                                                <option value="31400">Lampung</option>
+                                                <option value="31500">Maluku</option>
+                                                <option value="33100">Maluku Utara</option>
+                                                <option value="31600">Nusa Tenggara Barat</option>
+                                                <option value="31700">Nusa Tenggara Timur</option>
+                                                <option value="30400">Papua</option>
+                                                <option value="33300">Papua Barat</option>
+                                                <option value="31800">Riau</option>
+                                                <option value="33400">Sulawesi Barat</option>
+                                                <option value="31900">Sulawesi Selatan</option>
+                                                <option value="32000">Sulawesi Tengah</option>
+                                                <option value="32100">Sulawesi Tenggara</option>
+                                                <option value="32200">Sulawesi Utara</option>
+                                                <option value="32300">Sumatera Barat</option>
+                                                <option value="32400">Sumatera Selatan</option>
+                                                <option value="32500">Sumatera Utara</option>
+                                                <option value="32700">Yogyakarta</option>
+                                                <option value="ctry_80000">***** Select Thailand State *****</option>
+                                                <option value="80000">All Programmes in Thailand</option>
+                                                <option value="80800">All Programmes in Bangkok</option>
+                                                <option value="80801">Bangkok - Bang Bon</option>
+                                                <option value="80802">Bangkok - Bang Kapi</option>
+                                                <option value="80803">Bangkok - Bang Khae</option>
+                                                <option value="80804">Bangkok - Bang Khen</option>
+                                                <option value="80805">Bangkok - Bang Kho Laem</option>
+                                                <option value="80806">Bangkok - Bang Khun Thian</option>
+                                                <option value="80807">Bangkok - Bang Na</option>
+                                                <option value="80808">Bangkok - Bang Phlad</option>
+                                                <option value="80809">Bangkok - Bang Rak</option>
+                                                <option value="80810">Bangkok - Bang Sue</option>
+                                                <option value="80811">Bangkok - Bangkok Noi</option>
+                                                <option value="80812">Bangkok - Bangkok Yai</option>
+                                                <option value="80813">Bangkok - Bung Kum</option>
+                                                <option value="80814">Bangkok - Chatuchak</option>
+                                                <option value="80815">Bangkok - Chom Thong</option>
+                                                <option value="80816">Bangkok - Din Daeng</option>
+                                                <option value="80817">Bangkok - Don Muang</option>
+                                                <option value="80818">Bangkok - Dusit</option>
+                                                <option value="80819">Bangkok - Huai Khwang</option>
+                                                <option value="80820">Bangkok - Kan Na Yao</option>
+                                                <option value="80821">Bangkok - Khlong Sam Wa</option>
+                                                <option value="80822">Bangkok - Khlong San</option>
+                                                <option value="80823">Bangkok - Khlong Toei</option>
+                                                <option value="80824">Bangkok - Lad Krabang</option>
+                                                <option value="80825">Bangkok - Lad Phrao</option>
+                                                <option value="80826">Bangkok - Lak Si</option>
+                                                <option value="80827">Bangkok - Min Buri</option>
+                                                <option value="80828">Bangkok - Nong Chok</option>
+                                                <option value="80829">Bangkok - Nong Khaem</option>
+                                                <option value="80830">Bangkok - Pathum Wan</option>
+                                                <option value="80831">Bangkok - Phasi Charoen</option>
+                                                <option value="80832">Bangkok - Phaya Thai</option>
+                                                <option value="80833">Bangkok - Phra Kanong</option>
+                                                <option value="80834">Bangkok - Phra Nakhon</option>
+                                                <option value="80835">Bangkok - Pom Prap Sattru Phai</option>
+                                                <option value="80836">Bangkok - Pravet</option>
+                                                <option value="80837">Bangkok - Rat Burana</option>
+                                                <option value="80838">Bangkok - Ratchatewi</option>
+                                                <option value="80839">Bangkok - Sai Mai</option>
+                                                <option value="80840">Bangkok - Samphantawong</option>
+                                                <option value="80841">Bangkok - Saphan Sung</option>
+                                                <option value="80842">Bangkok - Sathon</option>
+                                                <option value="80843">Bangkok - Suan Luang</option>
+                                                <option value="80844">Bangkok - Taling Chan</option>
+                                                <option value="80845">Bangkok - Thawi Watthana</option>
+                                                <option value="80846">Bangkok - Thon Buri</option>
+                                                <option value="80847">Bangkok - Thung Khru</option>
+                                                <option value="80848">Bangkok - Vadhana</option>
+                                                <option value="80849">Bangkok - Wang Thonglang</option>
+                                                <option value="80850">Bangkok - Yan Nawa</option>
+                                                <option value="84000">All Programmes in Nonthaburi</option>
+                                                <option value="84001">Nonthaburi - Bang Bua Thong</option>
+                                                <option value="84002">Nonthaburi - Bang Kruai</option>
+                                                <option value="84003">Nonthaburi - Bang Yai</option>
+                                                <option value="84004">Nonthaburi - Mueang Nonthaburi</option>
+                                                <option value="84005">Nonthaburi - Pak Kret</option>
+                                                <option value="84006">Nonthaburi - Sai Noi</option>
+                                                <option value="86100">All Programmes in Samut Prakan</option>
+                                                <option value="86101">Samut Prakan - Bang Bo</option>
+                                                <option value="86102">Samut Prakan - Bang Phli</option>
+                                                <option value="86103">Samut Prakan - Bang Sao Thong</option>
+                                                <option value="86104">Samut Prakan - Mueang Samut Prakan</option>
+                                                <option value="86105">Samut Prakan - Phra Pradaeng</option>
+                                                <option value="86106">Samut Prakan - Phra Samut Chedi</option>
+                                                <option value="84100">All jobs in Pathum Thani</option>
+                                                <option value="84101">Pathum Thani - Khlong Luang</option>
+                                                <option value="84102">Pathum Thani - Lam Luk Ka</option>
+                                                <option value="84103">Pathum Thani - Lat Lum Kaeo</option>
+                                                <option value="84104">Pathum Thani - Mueang Pathum Thani</option>
+                                                <option value="84105">Pathum Thani - Nong Suea</option>
+                                                <option value="84106">Pathum Thani - Sam Khok</option>
+                                                <option value="84107">Pathum Thani - Thanyaburi</option>
+                                                <option value="80700">Ang Thong</option>
+                                                <option value="80900">Buri Ram</option>
+                                                <option value="81000">Cha Choeng Sao</option>
+                                                <option value="81100">Chai Nat</option>
+                                                <option value="81200">Chaiyaphum</option>
+                                                <option value="81300">Chanthaburi</option>
+                                                <option value="81400">Chiang Mai</option>
+                                                <option value="81500">Chiang Rai</option>
+                                                <option value="81600">Chon Buri</option>
+                                                <option value="81700">Chumphon</option>
+                                                <option value="81800">Kalasin</option>
+                                                <option value="81900">Kamphaeng Phet</option>
+                                                <option value="82000">Kanchanaburi</option>
+                                                <option value="82100">Khon Kaen</option>
+                                                <option value="82200">Krabi</option>
+                                                <option value="82300">Lampang</option>
+                                                <option value="82400">Lamphun</option>
+                                                <option value="82500">Loei</option>
+                                                <option value="82600">Lop Buri</option>
+                                                <option value="82700">Mae Hong Son</option>
+                                                <option value="82800">Maha Sarakham</option>
+                                                <option value="82900">Mukdahan</option>
+                                                <option value="83000">Nakhon Nayok</option>
+                                                <option value="83200">Nakhon Phanom</option>
+                                                <option value="83300">Nakhon Ratchasima</option>
+                                                <option value="83100">Nakhon Pathom</option>
+                                                <option value="83400">Nakhon Sawan</option>
+                                                <option value="83500">Nakhon Si Thammarat</option>
+                                                <option value="83600">Nan</option>
+                                                <option value="83700">Narathiwat</option>
+                                                <option value="83800">Nongbua Lumphoo</option>
+                                                <option value="83900">Nong Khai</option>
+                                                <option value="84200">Pattani</option>
+                                                <option value="84300">Phang Nga</option>
+                                                <option value="84400">Phatthalung</option>
+                                                <option value="84500">Phayao</option>
+                                                <option value="84600">Phetchabun</option>
+                                                <option value="84700">Phetchaburi</option>
+                                                <option value="84800">Phichit</option>
+                                                <option value="84900">Phitsanulok</option>
+                                                <option value="85000">Phra Nakhon Si Ayuttaya</option>
+                                                <option value="85100">Phrae</option>
+                                                <option value="85200">Phuket</option>
+                                                <option value="85300">Prachin Buri</option>
+                                                <option value="85400">Prachuap Khiri Khan</option>
+                                                <option value="85500">Ranong</option>
+                                                <option value="85600">Ratchaburi</option>
+                                                <option value="85700">Rayong</option>
+                                                <option value="85800">Roi Et</option>
+                                                <option value="85900">Sa Kaew</option>
+                                                <option value="86000">Sakon Nakhon</option>
+                                                <option value="86200">Samut Sakhon</option>
+                                                <option value="86300">Samut Songkhram</option>
+                                                <option value="86400">Saraburi</option>
+                                                <option value="86500">Satun</option>
+                                                <option value="86600">Si Sa Ket</option>
+                                                <option value="86700">Sing Buri</option>
+                                                <option value="86800">Song Khla</option>
+                                                <option value="86900">Sukhothai</option>
+                                                <option value="87000">Suphan Buri</option>
+                                                <option value="87100">Surat Thani</option>
+                                                <option value="87200">Surin</option>
+                                                <option value="87300">Tak</option>
+                                                <option value="87400">Trang</option>
+                                                <option value="87500">Trat</option>
+                                                <option value="87600">Ubon Ratchathani</option>
+                                                <option value="87700">Udon Thani</option>
+                                                <option value="80600">Umnad Chareun</option>
+                                                <option value="87800">Uthai Thani</option>
+                                                <option value="87900">Uttaradit</option>
+                                                <option value="88000">Yala</option>
+                                                <option value="88100">Yasothon</option>
+                                                <option value="ctry_110000">***** Select Vietnam State *****</option>
+                                                <option value="110000">All Programmes in Vietnam</option>
+                                                <option value="110101">An Giang</option>
+                                                <option value="110102">Ba Ria-Vung Tau</option>
+                                                <option value="110103">Bac Can</option>
+                                                <option value="110104">Bac Giang</option>
+                                                <option value="110105">Bac Lieu</option>
+                                                <option value="110106">Bac Ninh</option>
+                                                <option value="110107">Ben Tre</option>
+                                                <option value="110108">Binh Dinh</option>
+                                                <option value="110109">Binh Duong</option>
+                                                <option value="110110">Binh Phuoc</option>
+                                                <option value="110111">Binh Thuan</option>
+                                                <option value="110112">Ca Mau</option>
+                                                <option value="110113">Can Tho</option>
+                                                <option value="110114">Cao Bang</option>
+                                                <option value="110115">Da Nang</option>
+                                                <option value="110116">Dac Lac</option>
+                                                <option value="110163">Dien Bien</option>
+                                                <option value="110168">Dak Nong</option>
+                                                <option value="110117">Dong Nai</option>
+                                                <option value="110118">Dong Thap</option>
+                                                <option value="110119">Gia Lai</option>
+                                                <option value="110120">Ha Giang</option>
+                                                <option value="110121">Ha Nam</option>
+                                                <option value="110122">Ha Noi</option>
+                                                <option value="110123">Ha Tay</option>
+                                                <option value="110124">Ha Tinh</option>
+                                                <option value="110125">Hai Duong</option>
+                                                <option value="110126">Hai Phong</option>
+                                                <option value="110167">Hau Giang</option>
+                                                <option value="110127">Ho Chi Minh City</option>
+                                                <option value="110128">Hoa Binh</option>
+                                                <option value="110129">Hung Yen</option>
+                                                <option value="110130">Khanh Hoa</option>
+                                                <option value="110131">Kien Giang</option>
+                                                <option value="110132">Kon Tum</option>
+                                                <option value="110133">Lai Chau</option>
+                                                <option value="110134">Lam Dong</option>
+                                                <option value="110135">Lang Son</option>
+                                                <option value="110136">Lao Cai</option>
+                                                <option value="110137">Long An</option>
+                                                <option value="110138">Nam Dinh</option>
+                                                <option value="110139">Nghe An</option>
+                                                <option value="110140">Ninh Binh</option>
+                                                <option value="110141">Ninh Thuan</option>
+                                                <option value="110142">Phu Tho</option>
+                                                <option value="110143">Phu Yen</option>
+                                                <option value="110144">Quang Binh</option>
+                                                <option value="110145">Quang Nam</option>
+                                                <option value="110146">Quang Ngai</option>
+                                                <option value="110147">Quang Ninh</option>
+                                                <option value="110148">Quang Tri</option>
+                                                <option value="110149">Soc Trang</option>
+                                                <option value="110150">Son La</option>
+                                                <option value="110151">Tay Ninh</option>
+                                                <option value="110152">Thai Binh</option>
+                                                <option value="110153">Thai Nguyen</option>
+                                                <option value="110154">Thanh Hoa</option>
+                                                <option value="110155">Thua Thien-Hue</option>
+                                                <option value="110156">Tien Giang</option>
+                                                <option value="110157">Tra Vinh</option>
+                                                <option value="110158">Tuyen Quang</option>
+                                                <option value="110159">Vinh Long</option>
+                                                <option value="110160">Vinh Phuc</option>
+                                                <option value="110161">Yen Bai</option>
+                                                <option value="ctry_40000">***** Select India State *****</option>
+                                                <option value="40000">All Programmes in India</option>
+                                                <option value="40100">Andaman &amp; Nicobar</option>
+                                                <option value="40200">All Programmes in Andhra Pradesh</option>
+                                                <option value="40205">Andhra Pradesh - Anantapur</option>
+                                                <option value="40206">Andhra Pradesh - Guntakal</option>
+                                                <option value="40207">Andhra Pradesh - Guntur</option>
+                                                <option value="40210">Andhra Pradesh - Hyderabad / Secunderabad</option>
+                                                <option value="40211">Andhra Pradesh - Kakinada</option>
+                                                <option value="40212">Andhra Pradesh - Kurnool</option>
+                                                <option value="40213">Andhra Pradesh - Nellore</option>
+                                                <option value="40214">Andhra Pradesh - Nizamabad</option>
+                                                <option value="40215">Andhra Pradesh - Rajahmundry</option>
+                                                <option value="40216">Andhra Pradesh - Tirupati</option>
+                                                <option value="40220">Andhra Pradesh - Visakhapatnam</option>
+                                                <option value="40230">Andhra Pradesh - Vijayawada</option>
+                                                <option value="40231">Andhra Pradesh - Warangal</option>
+                                                <option value="40300">All Programmes in Assam</option>
+                                                <option value="40310">Assam - Gauhati</option>
+                                                <option value="40320">Assam - Silchar</option>
+                                                <option value="40400">All Programmes in Arunachal Pradesh</option>
+                                                <option value="40410">Arunachal Pradesh - Itanagar</option>
+                                                <option value="40500">All Programmes in Bihar</option>
+                                                <option value="40505">Bihar - Bahgalpur</option>
+                                                <option value="40510">Bihar - Patna</option>
+                                                <option value="40600">Chandigarh</option>
+                                                <option value="40700">Daman &amp; Diu</option>
+                                                <option value="40800">Delhi</option>
+                                                <option value="40900">Dadra &amp; Nagar Haveli</option>
+                                                <option value="41000">All Programmes in Goa</option>
+                                                <option value="41010">Goa - Panjim / Panaji</option>
+                                                <option value="41020">Goa - Vasco Da Gama</option>
+                                                <option value="41099">Goa - Other</option>
+                                                <option value="41100">All Programmes in Gujarat</option>
+                                                <option value="41110">Gujarat - Ahmedabad</option>
+                                                <option value="41111">Gujarat - Anand</option>
+                                                <option value="41112">Gujarat - Ankleshwar</option>
+                                                <option value="41113">Gujarat - Bharuch</option>
+                                                <option value="41114">Gujarat - Bhavnagar</option>
+                                                <option value="41115">Gujarat - Bhuj</option>
+                                                <option value="41116">Gujarat - Gandhinagar</option>
+                                                <option value="41117">Gujarat - Gir</option>
+                                                <option value="41118">Gujarat - Jamnagar</option>
+                                                <option value="41119">Gujarat - Kandla</option>
+                                                <option value="41121">Gujarat - Porbandar</option>
+                                                <option value="41122">Gujarat - Rajkot</option>
+                                                <option value="41123">Gujarat - Surat</option>
+                                                <option value="41120">Gujarat - Vadodara</option>
+                                                <option value="41124">Gujarat - Valsad</option>
+                                                <option value="41125">Gujarat - Vapi</option>
+                                                <option value="41200">All Programmes in Haryana</option>
+                                                <option value="41201">Haryana - Ambala</option>
+                                                <option value="41202">Haryana - Faridabad</option>
+                                                <option value="41203">Haryana - Gurgaon</option>
+                                                <option value="41204">Haryana - Hisar</option>
+                                                <option value="41205">Haryana - Karnal</option>
+                                                <option value="41206">Haryana - Kurukshetra</option>
+                                                <option value="41210">Haryana - Panipat</option>
+                                                <option value="41211">Haryana - Rohtak</option>
+                                                <option value="41300">All Programmes in Himachal Pradesh</option>
+                                                <option value="41301">Himachal Pradesh - Dalhousie</option>
+                                                <option value="41302">Himachal Pradesh - Dharmasala</option>
+                                                <option value="41303">Himachal Pradesh - Kulu / Manali</option>
+                                                <option value="41304">Himachal Pradesh - Shimla</option>
+                                                <option value="41400">All Programmes in Jammu &amp; Kashmir</option>
+                                                <option value="41401">Jammu &amp; Kashmir - Jammu</option>
+                                                <option value="41402">Jammu &amp; Kashmir - Srinagar</option>
+                                                <option value="41500">All Programmes in Karnataka</option>
+                                                <option value="41510">Karnataka - Bangalore</option>
+                                                <option value="41511">Karnataka - Belgaum</option>
+                                                <option value="41512">Karnataka - Bellary</option>
+                                                <option value="41513">Karnataka - Bidar</option>
+                                                <option value="41514">Karnataka - Dharwad</option>
+                                                <option value="41515">Karnataka - Gulbarga</option>
+                                                <option value="41516">Karnataka - Hubli</option>
+                                                <option value="41517">Karnataka - Kolar</option>
+                                                <option value="41520">Karnataka - Mysore</option>
+                                                <option value="41530">Karnataka - Mangalore</option>
+                                                <option value="41600">All Programmes in Kerala</option>
+                                                <option value="41601">Kerala - Calicut</option>
+                                                <option value="41610">Kerala - Cochin</option>
+                                                <option value="41611">Kerala - Ernakulam</option>
+                                                <option value="41612">Kerala - Kannur</option>
+                                                <option value="41613">Kerala - Kochi</option>
+                                                <option value="41614">Kerala - Kollam</option>
+                                                <option value="41615">Kerala - Kottayam</option>
+                                                <option value="41616">Kerala - Kozhikode</option>
+                                                <option value="41617">Kerala - Palakkad</option>
+                                                <option value="41618">Kerala - Palghat</option>
+                                                <option value="41619">Kerala - Thrissur</option>
+                                                <option value="41620">Kerala - Trivandrum</option>
+                                                <option value="41700">Lakshadweep</option>
+                                                <option value="41800">All Programmes in Maharashtra</option>
+                                                <option value="41801">Maharashtra - Ahmednagar</option>
+                                                <option value="41810">Maharashtra - Aurangabad</option>
+                                                <option value="41811">Maharashtra - Jalgaon</option>
+                                                <option value="41812">Maharashtra - Kolhapur</option>
+                                                <option value="41820">Maharashtra - Mumbai</option>
+                                                <option value="41821">Maharashtra - Mumbai Suburbs</option>
+                                                <option value="41830">Maharashtra - Nagpur</option>
+                                                <option value="41840">Maharashtra - Nashik</option>
+                                                <option value="41841">Maharashtra - Navi Mumbai</option>
+                                                <option value="41850">Maharashtra - Pune</option>
+                                                <option value="41860">Maharashtra - Solapur</option>
+                                                <option value="41870">Maharashtra - Thane</option>
+                                                <option value="41900">All Programmes in Meghalaya</option>
+                                                <option value="41910">Meghalaya - Shillong</option>
+                                                <option value="42000">All Programmes in Mizoram</option>
+                                                <option value="42010">Mizoram - Aizawal</option>
+                                                <option value="42100">All Programmes in Manipur</option>
+                                                <option value="42110">Manipur - Imphal</option>
+                                                <option value="42200">All Programmes in Madhya Pradesh</option>
+                                                <option value="42210">Madhya Pradesh - Bhopal</option>
+                                                <option value="42215">Madhya Pradesh - Gwalior</option>
+                                                <option value="42220">Madhya Pradesh - Indore</option>
+                                                <option value="42230">Madhya Pradesh - Jabalpur</option>
+                                                <option value="42240">Madhya Pradesh - Ujjain</option>
+                                                <option value="42300">All Programmes in Nagaland</option>
+                                                <option value="42310">Nagaland - Dimapur</option>
+                                                <option value="42400">All Programmes in Orissa</option>
+                                                <option value="42410">Orissa - Bhubaneshwar</option>
+                                                <option value="42420">Orissa - Cuttack</option>
+                                                <option value="42430">Orissa - Puri</option>
+                                                <option value="42440">Orissa - Paradeep</option>
+                                                <option value="42450">Orissa - Rourkela</option>
+                                                <option value="42500">Pondicherry</option>
+                                                <option value="42600">All Programmes in Punjab</option>
+                                                <option value="42601">Punjab - Amritsar</option>
+                                                <option value="42602">Punjab - Bathinda</option>
+                                                <option value="42610">Punjab - Jalandhar</option>
+                                                <option value="42620">Punjab - Ludhiana</option>
+                                                <option value="42630">Punjab - Mohali</option>
+                                                <option value="42640">Punjab - Patiala</option>
+                                                <option value="42650">Punjab - Pathankot</option>
+                                                <option value="42700">All Programmes in Rajasthan</option>
+                                                <option value="42701">Rajasthan - Ajmer</option>
+                                                <option value="42710">Rajasthan - Jaipur</option>
+                                                <option value="42715">Rajasthan - Jaisalmer</option>
+                                                <option value="42716">Rajasthan - Jodhpur</option>
+                                                <option value="42720">Rajasthan - Kota</option>
+                                                <option value="42730">Rajasthan - Udaipur</option>
+                                                <option value="42800">Sikkim</option>
+                                                <option value="42810">Sikkim - Gangtok</option>
+                                                <option value="42900">All Programmes in Tamil Nadu</option>
+                                                <option value="42910">Tamil Nadu - Chennai</option>
+                                                <option value="42920">Tamil Nadu - Coimbatore</option>
+                                                <option value="42921">Tamil Nadu - Cuddalore</option>
+                                                <option value="42925">Tamil Nadu - Erode</option>
+                                                <option value="42930">Tamil Nadu - Madurai</option>
+                                                <option value="42931">Tamil Nadu - Nagercoil</option>
+                                                <option value="42936">Tamil Nadu - Ooty</option>
+                                                <option value="42938">Tamil Nadu - Thanjavur</option>
+                                                <option value="42940">Tamil Nadu - Tiruchirapalli</option>
+                                                <option value="42941">Tamil Nadu - Tirunalveli</option>
+                                                <option value="42943">Tamil Nadu - Tuticorin</option>
+                                                <option value="42950">Tamil Nadu - Salem</option>
+                                                <option value="42960">Tamil Nadu - Hosur</option>
+                                                <option value="42961">Tamil Nadu - Vellore</option>
+                                                <option value="43000">All Programmes in Tripura</option>
+                                                <option value="43001">Tripura - Agartala</option>
+                                                <option value="43100">All Programmes in Uttar Pradesh</option>
+                                                <option value="43101">Uttar Pradesh - Agra</option>
+                                                <option value="43102">Uttar Pradesh - Aligarh</option>
+                                                <option value="43103">Uttar Pradesh - Allahabad</option>
+                                                <option value="43104">Uttar Pradesh - Bareilly</option>
+                                                <option value="43105">Uttar Pradesh - Etah</option>
+                                                <option value="43106">Uttar Pradesh - Faizabad</option>
+                                                <option value="43107">Uttar Pradesh - Ghaziabad</option>
+                                                <option value="43108">Uttar Pradesh - Gorakhpur</option>
+                                                <option value="43110">Uttar Pradesh - Lucknow</option>
+                                                <option value="43120">Uttar Pradesh - Kanpur</option>
+                                                <option value="43121">Uttar Pradesh - Mathura</option>
+                                                <option value="43122">Uttar Pradesh - Meerut</option>
+                                                <option value="43123">Uttar Pradesh - Moradabad</option>
+                                                <option value="43124">Uttar Pradesh - Noida</option>
+                                                <option value="43130">Uttar Pradesh - Varanasi</option>
+                                                <option value="43200">All Programmes in West Bengal</option>
+                                                <option value="43201">West Bengal - Asansol</option>
+                                                <option value="43202">West Bengal - Barddhaman</option>
+                                                <option value="43203">West Bengal - Durgapur</option>
+                                                <option value="43204">West Bengal - Haldia</option>
+                                                <option value="43205">West Bengal - Jalpaiguri</option>
+                                                <option value="43210">West Bengal - Kolkata</option>
+                                                <option value="43220">West Bengal - Kharagpur</option>
+                                                <option value="43230">West Bengal - Siliguri</option>
+                                                <option value="43400">All Programmes in Chhattisgarh</option>
+                                                <option value="43401">Chhattisgarh - Bilaspur</option>
+                                                <option value="43402">Chhattisgarh - Bhillai</option>
+                                                <option value="43403">Chhattisgarh - Raipur</option>
+                                                <option value="43500">All Programmes in Jharkhand</option>
+                                                <option value="43501">Jharkhand - Bokaro</option>
+                                                <option value="43510">Jharkhand - Jamshedpur</option>
+                                                <option value="43502">Jharkhand - Dhanbad</option>
+                                                <option value="43520">Jharkhand - Ranchi</option>
+                                                <option value="43600">All Programmes in Uttaranchal</option>
+                                                <option value="43620">Uttaranchal - Dehradun</option>
+                                                <option value="43630">Uttaranchal - Hardwar</option>
+                                                <option value="43640">Uttaranchal - Roorkee</option>
+                                                <option value="ctry_100000">***** Select China State *****</option>
+                                                <option value="100000">All Programmes in China</option>
+                                                <option value="ctry_20000">***** Select Hong Kong State *****</option>
+                                                <option value="20000">All Programmes in Hong Kong</option>
+                                                <option value="ctry_150000">***** Select Japan State *****</option>
+                                                <option value="150000">All Programmes in Japan</option>
+                                                <option value="ctry_10000">***** Select Australia State *****</option>
+                                                <option value="10000">All Programmes in Australia</option>
+                                                <option value="10100">A.C.T</option>
+                                                <option value="10200">Northern Territory</option>
+                                                <option value="10300">New South Wales</option>
+                                                <option value="10400">Queensland</option>
+                                                <option value="10500">South Australia</option>
+                                                <option value="10600">Tasmania</option>
+                                                <option value="10700">Victoria</option>
+                                                <option value="10800">Western Australia</option>
+                                                <option value="ctry_90100">*****************************</option>
+                                                <option value="90100">Other training locations</option>
+                                            </select>
+                                        </div>
+
+
+                                        <br>
+
+                                        <div class="form-group">
+                                            <h4 class="title">Keywords</h4>
+                                            <label>For more specific matches, enter keywords, e.g. course providers or specific skills. Leave blank for broader matches.<a href="http://myjobstreet.jobstreet.com.my/doc/learning-keywords.php" target="_blank">Tips</a>
+                                            </label>
+                                            <select type="text" id="js-keywords"  multiple="multiple" data-placement="Enter Keywords">
+                                              .,
+                                            </select>
+                                            
+                                           
+                                        </div>
+
+                                        <br>
+
+                                        <div class="form-group">
+
+                                            <div class="text-center">
+                                                <div>
+                                                    <input type="submit" class="btn btn-link btn-mobile-block" value="Save and View LEARNING Matches" id="sb2">
+                                                </div>
+                                                <input type="submit" class="btn btn-primary btn-mobile-block" value="Save Changes" id="sb1">
+
+                                                <input type="button" class="btn btn-default btn-mobile-block" value="Cancel" onclick="location.href='subscription.html';">
+                                              
+
+
+                                            </div>
+                                        </div>
+
+
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+    <!-- Confirm Unlink Fb Modal -->
+    <div id="UnlinkFbModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Warning!</h4>
+
+                </div>
+                <div class="modal-body">
+                    <p>Are you sure want to unlink your Jobstreet.com Account with Facebook?</p>
+                </div>
+                <div class="modal-footer">
+                    <form action="">
+                        <button id="comfirm_unlink" type="submit" data-dismiss="modal" class="btn btn-primary">Confirm</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    </div>
+    <!--end-->
+
+    </div>
+
+
+    <footer>
+        <div class="container">
+            <ul class="list-inline">
+                <li><a href="http://www.jobstreet.com.my/sitemap.htm" id="footer-sitemap">Site Map</a>
+                </li>
+                <li><a href="http://www.jobstreet.com.my/aboutus/default.htm">About Us</a>
+                </li>
+                <li><a href="http://job-search.jobstreet.com/CompanyProfile/company-profile.php?dm=http%3a%2f%2fsiva-my.jsstatic.com&amp;p=%2f_ads%2f_static%2fxml%2fMY%2f&amp;token=28b361b7dc8f5a797749c8397de04e59d5e14a2968d0b48e496e&amp;rnd=91859390#.UrjtWvQW1qV" id="footer_work_with_us">Work With Us</a>
+                </li>
+                <li><a href="http://www.jobstreet.com.my/terms-of-use.htm" id="footer_term_use">Terms of Use</a> </li>
+                <li><a href="http://www.jobstreet.com.my/privacy-policy.htm" id="footer_privacy_policy">Privacy Policy</a>
+                </li>
+                <li><a href="http://www.jobstreet.com.my/safe-job-search-guide.htm" id="footer_safe_guide">Safe Job Search Guide</a>
+                </li>
+                <li><a href="http://myjobstreet-dev.jobstreet.com.my/home/help.php?site=my" id="footer_help">Help</a>
+                </li>
+                <li><a href="http://myjobstreet-dev.jobstreet.com.my/home/feedback.php?site=my&amp;sub=feedback" id="footer_feedback" target="_blank">Send Feedback</a>
+                </li>
+            </ul>
+            <p class="footer-copyright">Copyright &copy; <span id="year"></span> JobStreet.com</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://dna.jsstatic.com/js/bootstrap.js"></script>
+
+    <!-- Plugin -->
+    <script src="http://dna.jsstatic.com/select2/select2.js"></script>
+    <script src="myjs.js"></script>
+    <script src="my-account.js"></script>
+
+
+    <script>
+    $("select").select2();
+     $("#js-program-categories").select2({
+      maximumSelectionLength: 10
+    });
+       $("#js-keywords").select2({
+     tags:true
+    });
+    
+    
+
+
+       
+
+    </script>
+</body>
+
+</html>

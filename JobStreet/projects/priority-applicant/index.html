@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<!-- saved from url=(0057)http://ui.jobstreet.com/examples/myjs/basic-template.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<title>MyJS Starter Template</title>
+        <link rel="stylesheet" href="http://dna.jsstatic.com/myjs/myjs-1.2.12.css">
+        <link rel="stylesheet" href="http://dna.jsstatic.com/pi/icon-font/2.1/icon-font.css">
+
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="http://ui.jobstreet.com/ico/favicon.png">
+		<link rel="apple-touch-icon" href="http://ui.jobstreet.com/ico/touch-icon-iphone.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="http://ui.jobstreet.com/%22ico/touch-icon-ipad.png%22">
+		<link rel="apple-touch-icon" sizes="120x120" href="http://ui.jobstreet.com/ico/touch-icon-iphone-retina.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="http://ui.jobstreet.com/ico/touch-icon-ipad-retina.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="http://ui.jobstreet.com/ico/touch-icon-iphone6p-ios8.png">
+		<!-- End of Favicon -->
+	<style type="text/css"></style></head>
+	
+    
+    <style>
+        .margin-1{
+            margin: 10px;
+        }
+        .header-img{
+            background-image: url("img/banner.png") ;
+            background-color: none;
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+        .priority-header{
+            
+            color:#ffffff;
+        }
+        .priority-benefit{
+            margin-bottom: 50px;
+           
+            color:#ffffff;
+        }
+
+        .priority-benefit div{
+            margin-bottom: 30px;
+        }
+        .priority-feature{
+            padding-top: 80px;
+        }
+        .priority-feature h3{
+            color: #1c3f94;
+            
+        }
+         @media (min-width: 368px) { 
+             .priority-feature h3{
+                 margin-top: 30px;
+            } 
+        }
+         @media (min-width: 768px) { 
+             .priority-feature h3{
+                 margin-top: 70px;
+            } 
+        }
+        .pri-effect{
+            opacity: 0;
+            position: relative;
+        }
+        .priority-testinomy{
+            
+           margin-top: 90px;
+            position: relative;
+        }
+        .priority-testinomy .header
+        {
+            position: absolute;
+            top: 50px;
+            width: 100%;
+            color: #1c3f94;
+            
+        }
+        .priority-testinomy .header h4{
+            font-weight: 700;
+        }
+        .priority-cta{
+            margin-top: 30px;
+        }
+        .carousel{
+            height: 500px;
+           
+        }
+        .carousel .item{
+            height: 500px;
+            background-color: #f5f5f7;
+        }
+        .carousel-caption{
+            z-index:10;
+            position: absolute;
+            top:20%;
+            color: #333333;
+            text-shadow: none;
+        }
+
+        .carousel-inner{
+            text-align: center;
+        }
+        .carousel-caption p{
+            font-size:18px;
+        }
+        .carousel-indicators li{
+            background-color: #ffffff;
+             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        .carousel-indicators .active{
+
+            background-color: #1c3f94;
+            border: none;
+        }
+        @media (max-width: 991px) { 
+            .carousel-caption p{
+            font-size:15px;
+            }
+            .carousel-caption h2{
+            font-size:25px;
+            }
+        }
+        .carousel-inner > .item  img{
+            height:500px;
+        }
+        .priority-testinomy .carousel-control [class^="icon-"],[class*=" icon-"]{
+            width:30px;
+            height:30px;
+            font-size:50px;
+            display:inline-block;
+            position:absolute;
+            top:50%;
+            color: #1c3f94;
+        }
+        .carousel-control.right{
+            background-image: none;
+        }
+        .carousel-control.right:hover{
+            background-image: -webkit-linear-gradient(left, rgba(0,0,0,0.0001) 0, rgba(0, 0, 0, 0.15) 100%);
+        }
+        .carousel-control.left{
+            background-image: none;
+        }
+        .carousel-control.left:hover{
+            background-image: -webkit-linear-gradient(right, rgba(0,0,0,0.0001) 0, rgba(0, 0, 0, 0.15) 100%);
+        }
+       
+        
+    </style>
+    
+</head>
+<body class="body-mobile-align">
+		
+<!--Header-->
+	<div class="mobile-navbar-fixed-top">
+		<div class="navbar navbar-inverse navbar-static">
+			<div class="container">
+				<div class="navbar-header">
+					<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" data-canvas="body" type="button" onclick="$(&#39;#mobile_search_bar&#39;).removeClass(&#39;active&#39;);">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<span class="jslogo jslogo-mobile visible-xs"></span>
+					<!--Mobile View Search Bar toggle button-->
+					<div class="search-toggle">
+						<a href="http://ui.jobstreet.com/examples/myjs/basic-template.html#"><span class="icon-search visible-xs"></span></a>
+					</div>
+					<div class="navbar-search toggle">
+						<div class="container visible-xs">
+							<div class="col-xs-12">
+								<form id="frmSearch_mobile" name="frmSearch-mobile" action="http://job-search-dev.jobstreet.com.my/malaysia/job-opening.php" method="get">
+									<div class="input-group">
+										<input class="form-control" id="search_box_keyword_mobile" name="key" type="text" placeholder="Search Jobs By Title, Skills or Keywords...">               
+										<span class="input-group-btn">
+										<a class="btn btn-default" id="header_searchbox_btn_mobile" type="button">Search</a>
+										</span>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="navbar-collapse navbar-collapse-align collapse" aria-expanded="false" style="height: 1px;">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="http://www.jobstreet.com.my/" title="Leading Job Site in Malaysia - Find Jobs in Malaysia">Home</a></li>
+						<li><a id="header-job-link" href="http://job-search-dev.jobstreet.com.my/malaysia/job-opening.php" title="Search Jobs @ Job Search JobStreet.com Malaysia">Search Jobs</a></li>
+						<li><a href="http://www.jobstreet.com.my/en/companies" title="company profiles">Company Profiles</a></li>
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="javascript:;" aria-expanded="false">MyJobStreet&nbsp;<b class="caret"></b></a>		
+							<ul class="dropdown-menu">
+								<li class="dropdown-header hidden-xs">My Resume</li>
+								<li class="hidden-xs"><a href="http://myjobstreet-dev.jobstreet.com.my/resume/preview-resume.php?x=a2p6dkp4hosoojv84nsr44ecp4">Preview Resume</a></li>
+								<li class="hidden-xs"><a href="http://myjobstreet-dev.jobstreet.com.my/resume/edit-work-experience.php?x=a2p6dkp4hosoojv84nsr44ecp4">Edit Resume</a></li>
+								<li class="divider hidden-xs"></li>
+								<li class="dropdown-header">My Applications</li>
+								<li><a href="http://myjobstreet-dev.jobstreet.com.my/application/application-status.php?view=0&amp;x=a2p6dkp4hosoojv84nsr44ecp4">Online Applications</a></li>
+								<li><a href="http://myjobstreet-dev.jobstreet.com.my/application/interview-request.php?view=latest&amp;x=a2p6dkp4hosoojv84nsr44ecp4">Interview Requests</a></li>
+								<li class="hidden-xs"><a id="header_emp_request_link" href="http://myjobstreet-dev.jobstreet.com.my/application/employer-request.php?x=a2p6dkp4hosoojv84nsr44ecp4">Resume Requests</a></li>
+								<li class="divider hidden-xs"></li>
+								<li class="dropdown-header hidden-xs">Career Enhancers</li>
+								<li class="hidden-xs"><a href="http://myjobstreet-dev.jobstreet.com.my/career-enhancer/pa-summary.php?x=a2p6dkp4hosoojv84nsr44ecp4">Priority Application</a></li>
+								<li class="hidden-xs"><a href="http://myjobstreet-dev.jobstreet.com.my/career-enhancer/salary-report.php?x=a2p6dkp4hosoojv84nsr44ecp4">Salary Report</a></li>
+								<li class="hidden-xs"><a href="javascript: popup_win8(&#39;http://myjobstreet-dev.jobstreet.com.my/career-enhancer/assessment.php?x=a2p6dkp4hosoojv84nsr44ecp4&#39;, 1000,700,&#39;JELA&#39;);">English Assessment</a></li>
+								<li class="hidden-xs">
+									<a class="hidden-xs" href="javascript: popup_win8(&#39;http://www.jobstreet.com.my/career-resources/&#39;, 1000,700,&#39;JELA&#39;);">
+									Career Resources</a>
+								</li>
+							</ul>
+						</li>
+						<li class="dropdown hidden-xs">
+							<a data-toggle="dropdown" class="dropdown-toggle" href="http://ui.jobstreet.com/examples/myjs/basic-template.html#" aria-expanded="false">Learning&nbsp;<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="http://www.jobstreet.com.my/learning/">View Course</a></li>
+								<li><a href="http://myjobstreet-dev.jobstreet.com.my/learning/learning-profile.php?x=g8q1cqbllnaoieol1h0ulno8h2">Edit Learning Profile</a></li>
+							</ul>
+						</li>
+						<li class="dropdown hidden-xs">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="javascript:;" aria-expanded="false">More&nbsp;<b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="http://job-search-dev.jobstreet.com.my/malaysia/browse/oversea.html">Overseas Jobs</a></li>
+								<li><a href="http://www.jobstreet.com.my/campus/">Fresh Grad Jobs</a></li>
+								<li><a href="http://job-search-dev.jobstreet.com.my/malaysia/job-classified.php">Classified Jobs</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li class="dropdown" style="display: list-item;">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="javascript:;" aria-expanded="false">
+								<span class="display-name">Lucas Lee</span>&nbsp;
+								<span><b class="caret"></b></span>
+							</a>
+							<ul class="dropdown-menu">
+								<li><a href="http://myjobstreet-dev.jobstreet.com.my/home/logout.php?x=g8q1cqbllnaoieol1h0ulno8h2">Logout</a></li>
+								<li class="hidden-xs"><a href="http://myjobstreet-dev.jobstreet.com.my/home/help.php?x=g8q1cqbllnaoieol1h0ulno8h2&amp;site=my">Help</a></li>
+								<li class="hidden-xs"><a class="language-separator" href="http://myjobstreet-dev.jobstreet.com.my/registration/update-account.php?x=g8q1cqbllnaoieol1h0ulno8h2">My Account</a></li>
+							</ul>
+						</li>
+						<li style="display: none;"> 
+							<a href="https://myjobstreet-dev.jobstreet.com.my/home/login.php?site=my&amp;language_code=3">Log In</a>
+						</li>
+						<li class="hidden-xs" style="display: none;"> <span>|</span> </li>
+						<li style="display: none;">
+							<a href="https://myjobstreet-dev.jobstreet.com.my/registration/simple-signup.php?site=my&amp;language_code=3">Sign Up</a>
+						</li>
+						<ul></ul>
+					</ul>
+				</div>
+				<!--/.nav-collapse -->
+			</div>
+			<div class="navbar-lower-deck hidden-xs">
+				<div class="container">
+					<div class="col-lg-3 col-md-3 col-sm-4 hidden-xs">
+						<a class="jslogo my" id="header-logo-link" href="http://www.jobstreet.com.my/" title="Leading Job Site in Malaysia - Find Jobs, Advertise Jobs in Malaysia"></a>
+					</div>
+					<div class="col-lg-5 col-md-5 col-sm-6">
+						<div class="search-area">
+							<form id="frmSearch" name="frmSearch" action="http://job-search-dev.jobstreet.com.my/malaysia/job-opening.php" method="get">
+								<div class="input-group">
+									<input class="form-control" name="key" type="text" placeholder="Search Jobs By Title, Skills or Keywords...">					
+									<span class="input-group-btn"><a class="btn btn-default" type="button"><span class="icon-search"></span></a></span>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-2 hidden-sm hidden-xs">
+						<a class="btn btn-link" href="http://job-search-dev.jobstreet.com.my/malaysia/advance-job-search.php?area=1&amp;option=1&amp;job-source=1%2C64&amp;classified=1&amp;job-posted=0&amp;sort=1&amp;order=0" title="Advanced Job Search @ JobStreet.com ">Advanced</a>
+					</div>
+					<div class="col-lg-2 col-md-2 col-sm-2 hidden-xs text-right">
+						<a class="btn btn-link employer-link" id="header-employer-link" href="http://www.jobstreet.com.my/employers/" title="Post a Job Ad: +603-­2176 0333">Employers</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--End of header-->
+
+
+     <div class="container">
+          
+		<div class="panel">
+            
+            <div class="header-img">
+            <div class="panel-heading priority-header">
+                <div class="text-center margin-4">
+                    <h3 class="title">Be first to be seen</h3>
+                    <h1 class="title">JobStreet.com's Priority Application</h1>
+                    <a id="test-btn"role="button" class="btn btn-primary btn-lg margin-1">Subscribe now</a>
+				</div>
+		    </div>
+            <!-- Content 1 -->
+            <div class="panel-body priority-benefit text-center">
+                
+                    <div class="col-md-4">
+                    <img class="img-circle" src="img/applicant.png" alt="Generic placeholder image">
+                    <h4 class="margin-1">Be seen as a keen applicant</h4> 
+                    </div>
+                    <div class="col-md-4">
+                    <img class="img-circle" src="img/applicant%20list.png">
+                    <h4 class="margin-1">Get highlighted and be placed on top of the applicant list</h4>   
+                    </div>
+                    <div class="col-md-4">
+                    <img class="img-circle" src="img/notify.png" alt="Generic placeholder image">
+                     <h4 class="margin-1">Get noticed by employers when you apply</h4>   
+                    </div>
+                
+            </div>
+            <!-- Content 1 End-->
+            </div>
+            
+            
+            <!-- Content 2 -->
+            <div class="panel-body priority-feature text-center ">
+                <div class="col-md-6 pri-effect">
+                    <a href="">
+                        <img width="100%" src="img/applicang%20img.png" alt="">
+                    </a>
+                </div>
+                <div class="col-md-5 col-md-offset-1 pri-effect text-left">
+                    <h3>Be seen as a keen applicant</h3>
+                    <p class="">Let yourself be seen first among hundreds of other applicants. With priority application, you’ll be distinguished as a candidate who’s committed and serious about your career growth.</p>
+                </div>
+            </div>
+            
+            <div class="panel-body priority-feature text-center ">
+                <div class="col-md-5 pri-effect text-left hidden-xs">
+                    <h3>Get highlighted and be placed on top of the applicant list</h3>
+                    <p >With Priority Application, you automatically get highlighted with a Priority Label and be placed on top of the employer’s applicants list, so employers see you first!</p>
+                </div>
+                
+                <div class="col-md-6 col-md-offset-1 pri-effect">
+                    <a href="">
+                        <img width="100%" src="img/appicant%20list%20%20img.png" alt="">
+                    </a>
+                </div>
+                
+                <div class="col-md-5 col-md-offset-1 pri-effect text-left visible-xs">
+                    <h3>Get highlighted and be placed on top of the applicant list</h3>
+                    <p >With Priority Application, you automatically get highlighted with a Priority Label and be placed on top of the employer’s applicants list, so employers see you first!</p>
+                </div>
+            </div>
+            
+            <div class="panel-body priority-feature text-center ">
+                <div class="col-md-6 pri-effect">
+                    <a href="">
+                        <img width="100%" src="img/notify%20img.png" alt="">
+                    </a>
+                </div>
+                <div class="col-md-5 col-md-offset-1 pri-effect text-left">
+                    <h3>Get noticed by employers when you apply</h3>
+                    <p>Employers will get personal email notification and give your application preferred consideration. You will also receive email alerts when employers view your resume.</p>
+                </div>
+            </div>
+            <!-- Content 2 End -->
+          
+            <!-- Content 3 -->
+           
+            <!-- Content 3 End-->
+	         
+              
+         <div class="priority-testinomy pri-effect">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <div class="container">
+                                    <div class="carousel-caption">
+                                       
+                                        <h2>A higher chance to making a favourable impression with employers</h2>
+                                        
+                                        <p>I signed up for PriorityApplication after I realised my numerous applications to the advertised jobs were not getting any response from the recruiting companies. I knew that there must have been hundreds of applicants vying for the same job position as I, and I wanted my resume to be among the first few to be viewed by the recruiting companies because the first few </p>
+                                        <br>
+                                        <p>- Business Development Executive</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="item">
+                                <div class="container">
+                                    <div class="carousel-caption">
+                                        <h2>Get a new job within a month</h2>
+                                        
+                                        <p>I strongly recommend PriorityApplication for all job seekers. I successfully landed a new job within a month after apply for PriorityApplication. My resume was seldom viewed by employer but with PriorityApplication, I got more resume viewed by employers.</p>
+                                        <br>
+                                        <p>- Supplier Development Engineer</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="item">
+                                <div class="container">
+                                    <div class="carousel-caption">
+                                        <h2>Good Platform</h2>
+                                        
+                                        <p>PriorityApplication provides a good platform for employer to notice our applications and giving us more opportunity to get an interview. The fee is reasonable. Keep up the good work.</p>
+                                        <br>
+                                        <p>- Quality Control Manager</p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                
+                    <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="icon-angle-left hidden-xs"></span></a>
+                    <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="icon-angle-right hidden-xs"></span></a>
+            
+                    <div class="header">
+                        <div class="text-center">
+                            <h4>
+                                What Candidates Said
+                            </h4>
+                        </div>
+                    </div>
+            </div>
+        </div>
+            <!-- Content 4 -->
+            <div class="panel-body priority-cta text-center pri-effect">
+                <h3>Getting your dream job is never easy</h3>
+                <p>With JobStreet.com’s Priority Application you will be <br> taking an additional step to stand out amongst all the other applicants</p>
+                <a id="test-btn" role="button" class="btn btn-primary btn-lg margin-1">Subscribe Now</a>
+                <br>
+                <span>Got questions?</span><a href="http://www.jobstreet.com.my/priority-application/pa_faq.htm" target="_blank">FAQ</a>
+            </div>
+            <!-- Content 4 End-->
+            
+                
+         </div>
+    </div>
+
+
+<footer>
+	<div class="container">
+		<ul class="list-inline">
+			<li><a href="http://www.jobstreet.com.my/sitemap.htm" id="footer-sitemap">Site Map</a></li>
+			<li><a href="http://www.jobstreet.com.my/aboutus/default.htm">About Us</a></li>
+			<li><a href="http://job-search.jobstreet.com/CompanyProfile/company-profile.php?dm=http%3a%2f%2fsiva-my.jsstatic.com&amp;p=%2f_ads%2f_static%2fxml%2fMY%2f&amp;token=28b361b7dc8f5a797749c8397de04e59d5e14a2968d0b48e496e&amp;rnd=91859390#.UrjtWvQW1qV" id="footer_work_with_us">Work With Us</a></li>
+			<li><a href="http://www.jobstreet.com.my/terms-of-use.htm" id="footer_term_use">Terms of Use</a> </li>
+			<li><a href="http://www.jobstreet.com.my/privacy-policy.htm" id="footer_privacy_policy">Privacy Policy</a></li>
+			<li><a href="http://www.jobstreet.com.my/safe-job-search-guide.htm" id="footer_safe_guide">Safe Job Search Guide</a></li>
+			<li><a href="http://myjobstreet-dev.jobstreet.com.my/home/help.php?site=my" id="footer_help">Help</a></li>
+			<li><a href="http://myjobstreet-dev.jobstreet.com.my/home/feedback.php?site=my&amp;sub=feedback" id="footer_feedback" target="_blank">Send Feedback</a></li>
+		</ul>
+		<p class="footer-copyright">Copyright &copy; <span id="year"></span> JobStreet.com</p>
+	</div>
+</footer>
+
+
+
+
+<script src="http://dna.jsstatic.com/js/myjs.js"></script>
+<script src="http://dna.jsstatic.com/js/jquery.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="http://dna.jsstatic.com/js/jquery.mobile.min.js"></script>
+
+<script>
+$(function() {
+    
+    
+    
+                $("#myCarousel").swiperight(function(event) {
+                    $(this).carousel('prev');
+                });
+
+                $("#myCarousel").swipeleft(function() {
+                    $(this).carousel('next'); 
+                });
+    
+    function animation_effect() {
+     $('.pri-effect').each( function(i){
+            var bottom_of_object = $(this).position().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            /* Adjust the "200" to either have a delay or that the content starts fading a bit before you reach it */
+            bottom_of_window = bottom_of_window + 250;  
+          
+            if( bottom_of_window > bottom_of_object){
+                $(this).fadeIn('fast', function () {
+                $(this).animate({'opacity': '1.0', 'bottom':35}, 400);
+            });
+                    
+            }
+        }); 
+    }
+    
+    //trigger it when refresh on location of pri-effect class
+    animation_effect();
+    
+    //trigger it when scroll to location of pri-effect class
+    $(window).scroll(function(){
+        animation_effect();
+    });
+    
+   
+    
+   
+    
+    
+});
+</script>
+    
+</body>
+</html>

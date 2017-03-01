@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>               
+    <title>JobStreet.com - Referral (Connect Fb)</title>       
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="Cache-Control" content="Public">
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+	<link rel="stylesheet" href="http://dna.jsstatic.com/myjs/myjs-1.2.12.css">
+	<link rel="stylesheet" href="https://dna.jsstatic.com/pi/icon-font/2.1/icon-font.css">
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="../../ico/favicon.png">
+	<link rel="apple-touch-icon" href="../../ico/touch-icon-iphone.png">
+	<link rel="apple-touch-icon" sizes="76x76" href=../../"ico/touch-icon-ipad.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="../../ico/touch-icon-iphone-retina.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="../../ico/touch-icon-ipad-retina.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="../../ico/touch-icon-iphone6p-ios8.png">
+	<!-- End of Favicon -->
+</head>
+<body class="body-mobile-align">
+
+	<div class="bg-black-out"></div>	
+	
+	<div id="fb-root"></div>
+	<script>
+		(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.4&appId=103631216349243";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
+
+	<!-- facebook login confirmation -->
+	<div class="modal fade" id="loginwithFB" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+		<div class="modal-content modal-connect-fb-content">
+		    <div class="modal-header">
+		        <h1 class="page-header">Your Friends on JobStreet</h1>
+				<h5>Connect to Facebook to see where your friends work. </h5>
+			</div>
+			<div class="modal-body text-center">
+				<img src="//dna.jsstatic.com/img/myjs/blur-friends.jpg"/>
+				<div class="row">
+					<a class="btn btn-fb btn-fb-in-connect-popup center-block" id="btn_fb_connect" href="#">
+                        <span class="icon-facebook" id="fb_icon"></span>
+                        <strong id="lbl_fb_connect">Connect with Facebook</strong>
+                    </a>
+				</div>
+				<a class="btn btn-link" id="no_btn" data-dismiss="modal" href="#">No thanks</a>
+				<h6 class="text-muted text-justify" id="text_tou"> If you proceed to log in using your Facebook account, your name, employer, job title and Facebook profile photo will be displayed to any of your Facebook friends who have also logged in to Jobstreet.com using Facebook Connect.</h6>
+		    </div>
+		</div>
+	  </div>
+	</div>
+	
+	<!-- Bootstrap core JavaScript -->
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="https://dna.jsstatic.com/js/bootstrap.js"></script>
+	<!-- Plugin -->
+	<script src="http://dna.jsstatic.com/js/myjs.js"></script>
+	
+	<script type="text/javascript">
+	//Show Login with Facebook modal
+	$(window).load(function(){
+		$('#loginwithFB').modal('show');
+	});	
+	</script>
+
+	</body>
+</html>

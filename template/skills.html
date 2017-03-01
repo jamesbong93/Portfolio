@@ -1,0 +1,38 @@
+<div class="container" ng-controller="SkillCtrl">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading wow bounceIn">Skill Sets</h2>
+                  
+                </div>
+            </div>
+            <br><br>
+            <div class="col-lg-12 text-center">
+                    <h3 class="section-heading wow bounceIn">Front End</h3>
+            </div>
+            
+            <div class="row text-center">
+                 <div ng-repeat="option in fed_skill">
+                    <div class="col-md-4 col-sm-6 wow bounceInUp">
+                        <img src="img/skill/{{option.img}}.png" width="100px" height="100px">
+                        <h4 class="service-heading">{{option.title}}</h4>
+                    </div>
+                </div>
+
+            </div>
+            <br><br><br><br>
+            <div class="col-lg-12 text-center">
+                    <h3 class="section-heading wow bounceIn">Back End</h3>
+                   
+            </div>
+            
+             <div class="row text-center">
+                
+                
+                 <div ng-repeat="option in bed_skill">
+                    <div class="col-md-4 col-sm-6 wow bounceInUp">
+                        <img src="img/skill/{{option.img}}.png" width="100px" height="100px">
+                        <h4 class="service-heading">{{option.title}}</h4>
+                    </div>
+                </div>
+            </div>
+</div>
